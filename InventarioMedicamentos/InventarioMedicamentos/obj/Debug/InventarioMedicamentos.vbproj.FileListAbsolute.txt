@@ -1,0 +1,2 @@
+c:\users\marie\onedrive\documentos\visual studio 2015\Projects\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\InventarioMedicamentos.exe.config
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\InventarioMedicamentos.exe.config
