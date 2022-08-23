@@ -90,6 +90,7 @@ Partial Class Form1
         Me.TextBox2.Location = New System.Drawing.Point(92, 72)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(294, 22)
         Me.TextBox2.TabIndex = 5
         '
