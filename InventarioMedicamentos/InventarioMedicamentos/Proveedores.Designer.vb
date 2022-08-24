@@ -22,300 +22,492 @@ Partial Class Proveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Proveedores))
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(554, 175)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(100, 20)
-        Me.Button6.TabIndex = 32
-        Me.Button6.Text = "Limpiar"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(554, 149)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(100, 20)
-        Me.Button5.TabIndex = 31
-        Me.Button5.Text = "Buscar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(362, 149)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(186, 20)
-        Me.TextBox4.TabIndex = 30
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 139)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(43, 13)
-        Me.Label4.TabIndex = 29
-        Me.Label4.Text = "Campo:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(73, 136)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(199, 21)
-        Me.ComboBox1.TabIndex = 28
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(722, 122)
+        Me.Button4.Location = New System.Drawing.Point(1977, 181)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 30)
+        Me.Button4.Size = New System.Drawing.Size(116, 35)
         Me.Button4.TabIndex = 27
         Me.Button4.Text = "Modificar"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(722, 51)
+        Me.Button3.Location = New System.Drawing.Point(1977, 99)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 30)
+        Me.Button3.Size = New System.Drawing.Size(116, 35)
         Me.Button3.TabIndex = 26
         Me.Button3.Text = "Limpiar"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(722, 86)
+        Me.Button2.Location = New System.Drawing.Point(1977, 140)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 30)
+        Me.Button2.Size = New System.Drawing.Size(116, 35)
         Me.Button2.TabIndex = 25
         Me.Button2.Text = "Eliminar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(722, 16)
+        Me.Button1.Location = New System.Drawing.Point(1977, 59)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 30)
+        Me.Button1.Size = New System.Drawing.Size(116, 35)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(64, 83)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(208, 20)
-        Me.TextBox3.TabIndex = 23
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(111, 5)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(161, 20)
-        Me.TextBox1.TabIndex = 21
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(9, 86)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 13)
-        Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Teléfono"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 8)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 13)
-        Me.Label1.TabIndex = 18
-        Me.Label1.Text = "Nombre del Cliente"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 212)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(810, 201)
-        Me.DataGridView1.TabIndex = 17
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
-        Me.Label2.TabIndex = 34
-        Me.Label2.Text = "Marca"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(73, 41)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(199, 21)
-        Me.ComboBox2.TabIndex = 33
-        '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Location = New System.Drawing.Point(287, 12)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 202)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(367, 112)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(827, 57)
         Me.GroupBox1.TabIndex = 35
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Marca"
         '
-        'TextBox2
+        'TextBox6
         '
-        Me.TextBox2.Location = New System.Drawing.Point(66, 19)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(265, 20)
-        Me.TextBox2.TabIndex = 25
+        Me.TextBox6.Location = New System.Drawing.Point(648, 22)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(59, 22)
+        Me.TextBox6.TabIndex = 29
         '
-        'Label5
+        'Label7
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 22)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(44, 13)
-        Me.Label5.TabIndex = 24
-        Me.Label5.Text = "Nombre"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(563, 25)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(77, 16)
+        Me.Label7.TabIndex = 28
+        Me.Label7.Text = "Calificación:"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(66, 45)
+        Me.TextBox5.Location = New System.Drawing.Point(307, 22)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(265, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(248, 22)
         Me.TextBox5.TabIndex = 27
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 48)
+        Me.Label6.Location = New System.Drawing.Point(233, 25)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 13)
+        Me.Label6.Size = New System.Drawing.Size(66, 16)
         Me.Label6.TabIndex = 26
-        Me.Label6.Text = "Dirección"
+        Me.Label6.Text = "Dirección:"
         '
-        'Label7
+        'TextBox2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(6, 78)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(61, 13)
-        Me.Label7.TabIndex = 28
-        Me.Label7.Text = "Calificación"
+        Me.TextBox2.Location = New System.Drawing.Point(73, 22)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(152, 22)
+        Me.TextBox2.TabIndex = 25
         '
-        'TextBox6
+        'Label5
         '
-        Me.TextBox6.Location = New System.Drawing.Point(66, 71)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(265, 20)
-        Me.TextBox6.TabIndex = 29
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(8, 25)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(57, 16)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Nombre:"
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(722, 175)
+        Me.Button7.Location = New System.Drawing.Point(1977, 242)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(100, 31)
+        Me.Button7.Size = New System.Drawing.Size(116, 36)
         Me.Button7.TabIndex = 36
         Me.Button7.Text = "Volver"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'TextBox7
+        'ComboBox3
         '
-        Me.TextBox7.Location = New System.Drawing.Point(666, 16)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(50, 20)
-        Me.TextBox7.TabIndex = 39
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(68, 103)
+        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(422, 23)
+        Me.ComboBox3.TabIndex = 201
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Label10.Location = New System.Drawing.Point(502, 32)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(11, 160)
+        Me.Label10.TabIndex = 196
+        Me.Label10.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(520, 105)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 16)
+        Me.Label9.TabIndex = 195
+        Me.Label9.Text = "Buscar:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Label8.Location = New System.Drawing.Point(518, 38)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(150, 19)
+        Me.Label8.TabIndex = 194
+        Me.Label8.Text = "Lista de Proveedor"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Label11.Location = New System.Drawing.Point(11, 38)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(179, 19)
+        Me.Label11.TabIndex = 193
+        Me.Label11.Text = "Detalles del Proveedor"
+        '
+        'Label12
+        '
+        Me.Label12.BackColor = System.Drawing.Color.Teal
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label12.Location = New System.Drawing.Point(0, 564)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(857, 26)
+        Me.Label12.TabIndex = 192
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        '
+        'Label13
+        '
+        Me.Label13.BackColor = System.Drawing.Color.Teal
+        Me.Label13.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label13.Location = New System.Drawing.Point(0, 0)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(857, 26)
+        Me.Label13.TabIndex = 191
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(374, 38)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.ReadOnly = True
+        Me.TextBox10.Size = New System.Drawing.Size(116, 22)
+        Me.TextBox10.TabIndex = 190
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Turquoise
+        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button8.Location = New System.Drawing.Point(523, 164)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(321, 33)
+        Me.Button8.TabIndex = 189
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Turquoise
+        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button9.Location = New System.Drawing.Point(685, 130)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(159, 26)
+        Me.Button9.TabIndex = 188
+        Me.Button9.Text = " "
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.Turquoise
+        Me.Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), System.Drawing.Image)
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button10.Location = New System.Drawing.Point(520, 130)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(155, 26)
+        Me.Button10.TabIndex = 187
+        Me.Button10.Text = " "
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(577, 102)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(267, 22)
+        Me.TextBox11.TabIndex = 186
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(519, 76)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(51, 16)
+        Me.Label14.TabIndex = 185
+        Me.Label14.Text = "Campo:"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(578, 72)
+        Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(266, 23)
+        Me.ComboBox4.TabIndex = 184
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.Turquoise
+        Me.Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), System.Drawing.Image)
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button11.Location = New System.Drawing.Point(250, 163)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(116, 34)
+        Me.Button11.TabIndex = 183
+        Me.Button11.Text = " "
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Turquoise
+        Me.Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), System.Drawing.Image)
+        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button12.Location = New System.Drawing.Point(13, 163)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(110, 34)
+        Me.Button12.TabIndex = 182
+        Me.Button12.Text = " "
+        Me.Button12.UseVisualStyleBackColor = False
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.Turquoise
+        Me.Button13.BackgroundImage = CType(resources.GetObject("Button13.BackgroundImage"), System.Drawing.Image)
+        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button13.Location = New System.Drawing.Point(374, 163)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(116, 34)
+        Me.Button13.TabIndex = 181
+        Me.Button13.Text = " "
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.Turquoise
+        Me.Button14.BackgroundImage = CType(resources.GetObject("Button14.BackgroundImage"), System.Drawing.Image)
+        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button14.Location = New System.Drawing.Point(131, 163)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(111, 34)
+        Me.Button14.TabIndex = 180
+        Me.Button14.Text = " "
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(81, 133)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(409, 22)
+        Me.TextBox12.TabIndex = 179
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(141, 73)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(349, 22)
+        Me.TextBox13.TabIndex = 178
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(13, 136)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(60, 16)
+        Me.Label15.TabIndex = 177
+        Me.Label15.Text = "Teléfono:"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(13, 106)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(47, 16)
+        Me.Label18.TabIndex = 176
+        Me.Label18.Text = "Marca:"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(14, 76)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(119, 16)
+        Me.Label19.TabIndex = 175
+        Me.Label19.Text = "Nombre del Cliente:"
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(17, 270)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(829, 277)
+        Me.DataGridView2.TabIndex = 174
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Turquoise
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.Location = New System.Drawing.Point(715, 17)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(104, 30)
+        Me.Button5.TabIndex = 202
+        Me.Button5.Text = " "
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Proveedores
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(834, 425)
+        Me.BackColor = System.Drawing.Color.Honeydew
+        Me.ClientSize = New System.Drawing.Size(857, 590)
         Me.ControlBox = False
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.Button13)
+        Me.Controls.Add(Me.Button14)
+        Me.Controls.Add(Me.TextBox12)
+        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Proveedores"
         Me.Text = "Proveedores"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label5 As Label
@@ -324,5 +516,29 @@ Partial Class Proveedores
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Button7 As Button
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label11 As Label
+    Private WithEvents Label12 As Label
+    Private WithEvents Label13 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents Button5 As Button
 End Class

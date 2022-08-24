@@ -54,10 +54,10 @@ Partial Class Clientes
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 218)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Location = New System.Drawing.Point(14, 207)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(830, 232)
+        Me.DataGridView1.Size = New System.Drawing.Size(830, 243)
         Me.DataGridView1.TabIndex = 0
         '
         'Label1
@@ -93,7 +93,7 @@ Partial Class Clientes
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(137, 73)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(353, 22)
         Me.TextBox1.TabIndex = 4
@@ -101,7 +101,7 @@ Partial Class Clientes
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(53, 103)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(437, 22)
         Me.TextBox2.TabIndex = 5
@@ -109,7 +109,7 @@ Partial Class Clientes
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(81, 133)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(409, 22)
         Me.TextBox3.TabIndex = 6
@@ -120,9 +120,9 @@ Partial Class Clientes
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.Location = New System.Drawing.Point(131, 161)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(111, 49)
+        Me.Button1.Size = New System.Drawing.Size(111, 38)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = " "
         Me.Button1.UseVisualStyleBackColor = False
@@ -133,9 +133,9 @@ Partial Class Clientes
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button2.Location = New System.Drawing.Point(374, 161)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(116, 49)
+        Me.Button2.Size = New System.Drawing.Size(116, 38)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = " "
         Me.Button2.UseVisualStyleBackColor = False
@@ -146,9 +146,9 @@ Partial Class Clientes
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button3.Location = New System.Drawing.Point(13, 161)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 49)
+        Me.Button3.Size = New System.Drawing.Size(110, 38)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = " "
         Me.Button3.UseVisualStyleBackColor = False
@@ -159,9 +159,9 @@ Partial Class Clientes
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button4.Location = New System.Drawing.Point(250, 161)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(116, 49)
+        Me.Button4.Size = New System.Drawing.Size(116, 38)
         Me.Button4.TabIndex = 10
         Me.Button4.Text = " "
         Me.Button4.UseVisualStyleBackColor = False
@@ -170,7 +170,7 @@ Partial Class Clientes
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(578, 73)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(266, 23)
         Me.ComboBox1.TabIndex = 11
@@ -188,7 +188,7 @@ Partial Class Clientes
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(577, 103)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(267, 22)
         Me.TextBox4.TabIndex = 14
@@ -198,10 +198,10 @@ Partial Class Clientes
         Me.Button5.BackColor = System.Drawing.Color.Turquoise
         Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Location = New System.Drawing.Point(522, 133)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Location = New System.Drawing.Point(522, 136)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(155, 33)
+        Me.Button5.Size = New System.Drawing.Size(155, 31)
         Me.Button5.TabIndex = 15
         Me.Button5.Text = " "
         Me.Button5.UseVisualStyleBackColor = False
@@ -212,7 +212,7 @@ Partial Class Clientes
         Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button6.Location = New System.Drawing.Point(685, 136)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(159, 31)
         Me.Button6.TabIndex = 16
@@ -224,17 +224,17 @@ Partial Class Clientes
         Me.Button7.BackColor = System.Drawing.Color.Turquoise
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(522, 175)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Location = New System.Drawing.Point(522, 173)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(322, 35)
+        Me.Button7.Size = New System.Drawing.Size(322, 26)
         Me.Button7.TabIndex = 17
         Me.Button7.UseVisualStyleBackColor = False
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(374, 38)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(116, 22)
@@ -247,7 +247,7 @@ Partial Class Clientes
         Me.Label5.Location = New System.Drawing.Point(0, 0)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(861, 26)
+        Me.Label5.Size = New System.Drawing.Size(860, 26)
         Me.Label5.TabIndex = 51
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -258,7 +258,7 @@ Partial Class Clientes
         Me.Label6.Location = New System.Drawing.Point(0, 469)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(861, 26)
+        Me.Label6.Size = New System.Drawing.Size(860, 26)
         Me.Label6.TabIndex = 52
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -302,16 +302,16 @@ Partial Class Clientes
         Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label10.Location = New System.Drawing.Point(502, 34)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(11, 176)
+        Me.Label10.Size = New System.Drawing.Size(11, 160)
         Me.Label10.TabIndex = 144
-        Me.Label10.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
+        Me.Label10.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
         '
         'Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(861, 495)
+        Me.ClientSize = New System.Drawing.Size(860, 495)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -338,7 +338,7 @@ Partial Class Clientes
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Clientes"
         Me.Text = "Clientes"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

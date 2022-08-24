@@ -60,38 +60,38 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(23, 46)
+        Me.Label1.Location = New System.Drawing.Point(13, 48)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 16)
+        Me.Label1.Size = New System.Drawing.Size(54, 16)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Usuario"
+        Me.Label1.Text = "Usuario:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 76)
+        Me.Label2.Location = New System.Drawing.Point(13, 75)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 16)
+        Me.Label2.Size = New System.Drawing.Size(74, 16)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Contraseña"
+        Me.Label2.Text = "Contraseña:"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(92, 42)
+        Me.TextBox1.Location = New System.Drawing.Point(75, 42)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(294, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(311, 22)
         Me.TextBox1.TabIndex = 4
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(92, 72)
+        Me.TextBox2.Location = New System.Drawing.Point(95, 72)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(294, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(291, 22)
         Me.TextBox2.TabIndex = 5
         '
         'Label3
@@ -122,9 +122,9 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(406, 42)
+        Me.PictureBox1.Location = New System.Drawing.Point(393, 42)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(243, 86)
+        Me.PictureBox1.Size = New System.Drawing.Size(256, 86)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 134
         Me.PictureBox1.TabStop = False
