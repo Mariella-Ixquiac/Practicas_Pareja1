@@ -53,7 +53,7 @@ Partial Class Salida_Buscar
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(1488, 479)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(116, 26)
         Me.Button7.TabIndex = 56
@@ -339,8 +339,9 @@ Partial Class Salida_Buscar
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Button7)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Salida_Buscar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Salida_Buscar"
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

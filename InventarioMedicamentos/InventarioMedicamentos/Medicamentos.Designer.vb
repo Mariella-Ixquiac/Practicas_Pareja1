@@ -66,7 +66,7 @@ Partial Class Medicamentos
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(592, 136)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(379, 67)
@@ -85,7 +85,7 @@ Partial Class Medicamentos
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(592, 211)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(379, 49)
@@ -104,7 +104,7 @@ Partial Class Medicamentos
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(146, 193)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(332, 22)
         Me.DateTimePicker1.TabIndex = 38
@@ -112,7 +112,7 @@ Partial Class Medicamentos
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(633, 103)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(338, 22)
         Me.TextBox8.TabIndex = 46
@@ -130,7 +130,7 @@ Partial Class Medicamentos
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(621, 73)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(350, 22)
         Me.TextBox9.TabIndex = 44
@@ -486,8 +486,9 @@ Partial Class Medicamentos
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Medicamentos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Medicamentos"
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -116,6 +116,24 @@
     <Compile Include="Index.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Index_configuracion.Designer.vb">
+      <DependentUpon>Index_configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Index_configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index_entrada.Designer.vb">
+      <DependentUpon>Index_entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Index_entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index_salida.Designer.vb">
+      <DependentUpon>index_salida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="index_salida.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Inventario.Designer.vb">
       <DependentUpon>Inventario.vb</DependentUpon>
     </Compile>
@@ -183,6 +201,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index_configuracion.resx">
+      <DependentUpon>Index_configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index_entrada.resx">
+      <DependentUpon>Index_entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index_salida.resx">
+      <DependentUpon>index_salida.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario.resx">
       <DependentUpon>Inventario.vb</DependentUpon>

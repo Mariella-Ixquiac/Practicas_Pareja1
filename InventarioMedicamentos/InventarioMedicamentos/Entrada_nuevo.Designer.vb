@@ -121,7 +121,7 @@ Partial Class Entrada_nuevo
         'NumericUpDown1
         '
         Me.NumericUpDown1.Location = New System.Drawing.Point(647, 192)
-        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(4)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(141, 22)
         Me.NumericUpDown1.TabIndex = 95
@@ -419,8 +419,9 @@ Partial Class Entrada_nuevo
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label11)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Entrada_nuevo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Entrada_nuevo"
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

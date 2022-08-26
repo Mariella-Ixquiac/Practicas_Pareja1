@@ -304,6 +304,7 @@ Partial Class Configuración_permisos
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Configuración_permisos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Configuración_permisos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

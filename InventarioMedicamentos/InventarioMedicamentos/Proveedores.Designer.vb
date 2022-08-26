@@ -28,12 +28,13 @@ Partial Class Proveedores
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -59,7 +60,6 @@ Partial Class Proveedores
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,7 +67,7 @@ Partial Class Proveedores
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(1977, 181)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(116, 35)
         Me.Button4.TabIndex = 27
@@ -77,7 +77,7 @@ Partial Class Proveedores
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(1977, 99)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(116, 35)
         Me.Button3.TabIndex = 26
@@ -87,7 +87,7 @@ Partial Class Proveedores
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(1977, 140)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 35)
         Me.Button2.TabIndex = 25
@@ -97,7 +97,7 @@ Partial Class Proveedores
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(1977, 59)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 35)
         Me.Button1.TabIndex = 24
@@ -114,18 +114,31 @@ Partial Class Proveedores
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 202)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(827, 57)
         Me.GroupBox1.TabIndex = 35
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Marca"
         '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Turquoise
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
+        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button5.Location = New System.Drawing.Point(715, 17)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(104, 30)
+        Me.Button5.TabIndex = 202
+        Me.Button5.Text = " "
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(648, 22)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(59, 22)
         Me.TextBox6.TabIndex = 29
@@ -140,14 +153,6 @@ Partial Class Proveedores
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Calificación:"
         '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(307, 22)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(248, 22)
-        Me.TextBox5.TabIndex = 27
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -158,13 +163,13 @@ Partial Class Proveedores
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "Dirección:"
         '
-        'TextBox2
+        'TextBox5
         '
-        Me.TextBox2.Location = New System.Drawing.Point(73, 22)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(152, 22)
-        Me.TextBox2.TabIndex = 25
+        Me.TextBox5.Location = New System.Drawing.Point(307, 22)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(248, 22)
+        Me.TextBox5.TabIndex = 27
         '
         'Label5
         '
@@ -176,10 +181,18 @@ Partial Class Proveedores
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Nombre:"
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(73, 22)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(152, 22)
+        Me.TextBox2.TabIndex = 25
+        '
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(1977, 242)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(116, 36)
         Me.Button7.TabIndex = 36
@@ -208,7 +221,7 @@ Partial Class Proveedores
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(520, 105)
+        Me.Label9.Location = New System.Drawing.Point(522, 143)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(50, 16)
@@ -220,7 +233,7 @@ Partial Class Proveedores
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label8.Location = New System.Drawing.Point(518, 38)
+        Me.Label8.Location = New System.Drawing.Point(520, 76)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(150, 19)
@@ -275,7 +288,7 @@ Partial Class Proveedores
         Me.Button8.BackColor = System.Drawing.Color.Turquoise
         Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button8.Location = New System.Drawing.Point(523, 164)
+        Me.Button8.Location = New System.Drawing.Point(522, -7)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(321, 33)
@@ -287,7 +300,7 @@ Partial Class Proveedores
         Me.Button9.BackColor = System.Drawing.Color.Turquoise
         Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button9.Location = New System.Drawing.Point(685, 130)
+        Me.Button9.Location = New System.Drawing.Point(687, 168)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(159, 26)
@@ -300,7 +313,7 @@ Partial Class Proveedores
         Me.Button10.BackColor = System.Drawing.Color.Turquoise
         Me.Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), System.Drawing.Image)
         Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button10.Location = New System.Drawing.Point(520, 130)
+        Me.Button10.Location = New System.Drawing.Point(522, 168)
         Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(155, 26)
@@ -310,7 +323,7 @@ Partial Class Proveedores
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(577, 102)
+        Me.TextBox11.Location = New System.Drawing.Point(579, 140)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(267, 22)
@@ -319,7 +332,7 @@ Partial Class Proveedores
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(519, 76)
+        Me.Label14.Location = New System.Drawing.Point(521, 114)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(51, 16)
@@ -329,7 +342,7 @@ Partial Class Proveedores
         'ComboBox4
         '
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(578, 72)
+        Me.ComboBox4.Location = New System.Drawing.Point(580, 110)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(266, 23)
@@ -443,19 +456,6 @@ Partial Class Proveedores
         Me.DataGridView2.Size = New System.Drawing.Size(829, 277)
         Me.DataGridView2.TabIndex = 174
         '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Turquoise
-        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Location = New System.Drawing.Point(715, 17)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(104, 30)
-        Me.Button5.TabIndex = 202
-        Me.Button5.Text = " "
-        Me.Button5.UseVisualStyleBackColor = False
-        '
         'Proveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -494,8 +494,9 @@ Partial Class Proveedores
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Proveedores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Proveedores"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

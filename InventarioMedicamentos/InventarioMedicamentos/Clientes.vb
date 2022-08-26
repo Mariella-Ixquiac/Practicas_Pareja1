@@ -1,21 +1,7 @@
 ﻿Public Class Clientes
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
-    End Sub
-
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Clientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Me.Hide()
+        Index.Show()
     End Sub
 End Class

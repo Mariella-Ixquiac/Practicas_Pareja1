@@ -22,3 +22,6 @@ C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamen
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.exe
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.xml
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.pdb
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Index_configuracion.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Index_entrada.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.index_salida.resources

@@ -1,9 +1,10 @@
 ﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'HOLIS XD
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Index.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Close()
     End Sub
 End Class
