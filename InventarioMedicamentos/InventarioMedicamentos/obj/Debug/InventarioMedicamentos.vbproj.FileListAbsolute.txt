@@ -25,3 +25,7 @@ C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamen
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Index_configuracion.resources
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Index_entrada.resources
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.index_salida.resources
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\InventarioMedicamentos.exe.config
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.exe
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.xml
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.pdb
