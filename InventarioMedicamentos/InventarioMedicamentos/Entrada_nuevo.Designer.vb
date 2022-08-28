@@ -64,7 +64,7 @@ Partial Class Entrada_nuevo
         Me.Label7.Location = New System.Drawing.Point(13, 158)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(113, 16)
+        Me.Label7.Size = New System.Drawing.Size(92, 14)
         Me.Label7.TabIndex = 81
         Me.Label7.Text = "Nombre Producto:"
         '
@@ -74,7 +74,7 @@ Partial Class Entrada_nuevo
         Me.Label3.Location = New System.Drawing.Point(417, 158)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(102, 16)
+        Me.Label3.Size = New System.Drawing.Size(83, 14)
         Me.Label3.TabIndex = 62
         Me.Label3.Text = "ID del Producto:"
         '
@@ -84,7 +84,7 @@ Partial Class Entrada_nuevo
         Me.Label2.Location = New System.Drawing.Point(417, 121)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(117, 16)
+        Me.Label2.Size = New System.Drawing.Size(97, 14)
         Me.Label2.TabIndex = 61
         Me.Label2.Text = "NIT del Proveedor:"
         '
@@ -94,7 +94,7 @@ Partial Class Entrada_nuevo
         Me.Label10.Location = New System.Drawing.Point(304, 194)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(98, 16)
+        Me.Label10.Size = New System.Drawing.Size(82, 14)
         Me.Label10.TabIndex = 91
         Me.Label10.Text = "Precio de Venta:"
         '
@@ -104,7 +104,7 @@ Partial Class Entrada_nuevo
         Me.Label11.Location = New System.Drawing.Point(13, 194)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(113, 16)
+        Me.Label11.Size = New System.Drawing.Size(93, 14)
         Me.Label11.TabIndex = 89
         Me.Label11.Text = "Precio de Compra:"
         '
@@ -114,7 +114,7 @@ Partial Class Entrada_nuevo
         Me.Label12.Location = New System.Drawing.Point(579, 194)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(60, 16)
+        Me.Label12.Size = New System.Drawing.Size(50, 14)
         Me.Label12.TabIndex = 94
         Me.Label12.Text = "Cantidad:"
         '
@@ -123,7 +123,7 @@ Partial Class Entrada_nuevo
         Me.NumericUpDown1.Location = New System.Drawing.Point(647, 192)
         Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(4)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(141, 22)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(141, 19)
         Me.NumericUpDown1.TabIndex = 95
         '
         'Label14
@@ -134,7 +134,7 @@ Partial Class Entrada_nuevo
         Me.Label14.Location = New System.Drawing.Point(876, 544)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(40, 19)
+        Me.Label14.Size = New System.Drawing.Size(33, 17)
         Me.Label14.TabIndex = 314
         Me.Label14.Text = "0.00"
         '
@@ -172,7 +172,7 @@ Partial Class Entrada_nuevo
         Me.Label15.Location = New System.Drawing.Point(11, 544)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(52, 19)
+        Me.Label15.Size = New System.Drawing.Size(43, 17)
         Me.Label15.TabIndex = 337
         Me.Label15.Text = "Total:"
         '
@@ -184,7 +184,7 @@ Partial Class Entrada_nuevo
         Me.Label16.Location = New System.Drawing.Point(11, 241)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(154, 19)
+        Me.Label16.Size = New System.Drawing.Size(126, 17)
         Me.Label16.TabIndex = 336
         Me.Label16.Text = "Lista de Productos:"
         '
@@ -194,7 +194,7 @@ Partial Class Entrada_nuevo
         Me.Label17.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label17.Location = New System.Drawing.Point(11, 92)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(908, 16)
+        Me.Label17.Size = New System.Drawing.Size(727, 14)
         Me.Label17.TabIndex = 335
         Me.Label17.Text = "---------------------------------------------------------------------------------" &
     "--------------------------------------------------------------------------------" &
@@ -206,7 +206,7 @@ Partial Class Entrada_nuevo
         Me.Label19.Location = New System.Drawing.Point(455, 69)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(45, 16)
+        Me.Label19.Size = New System.Drawing.Size(37, 14)
         Me.Label19.TabIndex = 319
         Me.Label19.Text = "Fecha:"
         '
@@ -216,7 +216,7 @@ Partial Class Entrada_nuevo
         Me.DateTimePicker2.Location = New System.Drawing.Point(508, 67)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(277, 22)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(277, 19)
         Me.DateTimePicker2.TabIndex = 320
         '
         'Label20
@@ -227,7 +227,7 @@ Partial Class Entrada_nuevo
         Me.Label20.Location = New System.Drawing.Point(7, 34)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(117, 19)
+        Me.Label20.Size = New System.Drawing.Size(98, 17)
         Me.Label20.TabIndex = 334
         Me.Label20.Text = "Nueva Entrada"
         '
@@ -273,7 +273,7 @@ Partial Class Entrada_nuevo
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(246, 22)
+        Me.TextBox8.Size = New System.Drawing.Size(246, 19)
         Me.TextBox8.TabIndex = 330
         '
         'TextBox9
@@ -282,7 +282,7 @@ Partial Class Entrada_nuevo
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(249, 22)
+        Me.TextBox9.Size = New System.Drawing.Size(249, 19)
         Me.TextBox9.TabIndex = 329
         '
         'Label22
@@ -291,7 +291,7 @@ Partial Class Entrada_nuevo
         Me.Label22.Location = New System.Drawing.Point(12, 121)
         Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(139, 16)
+        Me.Label22.Size = New System.Drawing.Size(114, 14)
         Me.Label22.TabIndex = 327
         Me.Label22.Text = "Nombre del Proveedor:"
         '
@@ -321,7 +321,7 @@ Partial Class Entrada_nuevo
         Me.TextBox11.Location = New System.Drawing.Point(142, 65)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(305, 22)
+        Me.TextBox11.Size = New System.Drawing.Size(305, 19)
         Me.TextBox11.TabIndex = 323
         '
         'Label25
@@ -330,7 +330,7 @@ Partial Class Entrada_nuevo
         Me.Label25.Location = New System.Drawing.Point(12, 69)
         Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(122, 16)
+        Me.Label25.Size = New System.Drawing.Size(100, 14)
         Me.Label25.TabIndex = 321
         Me.Label25.Text = "No. del Documento:"
         '
@@ -340,7 +340,7 @@ Partial Class Entrada_nuevo
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(274, 22)
+        Me.TextBox10.Size = New System.Drawing.Size(274, 19)
         Me.TextBox10.TabIndex = 342
         '
         'TextBox12
@@ -349,7 +349,7 @@ Partial Class Entrada_nuevo
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(261, 22)
+        Me.TextBox12.Size = New System.Drawing.Size(261, 19)
         Me.TextBox12.TabIndex = 343
         '
         'TextBox1
@@ -357,7 +357,7 @@ Partial Class Entrada_nuevo
         Me.TextBox1.Location = New System.Drawing.Point(134, 191)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(162, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(162, 19)
         Me.TextBox1.TabIndex = 344
         '
         'TextBox2
@@ -365,7 +365,7 @@ Partial Class Entrada_nuevo
         Me.TextBox2.Location = New System.Drawing.Point(410, 191)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(161, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(161, 19)
         Me.TextBox2.TabIndex = 345
         '
         'Label1
@@ -374,7 +374,7 @@ Partial Class Entrada_nuevo
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label1.Location = New System.Drawing.Point(11, 221)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(908, 16)
+        Me.Label1.Size = New System.Drawing.Size(727, 14)
         Me.Label1.TabIndex = 346
         Me.Label1.Text = "---------------------------------------------------------------------------------" &
     "--------------------------------------------------------------------------------" &
@@ -382,7 +382,7 @@ Partial Class Entrada_nuevo
         '
         'Entrada_nuevo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(932, 602)

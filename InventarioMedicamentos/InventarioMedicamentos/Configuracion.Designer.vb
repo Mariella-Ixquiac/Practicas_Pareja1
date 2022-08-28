@@ -62,7 +62,7 @@ Partial Class Configuracion
         Me.Label7.Location = New System.Drawing.Point(11, 38)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(160, 19)
+        Me.Label7.Size = New System.Drawing.Size(131, 17)
         Me.Label7.TabIndex = 165
         Me.Label7.Text = "Detalles del Usuario"
         '
@@ -94,7 +94,7 @@ Partial Class Configuracion
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(116, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(116, 19)
         Me.TextBox5.TabIndex = 162
         '
         'Button4
@@ -154,7 +154,7 @@ Partial Class Configuracion
         Me.TextBox3.Location = New System.Drawing.Point(75, 133)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(772, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(772, 19)
         Me.TextBox3.TabIndex = 151
         '
         'TextBox1
@@ -162,7 +162,7 @@ Partial Class Configuracion
         Me.TextBox1.Location = New System.Drawing.Point(146, 73)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(701, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(701, 19)
         Me.TextBox1.TabIndex = 149
         '
         'Label13
@@ -171,7 +171,7 @@ Partial Class Configuracion
         Me.Label13.Location = New System.Drawing.Point(13, 136)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(54, 16)
+        Me.Label13.Size = New System.Drawing.Size(45, 14)
         Me.Label13.TabIndex = 148
         Me.Label13.Text = "Usuario:"
         '
@@ -181,7 +181,7 @@ Partial Class Configuracion
         Me.Label14.Location = New System.Drawing.Point(13, 106)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(30, 16)
+        Me.Label14.Size = New System.Drawing.Size(26, 14)
         Me.Label14.TabIndex = 147
         Me.Label14.Text = "Rol:"
         '
@@ -191,7 +191,7 @@ Partial Class Configuracion
         Me.Label15.Location = New System.Drawing.Point(14, 76)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(124, 16)
+        Me.Label15.Size = New System.Drawing.Size(101, 14)
         Me.Label15.TabIndex = 146
         Me.Label15.Text = "Nombre del Usuario:"
         '
@@ -210,7 +210,7 @@ Partial Class Configuracion
         Me.TextBox6.Location = New System.Drawing.Point(155, 193)
         Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(692, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(692, 19)
         Me.TextBox6.TabIndex = 172
         '
         'TextBox7
@@ -218,7 +218,7 @@ Partial Class Configuracion
         Me.TextBox7.Location = New System.Drawing.Point(95, 163)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(752, 22)
+        Me.TextBox7.Size = New System.Drawing.Size(752, 19)
         Me.TextBox7.TabIndex = 171
         '
         'Label16
@@ -227,7 +227,7 @@ Partial Class Configuracion
         Me.Label16.Location = New System.Drawing.Point(13, 196)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(134, 16)
+        Me.Label16.Size = New System.Drawing.Size(111, 14)
         Me.Label16.TabIndex = 170
         Me.Label16.Text = "Confirmar contraseña:"
         '
@@ -237,7 +237,7 @@ Partial Class Configuracion
         Me.Label17.Location = New System.Drawing.Point(13, 166)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(74, 16)
+        Me.Label17.Size = New System.Drawing.Size(62, 14)
         Me.Label17.TabIndex = 169
         Me.Label17.Text = "Contraseña:"
         '
@@ -247,7 +247,7 @@ Partial Class Configuracion
         Me.ComboBox2.Location = New System.Drawing.Point(51, 103)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(796, 23)
+        Me.ComboBox2.Size = New System.Drawing.Size(796, 20)
         Me.ComboBox2.TabIndex = 173
         '
         'Label4
@@ -256,7 +256,7 @@ Partial Class Configuracion
         Me.Label4.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label4.Location = New System.Drawing.Point(15, 250)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(838, 16)
+        Me.Label4.Size = New System.Drawing.Size(671, 14)
         Me.Label4.TabIndex = 205
         Me.Label4.Text = "---------------------------------------------------------------------------------" &
     "--------------------------------------------------------------------------------" &
@@ -268,7 +268,7 @@ Partial Class Configuracion
         Me.Label1.Location = New System.Drawing.Point(257, 299)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 16)
+        Me.Label1.Size = New System.Drawing.Size(40, 14)
         Me.Label1.TabIndex = 204
         Me.Label1.Text = "Buscar:"
         '
@@ -280,7 +280,7 @@ Partial Class Configuracion
         Me.Label2.Location = New System.Drawing.Point(15, 266)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(180, 19)
+        Me.Label2.Size = New System.Drawing.Size(149, 17)
         Me.Label2.TabIndex = 203
         Me.Label2.Text = "Lista de Medicamentos"
         '
@@ -327,7 +327,7 @@ Partial Class Configuracion
         Me.TextBox13.Location = New System.Drawing.Point(313, 297)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(167, 22)
+        Me.TextBox13.Size = New System.Drawing.Size(167, 19)
         Me.TextBox13.TabIndex = 199
         '
         'Label18
@@ -336,7 +336,7 @@ Partial Class Configuracion
         Me.Label18.Location = New System.Drawing.Point(15, 300)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(51, 16)
+        Me.Label18.Size = New System.Drawing.Size(43, 14)
         Me.Label18.TabIndex = 198
         Me.Label18.Text = "Campo:"
         '
@@ -346,12 +346,12 @@ Partial Class Configuracion
         Me.ComboBox3.Location = New System.Drawing.Point(74, 296)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(168, 23)
+        Me.ComboBox3.Size = New System.Drawing.Size(168, 20)
         Me.ComboBox3.TabIndex = 197
         '
         'Configuracion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(860, 642)
