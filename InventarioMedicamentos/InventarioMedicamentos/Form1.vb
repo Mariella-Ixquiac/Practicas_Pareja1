@@ -39,8 +39,7 @@ Public Class Form1
             Dim hash() As Byte = md5.ComputeHash(codigo.GetBytes(clave))
             Dim nuevaclave As String
         nuevaclave = Convert.ToBase64String(hash)
-
-
+        MessageBox.Show("contraseña o:" & TextBox2.Text & vbCrLf & "contrseña n:" & nuevaclave)
 
         Index.Show()
                 Me.Hide()

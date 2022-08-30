@@ -70,7 +70,7 @@ Partial Class Medicamentos
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(379, 67)
-        Me.TextBox3.TabIndex = 24
+        Me.TextBox3.TabIndex = 8
         '
         'Label3
         '
@@ -78,7 +78,7 @@ Partial Class Medicamentos
         Me.Label3.Location = New System.Drawing.Point(498, 136)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 14)
+        Me.Label3.Size = New System.Drawing.Size(86, 16)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Precauciones:"
         '
@@ -89,7 +89,7 @@ Partial Class Medicamentos
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(379, 49)
-        Me.TextBox5.TabIndex = 36
+        Me.TextBox5.TabIndex = 9
         '
         'Label5
         '
@@ -97,7 +97,7 @@ Partial Class Medicamentos
         Me.Label5.Location = New System.Drawing.Point(505, 214)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 14)
+        Me.Label5.Size = New System.Drawing.Size(79, 16)
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Descripción:"
         '
@@ -106,16 +106,16 @@ Partial Class Medicamentos
         Me.DateTimePicker1.Location = New System.Drawing.Point(146, 193)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(332, 19)
-        Me.DateTimePicker1.TabIndex = 38
+        Me.DateTimePicker1.Size = New System.Drawing.Size(332, 22)
+        Me.DateTimePicker1.TabIndex = 5
         '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(633, 103)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(338, 19)
-        Me.TextBox8.TabIndex = 46
+        Me.TextBox8.Size = New System.Drawing.Size(338, 22)
+        Me.TextBox8.TabIndex = 7
         '
         'Label9
         '
@@ -123,7 +123,7 @@ Partial Class Medicamentos
         Me.Label9.Location = New System.Drawing.Point(503, 106)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(98, 14)
+        Me.Label9.Size = New System.Drawing.Size(122, 16)
         Me.Label9.TabIndex = 45
         Me.Label9.Text = "Dosis recomendada:"
         '
@@ -132,8 +132,8 @@ Partial Class Medicamentos
         Me.TextBox9.Location = New System.Drawing.Point(621, 73)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(350, 19)
-        Me.TextBox9.TabIndex = 44
+        Me.TextBox9.Size = New System.Drawing.Size(350, 22)
+        Me.TextBox9.TabIndex = 6
         '
         'Label10
         '
@@ -141,7 +141,7 @@ Partial Class Medicamentos
         Me.Label10.Location = New System.Drawing.Point(503, 76)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(92, 14)
+        Me.Label10.Size = New System.Drawing.Size(110, 16)
         Me.Label10.TabIndex = 43
         Me.Label10.Text = "Formula principal:"
         '
@@ -150,8 +150,8 @@ Partial Class Medicamentos
         Me.TextBox11.Location = New System.Drawing.Point(133, 163)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(345, 19)
-        Me.TextBox11.TabIndex = 199
+        Me.TextBox11.Size = New System.Drawing.Size(345, 22)
+        Me.TextBox11.TabIndex = 4
         '
         'Label16
         '
@@ -159,7 +159,7 @@ Partial Class Medicamentos
         Me.Label16.Location = New System.Drawing.Point(15, 196)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(98, 14)
+        Me.Label16.Size = New System.Drawing.Size(125, 16)
         Me.Label16.TabIndex = 198
         Me.Label16.Text = "Fecha de Caducidad:"
         '
@@ -169,7 +169,7 @@ Partial Class Medicamentos
         Me.Label17.Location = New System.Drawing.Point(13, 166)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(91, 14)
+        Me.Label17.Size = New System.Drawing.Size(112, 16)
         Me.Label17.TabIndex = 197
         Me.Label17.Text = "Unidad de Medida:"
         '
@@ -179,7 +179,7 @@ Partial Class Medicamentos
         Me.Label4.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label4.Location = New System.Drawing.Point(12, 263)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(771, 14)
+        Me.Label4.Size = New System.Drawing.Size(963, 16)
         Me.Label4.TabIndex = 196
         Me.Label4.Text = "---------------------------------------------------------------------------------" &
     "--------------------------------------------------------------------------------" &
@@ -191,7 +191,7 @@ Partial Class Medicamentos
         Me.Label11.Location = New System.Drawing.Point(289, 317)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(40, 14)
+        Me.Label11.Size = New System.Drawing.Size(50, 16)
         Me.Label11.TabIndex = 195
         Me.Label11.Text = "Buscar:"
         '
@@ -203,7 +203,7 @@ Partial Class Medicamentos
         Me.Label12.Location = New System.Drawing.Point(14, 282)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(149, 17)
+        Me.Label12.Size = New System.Drawing.Size(180, 19)
         Me.Label12.TabIndex = 194
         Me.Label12.Text = "Lista de Medicamentos"
         '
@@ -215,7 +215,7 @@ Partial Class Medicamentos
         Me.Label13.Location = New System.Drawing.Point(11, 38)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(96, 17)
+        Me.Label13.Size = New System.Drawing.Size(117, 19)
         Me.Label13.TabIndex = 193
         Me.Label13.Text = "Medicamentos"
         '
@@ -247,7 +247,7 @@ Partial Class Medicamentos
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(90, 19)
+        Me.TextBox12.Size = New System.Drawing.Size(90, 22)
         Me.TextBox12.TabIndex = 190
         '
         'Button8
@@ -259,7 +259,7 @@ Partial Class Medicamentos
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(131, 28)
-        Me.Button8.TabIndex = 189
+        Me.Button8.TabIndex = 18
         Me.Button8.UseVisualStyleBackColor = False
         '
         'Button9
@@ -271,7 +271,7 @@ Partial Class Medicamentos
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(131, 26)
-        Me.Button9.TabIndex = 188
+        Me.Button9.TabIndex = 17
         Me.Button9.Text = " "
         Me.Button9.UseVisualStyleBackColor = False
         '
@@ -284,7 +284,7 @@ Partial Class Medicamentos
         Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(131, 26)
-        Me.Button10.TabIndex = 187
+        Me.Button10.TabIndex = 16
         Me.Button10.Text = " "
         Me.Button10.UseVisualStyleBackColor = False
         '
@@ -293,8 +293,8 @@ Partial Class Medicamentos
         Me.TextBox13.Location = New System.Drawing.Point(346, 314)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(210, 19)
-        Me.TextBox13.TabIndex = 186
+        Me.TextBox13.Size = New System.Drawing.Size(210, 22)
+        Me.TextBox13.TabIndex = 15
         '
         'Label18
         '
@@ -302,18 +302,19 @@ Partial Class Medicamentos
         Me.Label18.Location = New System.Drawing.Point(14, 318)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(43, 14)
+        Me.Label18.Size = New System.Drawing.Size(51, 16)
         Me.Label18.TabIndex = 185
         Me.Label18.Text = "Campo:"
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(73, 314)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(209, 20)
-        Me.ComboBox1.TabIndex = 184
+        Me.ComboBox1.Size = New System.Drawing.Size(209, 23)
+        Me.ComboBox1.TabIndex = 14
         '
         'Button11
         '
@@ -324,7 +325,7 @@ Partial Class Medicamentos
         Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(116, 37)
-        Me.Button11.TabIndex = 183
+        Me.Button11.TabIndex = 12
         Me.Button11.Text = " "
         Me.Button11.UseVisualStyleBackColor = False
         '
@@ -337,7 +338,7 @@ Partial Class Medicamentos
         Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(110, 37)
-        Me.Button12.TabIndex = 182
+        Me.Button12.TabIndex = 10
         Me.Button12.Text = " "
         Me.Button12.UseVisualStyleBackColor = False
         '
@@ -350,7 +351,7 @@ Partial Class Medicamentos
         Me.Button13.Margin = New System.Windows.Forms.Padding(4)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(104, 37)
-        Me.Button13.TabIndex = 181
+        Me.Button13.TabIndex = 13
         Me.Button13.Text = " "
         Me.Button13.UseVisualStyleBackColor = False
         '
@@ -363,7 +364,7 @@ Partial Class Medicamentos
         Me.Button14.Margin = New System.Windows.Forms.Padding(4)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(111, 37)
-        Me.Button14.TabIndex = 180
+        Me.Button14.TabIndex = 11
         Me.Button14.Text = " "
         Me.Button14.UseVisualStyleBackColor = False
         '
@@ -372,16 +373,16 @@ Partial Class Medicamentos
         Me.TextBox14.Location = New System.Drawing.Point(104, 133)
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(374, 19)
-        Me.TextBox14.TabIndex = 179
+        Me.TextBox14.Size = New System.Drawing.Size(374, 22)
+        Me.TextBox14.TabIndex = 3
         '
         'TextBox15
         '
         Me.TextBox15.Location = New System.Drawing.Point(179, 73)
         Me.TextBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(299, 19)
-        Me.TextBox15.TabIndex = 178
+        Me.TextBox15.Size = New System.Drawing.Size(299, 22)
+        Me.TextBox15.TabIndex = 1
         '
         'Label19
         '
@@ -389,7 +390,7 @@ Partial Class Medicamentos
         Me.Label19.Location = New System.Drawing.Point(13, 136)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(70, 14)
+        Me.Label19.Size = New System.Drawing.Size(83, 16)
         Me.Label19.TabIndex = 177
         Me.Label19.Text = "Presentación:"
         '
@@ -399,7 +400,7 @@ Partial Class Medicamentos
         Me.Label20.Location = New System.Drawing.Point(13, 106)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(41, 14)
+        Me.Label20.Size = New System.Drawing.Size(49, 16)
         Me.Label20.TabIndex = 176
         Me.Label20.Text = "Receta:"
         '
@@ -409,7 +410,7 @@ Partial Class Medicamentos
         Me.Label21.Location = New System.Drawing.Point(14, 76)
         Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(129, 14)
+        Me.Label21.Size = New System.Drawing.Size(157, 16)
         Me.Label21.TabIndex = 175
         Me.Label21.Text = "Nombre del Medicamento:"
         '
@@ -417,10 +418,10 @@ Partial Class Medicamentos
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(18, 349)
+        Me.DataGridView2.Location = New System.Drawing.Point(18, 351)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(953, 398)
+        Me.DataGridView2.Size = New System.Drawing.Size(953, 352)
         Me.DataGridView2.TabIndex = 174
         '
         'TextBox1
@@ -428,8 +429,8 @@ Partial Class Medicamentos
         Me.TextBox1.Location = New System.Drawing.Point(73, 103)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(405, 19)
-        Me.TextBox1.TabIndex = 202
+        Me.TextBox1.Size = New System.Drawing.Size(405, 22)
+        Me.TextBox1.TabIndex = 2
         '
         'Label1
         '
@@ -437,13 +438,13 @@ Partial Class Medicamentos
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label1.Location = New System.Drawing.Point(485, 64)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(9, 168)
+        Me.Label1.Size = New System.Drawing.Size(11, 192)
         Me.Label1.TabIndex = 203
         Me.Label1.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
         '
         'Medicamentos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(984, 749)

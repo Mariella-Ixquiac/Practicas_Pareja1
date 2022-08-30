@@ -43,7 +43,7 @@ Partial Class Form1
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(155, 26)
-        Me.Button1.TabIndex = 0
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "Ingresar"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -54,7 +54,7 @@ Partial Class Form1
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(147, 26)
-        Me.Button2.TabIndex = 1
+        Me.Button2.TabIndex = 5
         Me.Button2.Text = "Salir"
         Me.Button2.UseVisualStyleBackColor = False
         '
@@ -64,7 +64,7 @@ Partial Class Form1
         Me.Label1.Location = New System.Drawing.Point(13, 48)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 14)
+        Me.Label1.Size = New System.Drawing.Size(54, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Usuario:"
         '
@@ -74,7 +74,7 @@ Partial Class Form1
         Me.Label2.Location = New System.Drawing.Point(13, 75)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 14)
+        Me.Label2.Size = New System.Drawing.Size(74, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Contraseña:"
         '
@@ -83,17 +83,17 @@ Partial Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(75, 42)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(266, 19)
-        Me.TextBox1.TabIndex = 4
+        Me.TextBox1.Size = New System.Drawing.Size(266, 22)
+        Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(83, 72)
+        Me.TextBox2.Location = New System.Drawing.Point(95, 72)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(257, 19)
-        Me.TextBox2.TabIndex = 5
+        Me.TextBox2.Size = New System.Drawing.Size(245, 22)
+        Me.TextBox2.TabIndex = 2
         '
         'Label3
         '
@@ -135,14 +135,14 @@ Partial Class Form1
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(222, 98)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(118, 18)
-        Me.CheckBox1.TabIndex = 135
+        Me.CheckBox1.Size = New System.Drawing.Size(142, 20)
+        Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "Mostrar Contraseña"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(636, 186)
