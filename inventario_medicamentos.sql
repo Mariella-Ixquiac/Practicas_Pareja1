@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 30-08-2022 a las 16:11:56
+-- Tiempo de generación: 30-08-2022 a las 22:07:04
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -35,7 +35,15 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `nit` varchar(13) NOT NULL,
   `telefono_cliente` varchar(8) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`id_cliente`, `nom_cliente`, `ape_cliente`, `nit`, `telefono_cliente`) VALUES
+(1, 'Marco', 'Sosa', '345678890', '54689098'),
+(3, 'Juana', 'Kiki', '12324435', '24233244');
 
 -- --------------------------------------------------------
 
@@ -69,17 +77,19 @@ CREATE TABLE IF NOT EXISTS `login` (
   `id_login` int(11) NOT NULL AUTO_INCREMENT,
   `usuario` varchar(50) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `rol` varchar(20) NOT NULL,
   `pssw` varchar(30) NOT NULL,
-  PRIMARY KEY (`id_login`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+  `id_rol` int(11) NOT NULL,
+  PRIMARY KEY (`id_login`),
+  KEY `ol` (`id_rol`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `login`
 --
 
-INSERT INTO `login` (`id_login`, `usuario`, `nombre`, `rol`, `pssw`) VALUES
-(1, 'Admin1', 'Alejandro Mendez Mendez', 'Administrador', '12345');
+INSERT INTO `login` (`id_login`, `usuario`, `nombre`, `pssw`, `id_rol`) VALUES
+(2, 'Juana Sosa', 'Admin1', '123', 1),
+(4, 'Juana Sosa', 'Admin3', '123456789', 4);
 
 -- --------------------------------------------------------
 
@@ -140,6 +150,27 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `rol`
+--
+
+DROP TABLE IF EXISTS `rol`;
+CREATE TABLE IF NOT EXISTS `rol` (
+  `id_rol` int(11) NOT NULL AUTO_INCREMENT,
+  `rol` varchar(20) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`id_rol`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `rol`
+--
+
+INSERT INTO `rol` (`id_rol`, `rol`) VALUES
+(1, 'Administrador.'),
+(4, 'Empleado.');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `venta`
 --
 
@@ -168,6 +199,12 @@ CREATE TABLE IF NOT EXISTS `venta` (
 ALTER TABLE `compra`
   ADD CONSTRAINT `compra_ibfk_1` FOREIGN KEY (`id_compra`) REFERENCES `medicamento` (`id_compra`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `compra_ibfk_2` FOREIGN KEY (`id_proveedores`) REFERENCES `proveedores` (`id_proveedores`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `login`
+--
+ALTER TABLE `login`
+  ADD CONSTRAINT `login_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_rol`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `medicamento`
