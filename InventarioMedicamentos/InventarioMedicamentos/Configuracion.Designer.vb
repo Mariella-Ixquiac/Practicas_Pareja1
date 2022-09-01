@@ -88,7 +88,7 @@ Partial Class Configuracion
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(731, 43)
+        Me.TextBox5.Location = New System.Drawing.Point(611, 39)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
@@ -270,7 +270,7 @@ Partial Class Configuracion
         Me.Button8.BackColor = System.Drawing.Color.Turquoise
         Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button8.Location = New System.Drawing.Point(734, 271)
+        Me.Button8.Location = New System.Drawing.Point(734, 35)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(113, 28)
@@ -282,10 +282,10 @@ Partial Class Configuracion
         Me.Button9.BackColor = System.Drawing.Color.Turquoise
         Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button9.Location = New System.Drawing.Point(611, 272)
+        Me.Button9.Location = New System.Drawing.Point(684, 273)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(115, 26)
+        Me.Button9.Size = New System.Drawing.Size(163, 26)
         Me.Button9.TabIndex = 12
         Me.Button9.Text = " "
         Me.Button9.UseVisualStyleBackColor = False
@@ -295,10 +295,10 @@ Partial Class Configuracion
         Me.Button10.BackColor = System.Drawing.Color.Turquoise
         Me.Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), System.Drawing.Image)
         Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button10.Location = New System.Drawing.Point(488, 272)
+        Me.Button10.Location = New System.Drawing.Point(488, 273)
         Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(115, 26)
+        Me.Button10.Size = New System.Drawing.Size(188, 26)
         Me.Button10.TabIndex = 11
         Me.Button10.Text = " "
         Me.Button10.UseVisualStyleBackColor = False

@@ -3,13 +3,246 @@ Imports MySql.Data
 Imports System.Configuration
 
 Public Class Proveedores
+    Dim conn As New MySqlConnection
+    Dim objetoconexion As New Class1
+    Dim cmd As MySqlCommand
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub mostrar()
+        conn = objetoconexion.AbrirCon
+
+        Dim query As String = "SELECT p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' FROM proveedores p inner JOIN marca m on p.id_marca= m.id_marca;"
+        Dim adpt As New MySqlDataAdapter(query, conn)
+        Dim ds As New DataSet()
+        adpt.Fill(ds)
+        DataGridView1.DataSource = ds.Tables(0)
+        conn.Close()
+        conn.Dispose()
+    End Sub
+
+    Private Sub mostrar2()
+        conn = objetoconexion.AbrirCon
+
+        Dim query As String = "SELECT m.id_marca AS 'ID', m.nom_marca as 'Nombre de la marca', m.direccion as 'domicilio', m.calificacion as 'Puntaje' FROM marca m;"
+        Dim adpt As New MySqlDataAdapter(query, conn)
+        Dim ds As New DataSet()
+        adpt.Fill(ds)
+        DataGridView2.DataSource = ds.Tables(0)
+        conn.Close()
+        conn.Dispose()
+    End Sub
+
+    Private Sub limpiar()
+        TextBox13.Focus()
+        TextBox10.Text = ""
+        TextBox13.Text = ""
+        ComboBox3.SelectedIndex = -1
+        TextBox12.Text = ""
+    End Sub
+
+    Private Sub limpiar2()
+        TextBox11.Text = ""
+        ComboBox4.SelectedIndex = -1
+    End Sub
+
+    Private Sub limpiar3()
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox5.Text = ""
+        TextBox6.Text = ""
+    End Sub
+
+    Sub Cargar_datos()
+        conn.Open()
+        Dim query As String = "SELECT * FROM marca;"
+        Dim adpt As New MySqlDataAdapter(query, conn)
+        Dim ds As New DataSet()
+        adpt.Fill(ds)
+        ComboBox3.DataSource = ds.Tables(0)
+        ComboBox3.DisplayMember = "nom_marca"
+        ComboBox3.ValueMember = "id_marca"
+        conn.Close()
+    End Sub
+
+    Private Sub Proveedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        mostrar()
+        mostrar2()
+        Cargar_datos()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Me.Hide()
         Index.Show()
     End Sub
 
-    Private Sub Proveedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        limpiar()
+    End Sub
 
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        limpiar2()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        limpiar3()
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        conn = objetoconexion.AbrirCon
+        Try
+            cmd = conn.CreateCommand
+            cmd.CommandText = "insert into proveedores(nom_proveedores,telefono,id_marca)values(@nom,@tel,@mar);"
+
+            cmd.Parameters.AddWithValue("@nom", TextBox13.Text)
+            cmd.Parameters.AddWithValue("@mar", ComboBox3.SelectedValue)
+            cmd.Parameters.AddWithValue("@tel", TextBox12.Text)
+
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            mostrar()
+        Catch ex As Exception
+
+
+        End Try
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        conn = objetoconexion.AbrirCon
+        Try
+            cmd = conn.CreateCommand
+            cmd.CommandText = "update proveedores set nom_proveedores=@nom, telefono=@tel, id_marca=@mar WHERE id_proveedores=@id"
+
+            cmd.Parameters.AddWithValue("@nom", TextBox13.Text)
+            cmd.Parameters.AddWithValue("@mar", ComboBox3.SelectedValue)
+            cmd.Parameters.AddWithValue("@tel", TextBox12.Text)
+
+            cmd.Parameters.AddWithValue("@id", TextBox10.Text)
+
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            mostrar()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        conn = objetoconexion.AbrirCon
+
+        Try
+            cmd = conn.CreateCommand
+            cmd.CommandText = "delete from proveedores where id_proveedores=@id"
+            cmd.Parameters.AddWithValue("@id", TextBox10.Text)
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            mostrar()
+
+            limpiar()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        Dim row As DataGridViewRow = DataGridView1.CurrentRow
+        Try
+
+            TextBox12.Text = row.Cells(2).Value.ToString()
+            TextBox13.Text = row.Cells(1).Value.ToString()
+            ComboBox3.SelectedItem = row.Cells(3).Value.ToString()
+            TextBox10.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub TextBox12_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox12.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        conn = objetoconexion.AbrirCon
+        Try
+            cmd = conn.CreateCommand
+            cmd.CommandText = "insert into marca(nom_marca,direccion,calificacion)values(@nom,@dir,@cali);"
+
+            cmd.Parameters.AddWithValue("@nom", TextBox2.Text)
+            cmd.Parameters.AddWithValue("@dir", TextBox5.Text)
+            cmd.Parameters.AddWithValue("@cali", TextBox6.Text)
+
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            Cargar_datos()
+            mostrar2()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        conn = objetoconexion.AbrirCon
+        Try
+            cmd = conn.CreateCommand
+            cmd.CommandText = "update marca set nom_marca=@nom, direccion=@dir, calificacion=@cali WHERE id_marca=@id"
+
+            cmd.Parameters.AddWithValue("@nom", TextBox2.Text)
+            cmd.Parameters.AddWithValue("@dir", TextBox5.Text)
+            cmd.Parameters.AddWithValue("@cali", TextBox6.Text)
+
+            cmd.Parameters.AddWithValue("@id", TextBox1.Text)
+
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            Cargar_datos()
+            mostrar2()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        conn = objetoconexion.AbrirCon
+        Try
+            cmd = conn.CreateCommand
+            cmd.CommandText = "delete from marca WHERE id_marca=@id"
+            cmd.Parameters.AddWithValue("@id", TextBox1.Text)
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            mostrar2()
+
+            limpiar()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+        Dim row As DataGridViewRow = DataGridView2.CurrentRow
+        Try
+
+            TextBox2.Text = row.Cells(1).Value.ToString()
+            TextBox5.Text = row.Cells(2).Value.ToString()
+            TextBox6.Text = row.Cells(3).Value.ToString()
+            TextBox1.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class

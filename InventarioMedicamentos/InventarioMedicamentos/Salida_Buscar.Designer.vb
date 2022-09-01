@@ -65,7 +65,7 @@ Partial Class Salida_Buscar
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label9.Location = New System.Drawing.Point(807, 546)
+        Me.Label9.Location = New System.Drawing.Point(807, 551)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(40, 19)
@@ -77,7 +77,7 @@ Partial Class Salida_Buscar
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label10.Location = New System.Drawing.Point(13, 546)
+        Me.Label10.Location = New System.Drawing.Point(13, 551)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(52, 19)
@@ -89,7 +89,7 @@ Partial Class Salida_Buscar
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label11.Location = New System.Drawing.Point(13, 252)
+        Me.Label11.Location = New System.Drawing.Point(13, 257)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(154, 19)
@@ -100,7 +100,7 @@ Partial Class Salida_Buscar
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label12.Location = New System.Drawing.Point(14, 95)
+        Me.Label12.Location = New System.Drawing.Point(14, 100)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(833, 16)
         Me.Label12.TabIndex = 241
@@ -111,7 +111,7 @@ Partial Class Salida_Buscar
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(14, 211)
+        Me.Label13.Location = New System.Drawing.Point(14, 216)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(34, 16)
@@ -121,7 +121,7 @@ Partial Class Salida_Buscar
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(13, 154)
+        Me.Label14.Location = New System.Drawing.Point(13, 159)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(42, 16)
@@ -131,7 +131,7 @@ Partial Class Salida_Buscar
         'DateTimePicker2
         '
         Me.DateTimePicker2.AllowDrop = True
-        Me.DateTimePicker2.Location = New System.Drawing.Point(64, 148)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(64, 153)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(780, 22)
@@ -142,7 +142,7 @@ Partial Class Salida_Buscar
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label15.Location = New System.Drawing.Point(9, 36)
+        Me.Label15.Location = New System.Drawing.Point(13, 40)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(111, 19)
@@ -165,10 +165,10 @@ Partial Class Salida_Buscar
         Me.Button1.BackColor = System.Drawing.Color.Turquoise
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Location = New System.Drawing.Point(721, 63)
+        Me.Button1.Location = New System.Drawing.Point(721, 33)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 31)
+        Me.Button1.Size = New System.Drawing.Size(123, 26)
         Me.Button1.TabIndex = 4
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -177,10 +177,10 @@ Partial Class Salida_Buscar
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(613, 62)
+        Me.Button2.Location = New System.Drawing.Point(677, 67)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 32)
+        Me.Button2.Size = New System.Drawing.Size(167, 32)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = " "
         Me.Button2.UseVisualStyleBackColor = False
@@ -190,17 +190,17 @@ Partial Class Salida_Buscar
         Me.Button3.BackColor = System.Drawing.Color.Turquoise
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(505, 63)
+        Me.Button3.Location = New System.Drawing.Point(505, 68)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 31)
+        Me.Button3.Size = New System.Drawing.Size(164, 31)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = " "
         Me.Button3.UseVisualStyleBackColor = False
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(55, 208)
+        Me.TextBox7.Location = New System.Drawing.Point(55, 213)
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
@@ -209,7 +209,7 @@ Partial Class Salida_Buscar
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(141, 179)
+        Me.TextBox8.Location = New System.Drawing.Point(141, 184)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
@@ -218,7 +218,7 @@ Partial Class Salida_Buscar
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(75, 118)
+        Me.TextBox9.Location = New System.Drawing.Point(75, 123)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
@@ -228,7 +228,7 @@ Partial Class Salida_Buscar
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(14, 182)
+        Me.Label18.Location = New System.Drawing.Point(14, 187)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(119, 16)
@@ -238,7 +238,7 @@ Partial Class Salida_Buscar
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(13, 121)
+        Me.Label19.Location = New System.Drawing.Point(13, 126)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(54, 16)
@@ -249,7 +249,7 @@ Partial Class Salida_Buscar
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(16, 282)
+        Me.DataGridView2.Location = New System.Drawing.Point(16, 287)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(830, 256)
@@ -259,7 +259,7 @@ Partial Class Salida_Buscar
         '
         Me.Label17.BackColor = System.Drawing.Color.Teal
         Me.Label17.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label17.Location = New System.Drawing.Point(0, 576)
+        Me.Label17.Location = New System.Drawing.Point(0, 583)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(863, 26)
@@ -268,7 +268,7 @@ Partial Class Salida_Buscar
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(144, 68)
+        Me.TextBox5.Location = New System.Drawing.Point(144, 73)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(346, 22)
@@ -277,7 +277,7 @@ Partial Class Salida_Buscar
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(14, 71)
+        Me.Label20.Location = New System.Drawing.Point(14, 76)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(122, 16)
@@ -287,7 +287,7 @@ Partial Class Salida_Buscar
         'CheckBox14
         '
         Me.CheckBox14.AutoSize = True
-        Me.CheckBox14.Location = New System.Drawing.Point(728, 254)
+        Me.CheckBox14.Location = New System.Drawing.Point(728, 259)
         Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox14.Name = "CheckBox14"
         Me.CheckBox14.Size = New System.Drawing.Size(118, 20)
@@ -299,7 +299,7 @@ Partial Class Salida_Buscar
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label1.Location = New System.Drawing.Point(14, 234)
+        Me.Label1.Location = New System.Drawing.Point(14, 239)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(833, 16)
         Me.Label1.TabIndex = 246
@@ -312,7 +312,7 @@ Partial Class Salida_Buscar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(863, 602)
+        Me.ClientSize = New System.Drawing.Size(863, 609)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckBox14)

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Medicamentos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Medicamentos
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Medicamentos))
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -243,7 +243,7 @@ Partial Class Medicamentos
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(881, 38)
+        Me.TextBox12.Location = New System.Drawing.Point(757, 38)
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
@@ -255,10 +255,10 @@ Partial Class Medicamentos
         Me.Button8.BackColor = System.Drawing.Color.Turquoise
         Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button8.Location = New System.Drawing.Point(842, 311)
+        Me.Button8.Location = New System.Drawing.Point(855, 36)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(131, 28)
+        Me.Button8.Size = New System.Drawing.Size(116, 25)
         Me.Button8.TabIndex = 18
         Me.Button8.UseVisualStyleBackColor = False
         '
@@ -267,10 +267,10 @@ Partial Class Medicamentos
         Me.Button9.BackColor = System.Drawing.Color.Turquoise
         Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button9.Location = New System.Drawing.Point(703, 311)
+        Me.Button9.Location = New System.Drawing.Point(785, 310)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(131, 26)
+        Me.Button9.Size = New System.Drawing.Size(186, 26)
         Me.Button9.TabIndex = 17
         Me.Button9.Text = " "
         Me.Button9.UseVisualStyleBackColor = False
@@ -283,7 +283,7 @@ Partial Class Medicamentos
         Me.Button10.Location = New System.Drawing.Point(564, 311)
         Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(131, 26)
+        Me.Button10.Size = New System.Drawing.Size(213, 26)
         Me.Button10.TabIndex = 16
         Me.Button10.Text = " "
         Me.Button10.UseVisualStyleBackColor = False

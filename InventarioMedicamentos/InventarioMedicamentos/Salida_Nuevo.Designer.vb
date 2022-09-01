@@ -181,7 +181,7 @@ Partial Class Salida_Nuevo
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(455, 73)
+        Me.Label19.Location = New System.Drawing.Point(522, 72)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(42, 16)
@@ -201,10 +201,10 @@ Partial Class Salida_Nuevo
         'DateTimePicker2
         '
         Me.DateTimePicker2.AllowDrop = True
-        Me.DateTimePicker2.Location = New System.Drawing.Point(505, 71)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(572, 70)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(280, 22)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(343, 22)
         Me.DateTimePicker2.TabIndex = 386
         '
         'Label20
@@ -235,10 +235,10 @@ Partial Class Salida_Nuevo
         Me.Button3.BackColor = System.Drawing.Color.Turquoise
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(796, 63)
+        Me.Button3.Location = New System.Drawing.Point(795, 38)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(120, 31)
+        Me.Button3.Size = New System.Drawing.Size(120, 24)
         Me.Button3.TabIndex = 6
         Me.Button3.UseVisualStyleBackColor = False
         '
@@ -310,7 +310,7 @@ Partial Class Salida_Nuevo
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(305, 22)
+        Me.TextBox11.Size = New System.Drawing.Size(372, 22)
         Me.TextBox11.TabIndex = 388
         Me.TextBox11.Text = "Autogenerado"
         '

@@ -177,10 +177,10 @@ Partial Class Entrada_Buscar
         Me.Button1.BackColor = System.Drawing.Color.Turquoise
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Location = New System.Drawing.Point(721, 63)
+        Me.Button1.Location = New System.Drawing.Point(754, 34)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 31)
+        Me.Button1.Size = New System.Drawing.Size(90, 24)
         Me.Button1.TabIndex = 4
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -189,10 +189,10 @@ Partial Class Entrada_Buscar
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(613, 62)
+        Me.Button2.Location = New System.Drawing.Point(689, 67)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 32)
+        Me.Button2.Size = New System.Drawing.Size(155, 26)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = " "
         Me.Button2.UseVisualStyleBackColor = False
@@ -202,10 +202,10 @@ Partial Class Entrada_Buscar
         Me.Button3.BackColor = System.Drawing.Color.Turquoise
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(505, 63)
+        Me.Button3.Location = New System.Drawing.Point(505, 68)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 31)
+        Me.Button3.Size = New System.Drawing.Size(176, 25)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = " "
         Me.Button3.UseVisualStyleBackColor = False

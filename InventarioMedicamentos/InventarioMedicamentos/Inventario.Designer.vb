@@ -70,10 +70,10 @@ Partial Class Inventario
         Me.Button7.BackColor = System.Drawing.Color.Turquoise
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(855, 72)
+        Me.Button7.Location = New System.Drawing.Point(896, 38)
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(159, 27)
+        Me.Button7.Size = New System.Drawing.Size(118, 27)
         Me.Button7.TabIndex = 4
         Me.Button7.UseVisualStyleBackColor = False
         '
@@ -183,13 +183,13 @@ Partial Class Inventario
         Me.DateTimePicker2.Location = New System.Drawing.Point(105, 76)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(236, 22)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(336, 22)
         Me.DateTimePicker2.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(353, 78)
+        Me.Label1.Location = New System.Drawing.Point(449, 78)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(64, 16)
@@ -199,10 +199,10 @@ Partial Class Inventario
         'DateTimePicker1
         '
         Me.DateTimePicker1.AllowDrop = True
-        Me.DateTimePicker1.Location = New System.Drawing.Point(425, 76)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(521, 77)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(253, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(326, 22)
         Me.DateTimePicker1.TabIndex = 2
         '
         'Label2
@@ -222,10 +222,10 @@ Partial Class Inventario
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(690, 72)
+        Me.Button2.Location = New System.Drawing.Point(855, 75)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(155, 27)
+        Me.Button2.Size = New System.Drawing.Size(159, 27)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = " "
         Me.Button2.UseVisualStyleBackColor = False

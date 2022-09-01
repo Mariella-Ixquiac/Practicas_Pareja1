@@ -10,7 +10,7 @@ Public Class Configuracion
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol;"
+        Dim query As String = "SELECT l.id_login AS 'ID', l.usuario as 'Nombre del usuario', r.rol as 'Rol', l.nombre as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -35,7 +35,7 @@ Public Class Configuracion
 
     Sub Cargar_datos()
         conn.Open()
-        Dim query As String = "SELECT * FROM login;"
+        Dim query As String = "SELECT * FROM rol;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -43,6 +43,7 @@ Public Class Configuracion
         ComboBox2.DisplayMember = "rol"
         ComboBox2.ValueMember = "id_rol"
         conn.Close()
+        ComboBox2.SelectedIndex = -1
     End Sub
 
     Private Sub Configuracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
