@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 01-09-2022 a las 06:54:03
+-- Tiempo de generación: 01-09-2022 a las 20:33:41
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -135,12 +135,17 @@ CREATE TABLE IF NOT EXISTS `medicamento` (
   `uni_medida` varchar(100) NOT NULL,
   `formula` varchar(200) NOT NULL,
   `dosis` varchar(100) NOT NULL,
-  `id_venta` int(11) NOT NULL,
-  `id_compra` int(11) NOT NULL,
-  PRIMARY KEY (`id_med`),
-  KEY `compra_index` (`id_compra`),
-  KEY `venta_index` (`id_venta`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  PRIMARY KEY (`id_med`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `medicamento`
+--
+
+INSERT INTO `medicamento` (`id_med`, `nom_med`, `receta`, `precauciones`, `descripcion`, `fec_caducidad`, `presentacion`, `uni_medida`, `formula`, `dosis`) VALUES
+(2, '1', 1, '1', '1', '2022-09-01', '1', '1', '1', '1'),
+(3, '1', 2, '7', '8', '2022-09-01', '3', '4', '5', '6'),
+(4, 'q', 0, 'werty', 'dsfgsgfd', '2022-09-01', 'qwe', 'asd', 'lkjh', 'nbvc');
 
 -- --------------------------------------------------------
 
@@ -156,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
   `id_marca` int(11) NOT NULL,
   PRIMARY KEY (`id_proveedores`),
   KEY `Marca` (`id_marca`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `proveedores`
@@ -164,7 +169,7 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
 
 INSERT INTO `proveedores` (`id_proveedores`, `nom_proveedores`, `telefono`, `id_marca`) VALUES
 (1, 'Edgar Raúl Culajay', '01726394', 1),
-(2, 'Mario Izariel Villatoro', '11111111', 1);
+(3, 'Marco Sosa', '12345456', 1);
 
 -- --------------------------------------------------------
 
@@ -216,21 +221,14 @@ CREATE TABLE IF NOT EXISTS `venta` (
 -- Filtros para la tabla `compra`
 --
 ALTER TABLE `compra`
-  ADD CONSTRAINT `compra_ibfk_1` FOREIGN KEY (`id_compra`) REFERENCES `medicamento` (`id_compra`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `compra_ibfk_2` FOREIGN KEY (`id_proveedores`) REFERENCES `proveedores` (`id_proveedores`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `compra_ibfk_2` FOREIGN KEY (`id_proveedores`) REFERENCES `proveedores` (`id_proveedores`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `compra_ibfk_3` FOREIGN KEY (`id_medicamento`) REFERENCES `medicamento` (`id_med`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `login`
 --
 ALTER TABLE `login`
   ADD CONSTRAINT `login_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_rol`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `medicamento`
---
-ALTER TABLE `medicamento`
-  ADD CONSTRAINT `medicamento_ibfk_1` FOREIGN KEY (`id_compra`) REFERENCES `compra` (`id_compra`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `medicamento_ibfk_2` FOREIGN KEY (`id_venta`) REFERENCES `venta` (`id_venta`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `proveedores`
@@ -242,8 +240,8 @@ ALTER TABLE `proveedores`
 -- Filtros para la tabla `venta`
 --
 ALTER TABLE `venta`
-  ADD CONSTRAINT `venta_ibfk_1` FOREIGN KEY (`id_venta`) REFERENCES `medicamento` (`id_venta`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `venta_ibfk_2` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `venta_ibfk_2` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `venta_ibfk_3` FOREIGN KEY (`id_medicamento`) REFERENCES `medicamento` (`id_med`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
