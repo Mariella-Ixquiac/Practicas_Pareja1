@@ -154,4 +154,18 @@ Public Class Clientes
             End If
         End If
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        conn = objetoconexion.AbrirCon
+        Try
+            Dim query As String = "select * from clientes where nit like '%" & TextBox4.Text & "%'"
+            Dim adpt As New MySqlDataAdapter(query, conn)
+            Dim ds As New DataSet()
+            adpt.Fill(ds)
+            DataGridView1.DataSource = ds.Tables(0)
+            conn.Close()
+            conn.Dispose()
+        Catch ex As Exception
+        End Try
+    End Sub
 End Class
