@@ -245,4 +245,62 @@ Public Class Proveedores
             End If
         End If
     End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+
+        If ComboBox4.SelectedItem = "ID" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from proveedores where id_proveedores like '%" & TextBox11.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox4.SelectedItem = "Nombre" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from proveedores where nom_proveedores like '%" & TextBox11.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+
+        ElseIf ComboBox4.SelectedItem = "Celular" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from proveedores where telefono like '%" & TextBox11.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox4.SelectedItem = "Marca" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from proveedores where id_marca like '%" & TextBox11.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+
+            End Try
+        End If
+    End Sub
 End Class

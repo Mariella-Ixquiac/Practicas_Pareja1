@@ -55,7 +55,7 @@ Partial Class Index
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(13, 188)
+        Me.Button2.Location = New System.Drawing.Point(196, 188)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(176, 141)
@@ -83,7 +83,7 @@ Partial Class Index
         Me.Button4.BackColor = System.Drawing.Color.Turquoise
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(196, 188)
+        Me.Button4.Location = New System.Drawing.Point(379, 188)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(176, 141)
@@ -111,7 +111,7 @@ Partial Class Index
         Me.Button6.BackColor = System.Drawing.Color.Turquoise
         Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(380, 188)
+        Me.Button6.Location = New System.Drawing.Point(563, 188)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(176, 141)
@@ -125,7 +125,7 @@ Partial Class Index
         Me.Button7.BackColor = System.Drawing.Color.Turquoise
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(563, 190)
+        Me.Button7.Location = New System.Drawing.Point(13, 188)
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(176, 141)

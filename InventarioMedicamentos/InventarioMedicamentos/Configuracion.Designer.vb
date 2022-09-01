@@ -325,6 +325,7 @@ Partial Class Configuracion
         '
         Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"ID", "Nombre", "Rol", "Usuario", "Clave"})
         Me.ComboBox3.Location = New System.Drawing.Point(74, 274)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox3.Name = "ComboBox3"

@@ -174,6 +174,7 @@ Partial Class Clientes
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre", "Apellidos", "NIT", "Celular"})
         Me.ComboBox1.Location = New System.Drawing.Point(576, 102)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"

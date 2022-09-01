@@ -30,7 +30,7 @@ Public Class Clientes
 
     Private Sub limpiar2()
         TextBox4.Text = ""
-        ComboBox1.SelectedValue = -1
+        ComboBox1.SelectedIndex = -1
     End Sub
 
     Sub Cargar_datos()
@@ -156,16 +156,73 @@ Public Class Clientes
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        conn = objetoconexion.AbrirCon
-        Try
-            Dim query As String = "select * from clientes where nit like '%" & TextBox4.Text & "%'"
-            Dim adpt As New MySqlDataAdapter(query, conn)
-            Dim ds As New DataSet()
-            adpt.Fill(ds)
-            DataGridView1.DataSource = ds.Tables(0)
-            conn.Close()
-            conn.Dispose()
-        Catch ex As Exception
-        End Try
+
+        If ComboBox1.SelectedItem = "ID" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from clientes where id_cliente like '%" & TextBox4.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox1.SelectedItem = "Nombre" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from clientes where nom_cliente like '%" & TextBox4.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox1.SelectedItem = "Apellidos" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from clientes where ape_cliente like '%" & TextBox4.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox1.SelectedItem = "NIT" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from clientes where nit like '%" & TextBox4.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox1.SelectedItem = "Celular" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from clientes where telefono_cliente like '%" & TextBox4.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        End If
+
     End Sub
 End Class

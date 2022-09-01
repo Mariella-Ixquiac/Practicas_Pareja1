@@ -94,12 +94,12 @@ Partial Class Medicamentos
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(505, 214)
+        Me.Label5.Location = New System.Drawing.Point(529, 214)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 16)
+        Me.Label5.Size = New System.Drawing.Size(55, 16)
         Me.Label5.TabIndex = 35
-        Me.Label5.Text = "Descripción:"
+        Me.Label5.Text = "Detalles:"
         '
         'DateTimePicker1
         '
@@ -310,6 +310,7 @@ Partial Class Medicamentos
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre", "Receta", "Empaque", "Unidad de Medica", "Fecha de Caducidad", "Formula", "Dosis", "Precausiones", "Detalles"})
         Me.ComboBox1.Location = New System.Drawing.Point(73, 314)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
@@ -370,10 +371,10 @@ Partial Class Medicamentos
         '
         'TextBox14
         '
-        Me.TextBox14.Location = New System.Drawing.Point(104, 133)
+        Me.TextBox14.Location = New System.Drawing.Point(84, 133)
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(374, 22)
+        Me.TextBox14.Size = New System.Drawing.Size(394, 22)
         Me.TextBox14.TabIndex = 3
         '
         'TextBox15
@@ -390,9 +391,9 @@ Partial Class Medicamentos
         Me.Label19.Location = New System.Drawing.Point(13, 136)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(83, 16)
+        Me.Label19.Size = New System.Drawing.Size(63, 16)
         Me.Label19.TabIndex = 177
-        Me.Label19.Text = "Presentación:"
+        Me.Label19.Text = "Empaque:"
         '
         'Label20
         '
@@ -428,6 +429,7 @@ Partial Class Medicamentos
         '
         Me.TextBox1.Location = New System.Drawing.Point(73, 103)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.MaxLength = 67
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(405, 22)
         Me.TextBox1.TabIndex = 2

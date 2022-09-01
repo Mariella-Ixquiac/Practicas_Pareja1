@@ -140,4 +140,73 @@ Public Class Configuracion
         End Try
     End Sub
 
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+
+        If ComboBox3.SelectedItem = "ID" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from login where id_login like '%" & TextBox13.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox3.SelectedItem = "Nombre" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from login where nombre like '%" & TextBox13.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox3.SelectedItem = "Rol" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from login where id_rol like '%" & TextBox13.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox3.SelectedItem = "Usuario" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from login where usuario like '%" & TextBox13.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox3.SelectedItem = "Clave" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select * from login where pssw like '%" & TextBox13.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView1.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+
+            End Try
+        End If
+    End Sub
 End Class
