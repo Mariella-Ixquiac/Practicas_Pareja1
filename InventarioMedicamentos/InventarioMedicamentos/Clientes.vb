@@ -201,6 +201,7 @@ Public Class Clientes
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
             Catch ex As Exception
             End Try
 
@@ -214,6 +215,7 @@ Public Class Clientes
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
             Catch ex As Exception
             End Try
 
@@ -227,6 +229,7 @@ Public Class Clientes
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
             Catch ex As Exception
             End Try
 
@@ -240,14 +243,11 @@ Public Class Clientes
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
             Catch ex As Exception
             End Try
 
         End If
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
 

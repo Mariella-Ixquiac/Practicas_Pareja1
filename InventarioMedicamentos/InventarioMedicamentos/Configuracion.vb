@@ -176,6 +176,8 @@ Public Class Configuracion
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+
             Catch ex As Exception
             End Try
 
@@ -189,6 +191,8 @@ Public Class Configuracion
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+
             Catch ex As Exception
             End Try
 
@@ -202,6 +206,8 @@ Public Class Configuracion
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+
             Catch ex As Exception
             End Try
 
@@ -215,6 +221,8 @@ Public Class Configuracion
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+
             Catch ex As Exception
             End Try
 
@@ -228,6 +236,8 @@ Public Class Configuracion
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+
             Catch ex As Exception
 
             End Try

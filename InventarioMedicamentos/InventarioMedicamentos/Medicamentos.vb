@@ -22,7 +22,7 @@ Public Class Medicamentos
     Private Sub limpiar()
         TextBox15.Focus()
         TextBox15.Text = ""
-        TextBox1.Text = ""
+        CheckBox1.Checked = False
         TextBox14.Text = ""
         TextBox11.Text = ""
         TextBox12.Text = ""
@@ -59,11 +59,6 @@ Public Class Medicamentos
         'Guardar
         conn = objetoconexion.AbrirCon
 
-        If TextBox1.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Receta")
-            TextBox1.Focus()
-            Exit Sub
-        End If
         If TextBox15.Text.Length = 0 Then
             MsgBox("Debe Ingresar Nombre del Medicamento")
             TextBox15.Focus()
@@ -79,11 +74,7 @@ Public Class Medicamentos
             TextBox11.Focus()
             Exit Sub
         End If
-        If TextBox1.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Receta")
-            TextBox1.Focus()
-            Exit Sub
-        End If
+        
         If TextBox9.Text.Length = 0 Then
             MsgBox("Debe Ingresar Formula")
             TextBox9.Focus()
@@ -110,7 +101,7 @@ Public Class Medicamentos
             cmd.CommandText = "insert into medicamento(nom_med,receta,presentacion,uni_medida,fec_caducidad,formula,dosis,precauciones,descripcion)values(@nom,@rec,@pre,@uni,@fec,@fom,@dos,@cau,@des);"
 
             cmd.Parameters.AddWithValue("@nom", TextBox15.Text)
-            cmd.Parameters.AddWithValue("@rec", TextBox1.Text)
+            cmd.Parameters.AddWithValue("@rec", CheckBox1.Checked)
             cmd.Parameters.AddWithValue("@pre", TextBox14.Text)
             cmd.Parameters.AddWithValue("@uni", TextBox11.Text)
             cmd.Parameters.AddWithValue("@fec", DateTimePicker1.Value.Date)
@@ -135,7 +126,7 @@ Public Class Medicamentos
             cmd.CommandText = "update medicamento set nom_med=@nom, receta=@rec, presentacion=@pre, uni_medida=@uni, fec_caducidad=@fec, formula=@fom, dosis=@dos, precauciones=@cau, descripcion=@des WHERE id_med=@id"
 
             cmd.Parameters.AddWithValue("@nom", TextBox15.Text)
-            'cmd.Parameters.AddWithValue("@rec", TextBox1.Text)
+            cmd.Parameters.AddWithValue("@rec", CheckBox1.Checked)
             cmd.Parameters.AddWithValue("@pre", TextBox14.Text)
             cmd.Parameters.AddWithValue("@uni", TextBox11.Text)
             cmd.Parameters.AddWithValue("@fec", DateTimePicker1.Value.Date)
@@ -195,7 +186,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -209,7 +200,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -223,7 +214,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -237,7 +228,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -251,7 +242,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -265,7 +256,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -279,7 +270,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -293,7 +284,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -307,7 +298,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -321,7 +312,7 @@ Public Class Medicamentos
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-                mostrar()
+
             Catch ex As Exception
             End Try
 
@@ -334,7 +325,7 @@ Public Class Medicamentos
 
             TextBox12.Text = row.Cells(0).Value.ToString()
             TextBox15.Text = row.Cells(1).Value.ToString()
-            TextBox1.Text = row.Cells(2).Value.ToString()
+            CheckBox1.Checked = row.Cells(2).Value.ToString()
             TextBox14.Text = row.Cells(3).Value.ToString()
             TextBox11.Text = row.Cells(4).Value.ToString()
             DateTimePicker1.Value = row.Cells(5).Value.ToString()
