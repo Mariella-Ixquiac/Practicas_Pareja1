@@ -107,6 +107,18 @@
     <Compile Include="Entrada_nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Entrada_nuevo_productos.Designer.vb">
+      <DependentUpon>Entrada_nuevo_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrada_nuevo_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrada_nuevo_proveedores.Designer.vb">
+      <DependentUpon>Entrada_nuevo_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Entrada_nuevo_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -177,10 +189,22 @@
     <Compile Include="Salida_Buscar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Salida_Nueva_productos.Designer.vb">
+      <DependentUpon>Salida_Nueva_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Salida_Nueva_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Salida_Nuevo.Designer.vb">
       <DependentUpon>Salida_Nuevo.vb</DependentUpon>
     </Compile>
     <Compile Include="Salida_Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salida_nuevo_cliente.Designer.vb">
+      <DependentUpon>Salida_nuevo_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Salida_nuevo_cliente.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -199,6 +223,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entrada_nuevo.resx">
       <DependentUpon>Entrada_nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrada_nuevo_productos.resx">
+      <DependentUpon>Entrada_nuevo_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrada_nuevo_proveedores.resx">
+      <DependentUpon>Entrada_nuevo_proveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -233,8 +263,14 @@
     <EmbeddedResource Include="Salida_Buscar.resx">
       <DependentUpon>Salida_Buscar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Salida_Nueva_productos.resx">
+      <DependentUpon>Salida_Nueva_productos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Salida_Nuevo.resx">
       <DependentUpon>Salida_Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salida_nuevo_cliente.resx">
+      <DependentUpon>Salida_nuevo_cliente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

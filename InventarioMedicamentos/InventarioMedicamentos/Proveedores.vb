@@ -80,6 +80,9 @@ Public Class Proveedores
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         limpiar2()
+        mostrar()
+        mostrar2()
+        Cargar_datos()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -278,7 +281,7 @@ Public Class Proveedores
         If ComboBox4.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from proveedores where id_proveedores like '%" & TextBox11.Text & "%'"
+                Dim query As String = "select p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' from proveedores p inner JOIN marca m on p.id_marca= m.id_marca where p.id_proveedores like '%" & TextBox11.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -291,7 +294,7 @@ Public Class Proveedores
         ElseIf ComboBox4.SelectedItem = "Nombre" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from proveedores where nom_proveedores like '%" & TextBox11.Text & "%'"
+                Dim query As String = "select p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' from proveedores p inner JOIN marca m on p.id_marca= m.id_marca where p.nom_proveedores like '%" & TextBox11.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -305,7 +308,7 @@ Public Class Proveedores
         ElseIf ComboBox4.SelectedItem = "Celular" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from proveedores where telefono like '%" & TextBox11.Text & "%'"
+                Dim query As String = "select p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' from proveedores p inner JOIN marca m on p.id_marca= m.id_marca where p.telefono like '%" & TextBox11.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -318,7 +321,7 @@ Public Class Proveedores
         ElseIf ComboBox4.SelectedItem = "Marca" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from proveedores where id_marca like '%" & TextBox11.Text & "%'"
+                Dim query As String = "select p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' from proveedores p inner JOIN marca m on p.id_marca= m.id_marca where m.nom_marca like '%" & TextBox11.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)

@@ -60,6 +60,9 @@ Partial Class Medicamentos
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,7 +73,7 @@ Partial Class Medicamentos
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(379, 67)
-        Me.TextBox3.TabIndex = 8
+        Me.TextBox3.TabIndex = 9
         '
         'Label3
         '
@@ -89,7 +92,7 @@ Partial Class Medicamentos
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(379, 49)
-        Me.TextBox5.TabIndex = 9
+        Me.TextBox5.TabIndex = 10
         '
         'Label5
         '
@@ -107,7 +110,8 @@ Partial Class Medicamentos
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(332, 22)
-        Me.DateTimePicker1.TabIndex = 5
+        Me.DateTimePicker1.TabIndex = 6
+        Me.DateTimePicker1.Value = New Date(2022, 9, 2, 17, 8, 0, 0)
         '
         'TextBox8
         '
@@ -115,7 +119,7 @@ Partial Class Medicamentos
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(338, 22)
-        Me.TextBox8.TabIndex = 7
+        Me.TextBox8.TabIndex = 8
         '
         'Label9
         '
@@ -133,7 +137,7 @@ Partial Class Medicamentos
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(350, 22)
-        Me.TextBox9.TabIndex = 6
+        Me.TextBox9.TabIndex = 7
         '
         'Label10
         '
@@ -151,7 +155,7 @@ Partial Class Medicamentos
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(345, 22)
-        Me.TextBox11.TabIndex = 4
+        Me.TextBox11.TabIndex = 5
         '
         'Label16
         '
@@ -177,18 +181,16 @@ Partial Class Medicamentos
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label4.Location = New System.Drawing.Point(12, 263)
+        Me.Label4.Location = New System.Drawing.Point(-46, 268)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(963, 16)
+        Me.Label4.Size = New System.Drawing.Size(2763, 16)
         Me.Label4.TabIndex = 196
-        Me.Label4.Text = "---------------------------------------------------------------------------------" &
-    "--------------------------------------------------------------------------------" &
-    "------------------------------"
+        Me.Label4.Text = resources.GetString("Label4.Text")
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(289, 317)
+        Me.Label11.Location = New System.Drawing.Point(290, 326)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(50, 16)
@@ -200,7 +202,7 @@ Partial Class Medicamentos
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label12.Location = New System.Drawing.Point(14, 282)
+        Me.Label12.Location = New System.Drawing.Point(15, 291)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(180, 19)
@@ -259,7 +261,7 @@ Partial Class Medicamentos
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(116, 25)
-        Me.Button8.TabIndex = 18
+        Me.Button8.TabIndex = 19
         Me.Button8.UseVisualStyleBackColor = False
         '
         'Button9
@@ -267,11 +269,11 @@ Partial Class Medicamentos
         Me.Button9.BackColor = System.Drawing.Color.Turquoise
         Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button9.Location = New System.Drawing.Point(785, 310)
+        Me.Button9.Location = New System.Drawing.Point(786, 319)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(186, 26)
-        Me.Button9.TabIndex = 17
+        Me.Button9.TabIndex = 18
         Me.Button9.Text = " "
         Me.Button9.UseVisualStyleBackColor = False
         '
@@ -280,26 +282,26 @@ Partial Class Medicamentos
         Me.Button10.BackColor = System.Drawing.Color.Turquoise
         Me.Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), System.Drawing.Image)
         Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button10.Location = New System.Drawing.Point(564, 311)
+        Me.Button10.Location = New System.Drawing.Point(565, 320)
         Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(213, 26)
-        Me.Button10.TabIndex = 16
+        Me.Button10.TabIndex = 17
         Me.Button10.Text = " "
         Me.Button10.UseVisualStyleBackColor = False
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(346, 314)
+        Me.TextBox13.Location = New System.Drawing.Point(347, 323)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(210, 22)
-        Me.TextBox13.TabIndex = 15
+        Me.TextBox13.TabIndex = 16
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(14, 318)
+        Me.Label18.Location = New System.Drawing.Point(15, 327)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(51, 16)
@@ -310,23 +312,23 @@ Partial Class Medicamentos
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre", "Receta", "Empaque", "Unidad de Medica", "Fecha de Caducidad", "Formula", "Dosis", "Precausiones", "Detalles"})
-        Me.ComboBox1.Location = New System.Drawing.Point(73, 314)
+        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre", "Receta", "Cantidad existente", "Empaque", "Unidad de Medica", "Fecha de Caducidad", "Formula", "Dosis", "Precausiones", "Detalles"})
+        Me.ComboBox1.Location = New System.Drawing.Point(74, 323)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(209, 23)
-        Me.ComboBox1.TabIndex = 14
+        Me.ComboBox1.TabIndex = 15
         '
         'Button11
         '
         Me.Button11.BackColor = System.Drawing.Color.Turquoise
         Me.Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), System.Drawing.Image)
         Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button11.Location = New System.Drawing.Point(250, 223)
+        Me.Button11.Location = New System.Drawing.Point(250, 226)
         Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(116, 37)
-        Me.Button11.TabIndex = 12
+        Me.Button11.TabIndex = 13
         Me.Button11.Text = " "
         Me.Button11.UseVisualStyleBackColor = False
         '
@@ -335,11 +337,11 @@ Partial Class Medicamentos
         Me.Button12.BackColor = System.Drawing.Color.Turquoise
         Me.Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), System.Drawing.Image)
         Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button12.Location = New System.Drawing.Point(13, 223)
+        Me.Button12.Location = New System.Drawing.Point(13, 226)
         Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(110, 37)
-        Me.Button12.TabIndex = 10
+        Me.Button12.TabIndex = 11
         Me.Button12.Text = " "
         Me.Button12.UseVisualStyleBackColor = False
         '
@@ -348,11 +350,11 @@ Partial Class Medicamentos
         Me.Button13.BackColor = System.Drawing.Color.Turquoise
         Me.Button13.BackgroundImage = CType(resources.GetObject("Button13.BackgroundImage"), System.Drawing.Image)
         Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button13.Location = New System.Drawing.Point(374, 223)
+        Me.Button13.Location = New System.Drawing.Point(374, 226)
         Me.Button13.Margin = New System.Windows.Forms.Padding(4)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(104, 37)
-        Me.Button13.TabIndex = 13
+        Me.Button13.TabIndex = 14
         Me.Button13.Text = " "
         Me.Button13.UseVisualStyleBackColor = False
         '
@@ -361,11 +363,11 @@ Partial Class Medicamentos
         Me.Button14.BackColor = System.Drawing.Color.Turquoise
         Me.Button14.BackgroundImage = CType(resources.GetObject("Button14.BackgroundImage"), System.Drawing.Image)
         Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button14.Location = New System.Drawing.Point(131, 223)
+        Me.Button14.Location = New System.Drawing.Point(131, 226)
         Me.Button14.Margin = New System.Windows.Forms.Padding(4)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(111, 37)
-        Me.Button14.TabIndex = 11
+        Me.Button14.TabIndex = 12
         Me.Button14.Text = " "
         Me.Button14.UseVisualStyleBackColor = False
         '
@@ -375,7 +377,7 @@ Partial Class Medicamentos
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(394, 22)
-        Me.TextBox14.TabIndex = 3
+        Me.TextBox14.TabIndex = 4
         '
         'TextBox15
         '
@@ -401,9 +403,9 @@ Partial Class Medicamentos
         Me.Label20.Location = New System.Drawing.Point(13, 106)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(166, 16)
+        Me.Label20.Size = New System.Drawing.Size(98, 16)
         Me.Label20.TabIndex = 176
-        Me.Label20.Text = "El producto contiene receta:"
+        Me.Label20.Text = "Contiene receta:"
         '
         'Label21
         '
@@ -419,31 +421,59 @@ Partial Class Medicamentos
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(18, 351)
+        Me.DataGridView2.Location = New System.Drawing.Point(18, 362)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(953, 352)
+        Me.DataGridView2.Size = New System.Drawing.Size(953, 341)
         Me.DataGridView2.TabIndex = 174
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label1.Location = New System.Drawing.Point(485, 64)
+        Me.Label1.Location = New System.Drawing.Point(486, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(11, 192)
+        Me.Label1.Size = New System.Drawing.Size(11, 224)
         Me.Label1.TabIndex = 203
-        Me.Label1.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
+        Me.Label1.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(186, 105)
+        Me.CheckBox1.Location = New System.Drawing.Point(118, 106)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(136, 20)
-        Me.CheckBox1.TabIndex = 205
-        Me.CheckBox1.Text = "Selecciona para sí."
+        Me.CheckBox1.Size = New System.Drawing.Size(46, 20)
+        Me.CheckBox1.TabIndex = 2
+        Me.CheckBox1.Text = "Sí."
         Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(297, 103)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(181, 22)
+        Me.TextBox1.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(176, 106)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(113, 16)
+        Me.Label2.TabIndex = 207
+        Me.Label2.Text = "Cantidad existente:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Label6.Location = New System.Drawing.Point(160, 104)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(11, 16)
+        Me.Label6.TabIndex = 208
+        Me.Label6.Text = "|"
         '
         'Medicamentos
         '
@@ -452,6 +482,9 @@ Partial Class Medicamentos
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(984, 749)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox11)
@@ -536,4 +569,7 @@ Partial Class Medicamentos
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label6 As Label
 End Class

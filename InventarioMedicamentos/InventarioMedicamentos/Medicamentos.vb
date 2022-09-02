@@ -10,7 +10,7 @@ Public Class Medicamentos
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' FROM medicamento e;"
+        Dim query As String = "SELECT e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' FROM medicamento e;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -53,6 +53,7 @@ Public Class Medicamentos
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         limpiar2()
+        mostrar()
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
@@ -98,10 +99,11 @@ Public Class Medicamentos
 
         Try
             cmd = conn.CreateCommand
-            cmd.CommandText = "insert into medicamento(nom_med,receta,presentacion,uni_medida,fec_caducidad,formula,dosis,precauciones,descripcion)values(@nom,@rec,@pre,@uni,@fec,@fom,@dos,@cau,@des);"
+            cmd.CommandText = "insert into medicamento(nom_med,receta,Cantidad_existente,presentacion,uni_medida,fec_caducidad,formula,dosis,precauciones,descripcion)values(@nom,@rec,@can,@pre,@uni,@fec,@fom,@dos,@cau,@des);"
 
             cmd.Parameters.AddWithValue("@nom", TextBox15.Text)
             cmd.Parameters.AddWithValue("@rec", CheckBox1.Checked)
+            cmd.Parameters.AddWithValue("@can", TextBox1.Text)
             cmd.Parameters.AddWithValue("@pre", TextBox14.Text)
             cmd.Parameters.AddWithValue("@uni", TextBox11.Text)
             cmd.Parameters.AddWithValue("@fec", DateTimePicker1.Value.Date)
@@ -123,10 +125,11 @@ Public Class Medicamentos
         conn = objetoconexion.AbrirCon
         Try
             cmd = conn.CreateCommand
-            cmd.CommandText = "update medicamento set nom_med=@nom, receta=@rec, presentacion=@pre, uni_medida=@uni, fec_caducidad=@fec, formula=@fom, dosis=@dos, precauciones=@cau, descripcion=@des WHERE id_med=@id"
+            cmd.CommandText = "update medicamento set nom_med=@nom, Cantidad_existente=@can, receta=@rec, presentacion=@pre, uni_medida=@uni, fec_caducidad=@fec, formula=@fom, dosis=@dos, precauciones=@cau, descripcion=@des WHERE id_med=@id"
 
             cmd.Parameters.AddWithValue("@nom", TextBox15.Text)
             cmd.Parameters.AddWithValue("@rec", CheckBox1.Checked)
+            cmd.Parameters.AddWithValue("@can", TextBox1.Text)
             cmd.Parameters.AddWithValue("@pre", TextBox14.Text)
             cmd.Parameters.AddWithValue("@uni", TextBox11.Text)
             cmd.Parameters.AddWithValue("@fec", DateTimePicker1.Value.Date)
@@ -179,21 +182,20 @@ Public Class Medicamentos
         If ComboBox1.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where id_med like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.id_med like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-
             Catch ex As Exception
             End Try
 
         ElseIf ComboBox1.SelectedItem = "Nombre" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where nom_med like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.nom_med like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -207,7 +209,21 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Receta" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where receta like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.receta like '%" & TextBox13.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox1.SelectedItem = "Cantidad existente" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.Cantidad_existente like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -221,7 +237,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Empaque" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where presentacion like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.presentacion like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -235,7 +251,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Unidad de Medica" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where uni_medida like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.uni_medida like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -249,7 +265,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Fecha de Caducidad" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where fec_caducidad like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.fec_caducidad like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -263,7 +279,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Formula" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where formula like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.formula like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -277,7 +293,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Dosis" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where dosis like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.dosis like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -291,7 +307,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Precausiones" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where precauciones like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.precauciones like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -305,7 +321,7 @@ Public Class Medicamentos
         ElseIf ComboBox1.SelectedItem = "Detalles" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from medicamento where descripcion like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' from medicamento e where e.descripcion like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -326,14 +342,14 @@ Public Class Medicamentos
             TextBox12.Text = row.Cells(0).Value.ToString()
             TextBox15.Text = row.Cells(1).Value.ToString()
             CheckBox1.Checked = row.Cells(2).Value.ToString()
-            TextBox14.Text = row.Cells(3).Value.ToString()
-            TextBox11.Text = row.Cells(4).Value.ToString()
-            DateTimePicker1.Value = row.Cells(5).Value.ToString()
-            TextBox9.Text = row.Cells(6).Value.ToString()
-            TextBox8.Text = row.Cells(7).Value.ToString()
-            TextBox3.Text = row.Cells(8).Value.ToString()
-            TextBox5.Text = row.Cells(9).Value.ToString()
-
+            TextBox1.Text = row.Cells(3).Value.ToString()
+            TextBox14.Text = row.Cells(4).Value.ToString()
+            DateTimePicker1.Value = row.Cells(6).Value.ToString()
+            TextBox11.Text = row.Cells(5).Value.ToString()
+            TextBox9.Text = row.Cells(7).Value.ToString()
+            TextBox8.Text = row.Cells(8).Value.ToString()
+            TextBox3.Text = row.Cells(9).Value.ToString()
+            TextBox5.Text = row.Cells(10).Value.ToString()
         Catch ex As Exception
         End Try
 

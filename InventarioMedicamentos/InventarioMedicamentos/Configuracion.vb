@@ -10,7 +10,7 @@ Public Class Configuracion
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT l.id_login AS 'ID', l.usuario as 'Nombre del usuario', r.rol as 'Rol', l.nombre as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol;"
+        Dim query As String = "SELECT l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -22,6 +22,7 @@ Public Class Configuracion
     Private Sub limpiar()
         TextBox1.Focus()
         TextBox1.Text = ""
+        TextBox2.Text = ""
         ComboBox2.SelectedIndex = -1
         TextBox5.Text = ""
         TextBox3.Text = ""
@@ -62,6 +63,8 @@ Public Class Configuracion
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         limpiar2()
+        mostrar()
+        Cargar_datos()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -124,6 +127,7 @@ Public Class Configuracion
             cmd.Parameters.AddWithValue("@nom", TextBox1.Text)
             cmd.Parameters.AddWithValue("@rol", ComboBox2.SelectedValue)
             cmd.Parameters.AddWithValue("@psw", TextBox7.Text)
+            cmd.Parameters.AddWithValue("@psw", TextBox2.Text)
 
             cmd.Parameters.AddWithValue("@id", TextBox5.Text)
 
@@ -169,7 +173,7 @@ Public Class Configuracion
         If ComboBox3.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from login where id_login like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol where l.id_login like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -184,7 +188,7 @@ Public Class Configuracion
         ElseIf ComboBox3.SelectedItem = "Nombre" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from login where nombre like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol where l.nombre like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -199,7 +203,7 @@ Public Class Configuracion
         ElseIf ComboBox3.SelectedItem = "Rol" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from login where id_rol like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol where r.rol like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -214,7 +218,7 @@ Public Class Configuracion
         ElseIf ComboBox3.SelectedItem = "Usuario" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from login where usuario like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol where l.usuario like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -229,7 +233,7 @@ Public Class Configuracion
         ElseIf ComboBox3.SelectedItem = "Clave" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from login where pssw like '%" & TextBox13.Text & "%'"
+                Dim query As String = "select l.id_login AS 'ID', l.usuario as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol where l.pssw like '%" & TextBox13.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)

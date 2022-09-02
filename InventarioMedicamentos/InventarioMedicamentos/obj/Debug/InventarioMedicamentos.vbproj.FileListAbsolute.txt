@@ -71,3 +71,7 @@ C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamen
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\MySql.Data.xml
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.vbproj.InventarioMedicamentos.exe.config
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_nuevo_cliente.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_Nueva_productos.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_productos.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_proveedores.resources

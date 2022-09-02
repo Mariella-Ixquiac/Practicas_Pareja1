@@ -9,11 +9,11 @@ Public Class Entrada_nuevo
         Index.Show()
     End Sub
 
-    Private Sub Entrada_nuevo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Entrada_nuevo_productos.Show()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
+        Entrada_nuevo_proveedores.Show()
     End Sub
 End Class

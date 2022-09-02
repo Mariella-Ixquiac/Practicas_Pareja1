@@ -53,6 +53,8 @@ Public Class Clientes
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Me.Hide()
         Index.Show()
+        mostrar()
+        Cargar_datos()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -61,6 +63,8 @@ Public Class Clientes
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         limpiar2()
+        mostrar()
+        Cargar_datos()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -181,7 +185,7 @@ Public Class Clientes
         If ComboBox1.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from clientes where id_cliente like '%" & TextBox4.Text & "%'"
+                Dim query As String = "select c.id_cliente AS 'ID', c.nom_cliente as 'Nombre del Cliente', c.ape_cliente as 'Apellidos del Cliente', c.nit as 'NIT', c.telefono_cliente as 'Celular del Cliente' FROM clientes c where c.id_cliente like '%" & TextBox4.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -194,7 +198,7 @@ Public Class Clientes
         ElseIf ComboBox1.SelectedItem = "Nombre" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from clientes where nom_cliente like '%" & TextBox4.Text & "%'"
+                Dim query As String = "select c.id_cliente AS 'ID', c.nom_cliente as 'Nombre del Cliente', c.ape_cliente as 'Apellidos del Cliente', c.nit as 'NIT', c.telefono_cliente as 'Celular del Cliente' FROM clientes c where c.nom_cliente like '%" & TextBox4.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -208,7 +212,7 @@ Public Class Clientes
         ElseIf ComboBox1.SelectedItem = "Apellidos" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from clientes where ape_cliente like '%" & TextBox4.Text & "%'"
+                Dim query As String = "select c.id_cliente AS 'ID', c.nom_cliente as 'Nombre del Cliente', c.ape_cliente as 'Apellidos del Cliente', c.nit as 'NIT', c.telefono_cliente as 'Celular del Cliente' FROM clientes c where c.ape_cliente like '%" & TextBox4.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -222,7 +226,7 @@ Public Class Clientes
         ElseIf ComboBox1.SelectedItem = "NIT" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from clientes where nit like '%" & TextBox4.Text & "%'"
+                Dim query As String = "select c.id_cliente AS 'ID', c.nom_cliente as 'Nombre del Cliente', c.ape_cliente as 'Apellidos del Cliente', c.nit as 'NIT', c.telefono_cliente as 'Celular del Cliente' FROM clientes c where c.nit like '%" & TextBox4.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -236,7 +240,7 @@ Public Class Clientes
         ElseIf ComboBox1.SelectedItem = "Celular" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select * from clientes where telefono_cliente like '%" & TextBox4.Text & "%'"
+                Dim query As String = "select c.id_cliente AS 'ID', c.nom_cliente as 'Nombre del Cliente', c.ape_cliente as 'Apellidos del Cliente', c.nit as 'NIT', c.telefono_cliente as 'Celular del Cliente' FROM clientes c where c.telefono_cliente like '%" & TextBox4.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -267,4 +271,5 @@ Public Class Clientes
         Button4.Enabled = True
         Button2.Enabled = True
     End Sub
+
 End Class

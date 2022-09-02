@@ -41,11 +41,11 @@ Partial Class Index
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Location = New System.Drawing.Point(13, 42)
+        Me.Button1.Location = New System.Drawing.Point(196, 192)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(176, 140)
-        Me.Button1.TabIndex = 1
+        Me.Button1.TabIndex = 6
         Me.Button1.Text = " "
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button1.UseVisualStyleBackColor = False
@@ -55,7 +55,7 @@ Partial Class Index
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(196, 188)
+        Me.Button2.Location = New System.Drawing.Point(13, 191)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(176, 141)
@@ -83,11 +83,11 @@ Partial Class Index
         Me.Button4.BackColor = System.Drawing.Color.Turquoise
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(379, 188)
+        Me.Button4.Location = New System.Drawing.Point(380, 44)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(176, 141)
-        Me.Button4.TabIndex = 6
+        Me.Button4.TabIndex = 3
         Me.Button4.Text = " "
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button4.UseVisualStyleBackColor = False
@@ -97,11 +97,11 @@ Partial Class Index
         Me.Button5.BackColor = System.Drawing.Color.Turquoise
         Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Location = New System.Drawing.Point(380, 42)
+        Me.Button5.Location = New System.Drawing.Point(13, 44)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(176, 140)
-        Me.Button5.TabIndex = 3
+        Me.Button5.TabIndex = 1
         Me.Button5.Text = " "
         Me.Button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button5.UseVisualStyleBackColor = False
@@ -115,7 +115,7 @@ Partial Class Index
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(176, 141)
-        Me.Button6.TabIndex = 7
+        Me.Button6.TabIndex = 4
         Me.Button6.Text = " "
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button6.UseVisualStyleBackColor = False
@@ -125,11 +125,11 @@ Partial Class Index
         Me.Button7.BackColor = System.Drawing.Color.Turquoise
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(13, 188)
+        Me.Button7.Location = New System.Drawing.Point(380, 191)
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(176, 141)
-        Me.Button7.TabIndex = 4
+        Me.Button7.TabIndex = 7
         Me.Button7.Text = " "
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.Button7.UseVisualStyleBackColor = False
@@ -176,7 +176,7 @@ Partial Class Index
         '
         'Index
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(759, 370)

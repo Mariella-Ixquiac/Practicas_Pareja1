@@ -23,13 +23,9 @@ Partial Class Entrada_nuevo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Entrada_nuevo))
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -49,82 +45,49 @@ Partial Class Entrada_nuevo
         Me.Label24 = New System.Windows.Forms.Label()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(13, 160)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(92, 14)
-        Me.Label7.TabIndex = 81
-        Me.Label7.Text = "Nombre Producto:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(417, 160)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 14)
-        Me.Label3.TabIndex = 62
-        Me.Label3.Text = "ID del Producto:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(417, 123)
+        Me.Label2.Location = New System.Drawing.Point(444, 123)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 14)
+        Me.Label2.Size = New System.Drawing.Size(47, 16)
         Me.Label2.TabIndex = 61
-        Me.Label2.Text = "NIT del Proveedor:"
+        Me.Label2.Text = "Marca:"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(304, 196)
+        Me.Label10.Location = New System.Drawing.Point(503, 196)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(82, 14)
+        Me.Label10.Size = New System.Drawing.Size(98, 16)
         Me.Label10.TabIndex = 91
         Me.Label10.Text = "Precio de Venta:"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(13, 196)
+        Me.Label11.Location = New System.Drawing.Point(186, 196)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(93, 14)
+        Me.Label11.Size = New System.Drawing.Size(113, 16)
         Me.Label11.TabIndex = 89
         Me.Label11.Text = "Precio de Compra:"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(579, 196)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(50, 14)
-        Me.Label12.TabIndex = 94
-        Me.Label12.Text = "Cantidad:"
-        '
-        'NumericUpDown1
-        '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(647, 194)
-        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(4)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(141, 19)
-        Me.NumericUpDown1.TabIndex = 8
         '
         'Label14
         '
@@ -134,7 +97,7 @@ Partial Class Entrada_nuevo
         Me.Label14.Location = New System.Drawing.Point(876, 546)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(33, 17)
+        Me.Label14.Size = New System.Drawing.Size(40, 19)
         Me.Label14.TabIndex = 314
         Me.Label14.Text = "0.00"
         '
@@ -147,7 +110,7 @@ Partial Class Entrada_nuevo
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(120, 31)
-        Me.Button8.TabIndex = 9
+        Me.Button8.TabIndex = 6
         Me.Button8.Text = " "
         Me.Button8.UseVisualStyleBackColor = False
         '
@@ -160,7 +123,7 @@ Partial Class Entrada_nuevo
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(120, 31)
-        Me.Button4.TabIndex = 5
+        Me.Button4.TabIndex = 3
         Me.Button4.Text = " "
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -172,7 +135,7 @@ Partial Class Entrada_nuevo
         Me.Label15.Location = New System.Drawing.Point(11, 546)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(43, 17)
+        Me.Label15.Size = New System.Drawing.Size(52, 19)
         Me.Label15.TabIndex = 337
         Me.Label15.Text = "Total:"
         '
@@ -184,7 +147,7 @@ Partial Class Entrada_nuevo
         Me.Label16.Location = New System.Drawing.Point(11, 243)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(126, 17)
+        Me.Label16.Size = New System.Drawing.Size(154, 19)
         Me.Label16.TabIndex = 336
         Me.Label16.Text = "Lista de Productos:"
         '
@@ -192,13 +155,11 @@ Partial Class Entrada_nuevo
         '
         Me.Label17.AutoSize = True
         Me.Label17.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label17.Location = New System.Drawing.Point(11, 94)
+        Me.Label17.Location = New System.Drawing.Point(-36, 95)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(727, 14)
+        Me.Label17.Size = New System.Drawing.Size(3608, 16)
         Me.Label17.TabIndex = 335
-        Me.Label17.Text = "---------------------------------------------------------------------------------" &
-    "--------------------------------------------------------------------------------" &
-    "-------------------"
+        Me.Label17.Text = resources.GetString("Label17.Text")
         '
         'Label19
         '
@@ -206,7 +167,7 @@ Partial Class Entrada_nuevo
         Me.Label19.Location = New System.Drawing.Point(455, 71)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(37, 14)
+        Me.Label19.Size = New System.Drawing.Size(45, 16)
         Me.Label19.TabIndex = 319
         Me.Label19.Text = "Fecha:"
         '
@@ -216,8 +177,8 @@ Partial Class Entrada_nuevo
         Me.DateTimePicker2.Location = New System.Drawing.Point(508, 69)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(408, 19)
-        Me.DateTimePicker2.TabIndex = 2
+        Me.DateTimePicker2.Size = New System.Drawing.Size(408, 22)
+        Me.DateTimePicker2.TabIndex = 1
         '
         'Label20
         '
@@ -227,7 +188,7 @@ Partial Class Entrada_nuevo
         Me.Label20.Location = New System.Drawing.Point(10, 37)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(98, 17)
+        Me.Label20.Size = New System.Drawing.Size(117, 19)
         Me.Label20.TabIndex = 334
         Me.Label20.Text = "Nueva Entrada"
         '
@@ -251,7 +212,7 @@ Partial Class Entrada_nuevo
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(120, 27)
-        Me.Button3.TabIndex = 3
+        Me.Button3.TabIndex = 7
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button6
@@ -263,35 +224,35 @@ Partial Class Entrada_nuevo
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(120, 31)
-        Me.Button6.TabIndex = 4
+        Me.Button6.TabIndex = 2
         Me.Button6.Text = " "
         Me.Button6.UseVisualStyleBackColor = False
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(542, 120)
+        Me.TextBox8.Location = New System.Drawing.Point(499, 120)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(246, 19)
+        Me.TextBox8.Size = New System.Drawing.Size(289, 22)
         Me.TextBox8.TabIndex = 330
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(159, 120)
+        Me.TextBox9.Location = New System.Drawing.Point(214, 120)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(249, 19)
+        Me.TextBox9.Size = New System.Drawing.Size(222, 22)
         Me.TextBox9.TabIndex = 329
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(12, 123)
+        Me.Label22.Location = New System.Drawing.Point(67, 123)
         Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(114, 14)
+        Me.Label22.Size = New System.Drawing.Size(139, 16)
         Me.Label22.TabIndex = 327
         Me.Label22.Text = "Nombre del Proveedor:"
         '
@@ -321,8 +282,10 @@ Partial Class Entrada_nuevo
         Me.TextBox11.Location = New System.Drawing.Point(142, 67)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(305, 19)
+        Me.TextBox11.ReadOnly = True
+        Me.TextBox11.Size = New System.Drawing.Size(305, 22)
         Me.TextBox11.TabIndex = 1
+        Me.TextBox11.Text = "Autogenerado"
         '
         'Label25
         '
@@ -330,73 +293,133 @@ Partial Class Entrada_nuevo
         Me.Label25.Location = New System.Drawing.Point(12, 71)
         Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(100, 14)
+        Me.Label25.Size = New System.Drawing.Size(122, 16)
         Me.Label25.TabIndex = 321
         Me.Label25.Text = "No. del Documento:"
         '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(134, 157)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(274, 19)
-        Me.TextBox10.TabIndex = 342
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(527, 157)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(261, 19)
-        Me.TextBox12.TabIndex = 343
-        '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(134, 193)
+        Me.TextBox1.Location = New System.Drawing.Point(307, 193)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(162, 19)
-        Me.TextBox1.TabIndex = 6
+        Me.TextBox1.Size = New System.Drawing.Size(188, 22)
+        Me.TextBox1.TabIndex = 4
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(410, 193)
+        Me.TextBox2.Location = New System.Drawing.Point(609, 193)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(161, 19)
-        Me.TextBox2.TabIndex = 7
+        Me.TextBox2.Size = New System.Drawing.Size(179, 22)
+        Me.TextBox2.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label1.Location = New System.Drawing.Point(11, 223)
+        Me.Label1.Location = New System.Drawing.Point(-23, 227)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(727, 14)
+        Me.Label1.Size = New System.Drawing.Size(1808, 16)
         Me.Label1.TabIndex = 346
-        Me.Label1.Text = "---------------------------------------------------------------------------------" &
-    "--------------------------------------------------------------------------------" &
-    "-------------------"
+        Me.Label1.Text = resources.GetString("Label1.Text")
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(65, 193)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.Size = New System.Drawing.Size(113, 22)
+        Me.TextBox3.TabIndex = 407
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(13, 196)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 16)
+        Me.Label4.TabIndex = 406
+        Me.Label4.Text = "Stock:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(13, 120)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(46, 22)
+        Me.TextBox4.TabIndex = 408
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.AllowDrop = True
+        Me.DateTimePicker1.Enabled = False
+        Me.DateTimePicker1.Location = New System.Drawing.Point(552, 157)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(236, 22)
+        Me.DateTimePicker1.TabIndex = 414
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(13, 157)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
+        Me.TextBox5.Size = New System.Drawing.Size(46, 22)
+        Me.TextBox5.TabIndex = 413
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(187, 156)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.ReadOnly = True
+        Me.TextBox10.Size = New System.Drawing.Size(226, 22)
+        Me.TextBox10.TabIndex = 412
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(67, 160)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 16)
+        Me.Label7.TabIndex = 411
+        Me.Label7.Text = "Nombre Producto:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(421, 162)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(123, 16)
+        Me.Label3.TabIndex = 410
+        Me.Label3.Text = "Fecha de caducidad:"
         '
         'Entrada_nuevo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(932, 602)
         Me.ControlBox = False
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label19)
@@ -414,8 +437,6 @@ Partial Class Entrada_nuevo
         Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label11)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -423,19 +444,14 @@ Partial Class Entrada_nuevo
         Me.Name = "Entrada_nuevo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Entrada_nuevo"
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label14 As Label
     Friend WithEvents Button8 As Button
     Friend WithEvents Button4 As Button
@@ -455,9 +471,15 @@ Partial Class Entrada_nuevo
     Private WithEvents Label24 As Label
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents Label25 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label3 As Label
 End Class

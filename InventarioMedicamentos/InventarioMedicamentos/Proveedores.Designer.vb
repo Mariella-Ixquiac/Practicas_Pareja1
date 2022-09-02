@@ -138,8 +138,8 @@ Partial Class Proveedores
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(90, 19)
-        Me.TextBox1.TabIndex = 199
+        Me.TextBox1.Size = New System.Drawing.Size(90, 22)
+        Me.TextBox1.TabIndex = 12
         '
         'Button15
         '
@@ -150,7 +150,7 @@ Partial Class Proveedores
         Me.Button15.Margin = New System.Windows.Forms.Padding(4)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(249, 30)
-        Me.Button15.TabIndex = 199
+        Me.Button15.TabIndex = 19
         Me.Button15.Text = " "
         Me.Button15.UseVisualStyleBackColor = False
         '
@@ -163,7 +163,7 @@ Partial Class Proveedores
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(235, 30)
-        Me.Button8.TabIndex = 199
+        Me.Button8.TabIndex = 18
         Me.Button8.Text = " "
         Me.Button8.UseVisualStyleBackColor = False
         '
@@ -176,7 +176,7 @@ Partial Class Proveedores
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(221, 30)
-        Me.Button7.TabIndex = 199
+        Me.Button7.TabIndex = 16
         Me.Button7.Text = " "
         Me.Button7.UseVisualStyleBackColor = False
         '
@@ -189,7 +189,7 @@ Partial Class Proveedores
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(266, 30)
-        Me.Button5.TabIndex = 15
+        Me.Button5.TabIndex = 17
         Me.Button5.Text = " "
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -199,8 +199,8 @@ Partial Class Proveedores
         Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.MaxLength = 1
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(37, 19)
-        Me.TextBox6.TabIndex = 14
+        Me.TextBox6.Size = New System.Drawing.Size(37, 22)
+        Me.TextBox6.TabIndex = 15
         '
         'Label7
         '
@@ -208,7 +208,7 @@ Partial Class Proveedores
         Me.Label7.Location = New System.Drawing.Point(881, 26)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(65, 14)
+        Me.Label7.Size = New System.Drawing.Size(77, 16)
         Me.Label7.TabIndex = 28
         Me.Label7.Text = "Calificación:"
         '
@@ -218,7 +218,7 @@ Partial Class Proveedores
         Me.Label6.Location = New System.Drawing.Point(459, 25)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(55, 14)
+        Me.Label6.Size = New System.Drawing.Size(66, 16)
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "Dirección:"
         '
@@ -227,8 +227,8 @@ Partial Class Proveedores
         Me.TextBox5.Location = New System.Drawing.Point(533, 22)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(340, 19)
-        Me.TextBox5.TabIndex = 13
+        Me.TextBox5.Size = New System.Drawing.Size(340, 22)
+        Me.TextBox5.TabIndex = 14
         '
         'Label5
         '
@@ -236,7 +236,7 @@ Partial Class Proveedores
         Me.Label5.Location = New System.Drawing.Point(106, 26)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 14)
+        Me.Label5.Size = New System.Drawing.Size(57, 16)
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Nombre:"
         '
@@ -245,8 +245,8 @@ Partial Class Proveedores
         Me.TextBox2.Location = New System.Drawing.Point(171, 23)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(280, 19)
-        Me.TextBox2.TabIndex = 12
+        Me.TextBox2.Size = New System.Drawing.Size(280, 22)
+        Me.TextBox2.TabIndex = 13
         '
         'ComboBox3
         '
@@ -255,18 +255,18 @@ Partial Class Proveedores
         Me.ComboBox3.Location = New System.Drawing.Point(68, 103)
         Me.ComboBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(422, 20)
+        Me.ComboBox3.Size = New System.Drawing.Size(422, 23)
         Me.ComboBox3.TabIndex = 2
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label10.Location = New System.Drawing.Point(502, 32)
+        Me.Label10.Location = New System.Drawing.Point(502, 38)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(9, 140)
+        Me.Label10.Size = New System.Drawing.Size(11, 176)
         Me.Label10.TabIndex = 196
-        Me.Label10.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
+        Me.Label10.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label9
         '
@@ -274,7 +274,7 @@ Partial Class Proveedores
         Me.Label9.Location = New System.Drawing.Point(522, 143)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(40, 14)
+        Me.Label9.Size = New System.Drawing.Size(50, 16)
         Me.Label9.TabIndex = 195
         Me.Label9.Text = "Buscar:"
         '
@@ -286,7 +286,7 @@ Partial Class Proveedores
         Me.Label8.Location = New System.Drawing.Point(520, 76)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(123, 17)
+        Me.Label8.Size = New System.Drawing.Size(150, 19)
         Me.Label8.TabIndex = 194
         Me.Label8.Text = "Lista de Proveedor"
         '
@@ -298,7 +298,7 @@ Partial Class Proveedores
         Me.Label11.Location = New System.Drawing.Point(11, 38)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(146, 17)
+        Me.Label11.Size = New System.Drawing.Size(179, 19)
         Me.Label11.TabIndex = 193
         Me.Label11.Text = "Detalles del Proveedor"
         '
@@ -319,7 +319,7 @@ Partial Class Proveedores
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(116, 19)
+        Me.TextBox10.Size = New System.Drawing.Size(116, 22)
         Me.TextBox10.TabIndex = 0
         '
         'Button9
@@ -353,7 +353,7 @@ Partial Class Proveedores
         Me.TextBox11.Location = New System.Drawing.Point(579, 140)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(451, 19)
+        Me.TextBox11.Size = New System.Drawing.Size(451, 22)
         Me.TextBox11.TabIndex = 9
         '
         'Label14
@@ -362,7 +362,7 @@ Partial Class Proveedores
         Me.Label14.Location = New System.Drawing.Point(521, 114)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(43, 14)
+        Me.Label14.Size = New System.Drawing.Size(51, 16)
         Me.Label14.TabIndex = 185
         Me.Label14.Text = "Campo:"
         '
@@ -374,7 +374,7 @@ Partial Class Proveedores
         Me.ComboBox4.Location = New System.Drawing.Point(580, 110)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(450, 20)
+        Me.ComboBox4.Size = New System.Drawing.Size(450, 23)
         Me.ComboBox4.TabIndex = 8
         '
         'Button11
@@ -435,7 +435,7 @@ Partial Class Proveedores
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.MaxLength = 8
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(409, 19)
+        Me.TextBox12.Size = New System.Drawing.Size(409, 22)
         Me.TextBox12.TabIndex = 3
         '
         'TextBox13
@@ -443,7 +443,7 @@ Partial Class Proveedores
         Me.TextBox13.Location = New System.Drawing.Point(141, 73)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(349, 19)
+        Me.TextBox13.Size = New System.Drawing.Size(349, 22)
         Me.TextBox13.TabIndex = 1
         '
         'Label15
@@ -452,7 +452,7 @@ Partial Class Proveedores
         Me.Label15.Location = New System.Drawing.Point(13, 136)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(52, 14)
+        Me.Label15.Size = New System.Drawing.Size(60, 16)
         Me.Label15.TabIndex = 177
         Me.Label15.Text = "Teléfono:"
         '
@@ -462,7 +462,7 @@ Partial Class Proveedores
         Me.Label18.Location = New System.Drawing.Point(13, 106)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(39, 14)
+        Me.Label18.Size = New System.Drawing.Size(47, 16)
         Me.Label18.TabIndex = 176
         Me.Label18.Text = "Marca:"
         '
@@ -472,7 +472,7 @@ Partial Class Proveedores
         Me.Label19.Location = New System.Drawing.Point(14, 76)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(99, 14)
+        Me.Label19.Size = New System.Drawing.Size(119, 16)
         Me.Label19.TabIndex = 175
         Me.Label19.Text = "Nombre del Cliente:"
         '
@@ -495,7 +495,7 @@ Partial Class Proveedores
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(120, 25)
-        Me.Button6.TabIndex = 16
+        Me.Button6.TabIndex = 20
         Me.Button6.UseVisualStyleBackColor = False
         '
         'Label13
@@ -523,15 +523,15 @@ Partial Class Proveedores
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label1.Location = New System.Drawing.Point(502, 301)
+        Me.Label1.Location = New System.Drawing.Point(502, 300)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(9, 238)
+        Me.Label1.Size = New System.Drawing.Size(11, 320)
         Me.Label1.TabIndex = 198
-        Me.Label1.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
+        Me.Label1.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
         '
         'Proveedores
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(1043, 621)
