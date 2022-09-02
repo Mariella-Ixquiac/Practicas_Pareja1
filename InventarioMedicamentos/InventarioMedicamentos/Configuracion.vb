@@ -66,15 +66,43 @@ Public Class Configuracion
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         conn = objetoconexion.AbrirCon
+
+        If TextBox1.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Nombre")
+            TextBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox3.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Usuario")
+            TextBox3.Focus()
+            Exit Sub
+        End If
+        If TextBox7.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Contraseña")
+            TextBox7.Focus()
+            Exit Sub
+        End If
+        If ComboBox2.SelectedIndex = -1 Then
+            MsgBox("Debe Ingresar Rol")
+            ComboBox2.Focus()
+            Exit Sub
+        End If
+
         Try
-            cmd = conn.CreateCommand
-            cmd.CommandText = "insert into login(usuario,nombre,id_rol,pssw)values(@usu,@nom,@rol,@psw);"
+            If TextBox2.Text = TextBox7.Text Then
+                cmd = conn.CreateCommand
+                cmd.CommandText = "insert into login(usuario,nombre,id_rol,pssw)values(@usu,@nom,@rol,@psw);"
 
-            cmd.Parameters.AddWithValue("@usu", TextBox3.Text)
-            cmd.Parameters.AddWithValue("@nom", TextBox1.Text)
-            cmd.Parameters.AddWithValue("@rol", ComboBox2.SelectedValue)
-            cmd.Parameters.AddWithValue("@psw", TextBox7.Text)
-
+                cmd.Parameters.AddWithValue("@usu", TextBox3.Text)
+                cmd.Parameters.AddWithValue("@nom", TextBox1.Text)
+                cmd.Parameters.AddWithValue("@rol", ComboBox2.SelectedValue)
+                cmd.Parameters.AddWithValue("@psw", TextBox7.Text)
+            Else
+                MessageBox.Show("Las Contraseñas no Coinciden. Vuelva a Intentarlo", "Atención!")
+                TextBox7.Clear()
+                TextBox2.Clear()
+                TextBox7.Focus()
+            End If
 
             cmd.ExecuteNonQuery()
             conn.Close()
@@ -82,12 +110,12 @@ Public Class Configuracion
             mostrar()
         Catch ex As Exception
 
-
         End Try
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         conn = objetoconexion.AbrirCon
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "update login set usuario=@usu, nombre=@nom, id_rol=@rol, pssw=@psw WHERE id_login=@id"
@@ -106,6 +134,9 @@ Public Class Configuracion
 
         Catch ex As Exception
         End Try
+
+        Button4.Enabled = False
+        Button2.Enabled = False
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -124,20 +155,13 @@ Public Class Configuracion
 
         Catch ex As Exception
         End Try
+
+        Button4.Enabled = False
+        Button2.Enabled = False
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Dim row As DataGridViewRow = DataGridView1.CurrentRow
-        Try
 
-            TextBox3.Text = row.Cells(3).Value.ToString()
-            TextBox1.Text = row.Cells(1).Value.ToString()
-            ComboBox2.SelectedItem = row.Cells(2).Value.ToString()
-            TextBox7.Text = row.Cells(4).Value.ToString()
-            TextBox5.Text = row.Cells(0).Value.ToString()
-
-        Catch ex As Exception
-        End Try
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
@@ -208,5 +232,22 @@ Public Class Configuracion
 
             End Try
         End If
+    End Sub
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
+        Dim row As DataGridViewRow = DataGridView1.CurrentRow
+        Try
+
+            TextBox3.Text = row.Cells(3).Value.ToString()
+            TextBox1.Text = row.Cells(1).Value.ToString()
+            ComboBox2.SelectedItem = row.Cells(2).Value.ToString()
+            TextBox7.Text = row.Cells(4).Value.ToString()
+            TextBox5.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+
+        Button4.Enabled = True
+        Button2.Enabled = True
     End Sub
 End Class

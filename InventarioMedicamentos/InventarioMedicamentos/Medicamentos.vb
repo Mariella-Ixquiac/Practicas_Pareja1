@@ -56,7 +56,55 @@ Public Class Medicamentos
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        'Guardar
         conn = objetoconexion.AbrirCon
+
+        If TextBox1.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Receta")
+            TextBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox15.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Nombre del Medicamento")
+            TextBox15.Focus()
+            Exit Sub
+        End If
+        If TextBox14.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Empaque")
+            TextBox14.Focus()
+            Exit Sub
+        End If
+        If TextBox11.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Unidad de Medida")
+            TextBox11.Focus()
+            Exit Sub
+        End If
+        If TextBox1.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Receta")
+            TextBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox9.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Formula")
+            TextBox9.Focus()
+            Exit Sub
+        End If
+        If TextBox8.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Dosis")
+            TextBox8.Focus()
+            Exit Sub
+        End If
+        If TextBox3.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Precauciones")
+            TextBox3.Focus()
+            Exit Sub
+        End If
+        If TextBox5.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Descripción")
+            TextBox5.Focus()
+            Exit Sub
+        End If
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "insert into medicamento(nom_med,receta,presentacion,uni_medida,fec_caducidad,formula,dosis,precauciones,descripcion)values(@nom,@rec,@pre,@uni,@fec,@fom,@dos,@cau,@des);"
@@ -76,7 +124,6 @@ Public Class Medicamentos
             conn.Dispose()
             mostrar()
         Catch ex As Exception
-
 
         End Try
     End Sub
@@ -106,6 +153,9 @@ Public Class Medicamentos
 
         Catch ex As Exception
         End Try
+
+        Button11.Enabled = False
+        Button13.Enabled = False
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
@@ -124,25 +174,13 @@ Public Class Medicamentos
 
         Catch ex As Exception
         End Try
+
+        Button11.Enabled = False
+        Button13.Enabled = False
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-        Dim row As DataGridViewRow = DataGridView2.CurrentRow
-        Try
-
-            TextBox12.Text = row.Cells(0).Value.ToString()
-            TextBox15.Text = row.Cells(1).Value.ToString()
-            TextBox1.Text = row.Cells(2).Value.ToString()
-            TextBox14.Text = row.Cells(3).Value.ToString()
-            TextBox11.Text = row.Cells(4).Value.ToString()
-            DateTimePicker1.Value = row.Cells(5).Value.ToString()
-            TextBox9.Text = row.Cells(6).Value.ToString()
-            TextBox8.Text = row.Cells(7).Value.ToString()
-            TextBox3.Text = row.Cells(8).Value.ToString()
-            TextBox5.Text = row.Cells(9).Value.ToString()
-
-        Catch ex As Exception
-        End Try
+        'Está en DataGridView2_CellDoubleClick 
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
@@ -290,4 +328,25 @@ Public Class Medicamentos
         End If
     End Sub
 
+    Private Sub DataGridView2_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellDoubleClick
+        Dim row As DataGridViewRow = DataGridView2.CurrentRow
+        Try
+
+            TextBox12.Text = row.Cells(0).Value.ToString()
+            TextBox15.Text = row.Cells(1).Value.ToString()
+            TextBox1.Text = row.Cells(2).Value.ToString()
+            TextBox14.Text = row.Cells(3).Value.ToString()
+            TextBox11.Text = row.Cells(4).Value.ToString()
+            DateTimePicker1.Value = row.Cells(5).Value.ToString()
+            TextBox9.Text = row.Cells(6).Value.ToString()
+            TextBox8.Text = row.Cells(7).Value.ToString()
+            TextBox3.Text = row.Cells(8).Value.ToString()
+            TextBox5.Text = row.Cells(9).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+
+        Button11.Enabled = True
+        Button13.Enabled = True
+    End Sub
 End Class

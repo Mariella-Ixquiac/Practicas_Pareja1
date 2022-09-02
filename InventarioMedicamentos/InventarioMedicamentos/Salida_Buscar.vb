@@ -12,4 +12,8 @@ Public Class Salida_Buscar
     Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+    End Sub
 End Class

@@ -68,7 +68,7 @@ Partial Class Clientes
         Me.Label1.Location = New System.Drawing.Point(13, 76)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 16)
+        Me.Label1.Size = New System.Drawing.Size(47, 14)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Nombre:"
         '
@@ -78,7 +78,7 @@ Partial Class Clientes
         Me.Label2.Location = New System.Drawing.Point(13, 106)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 16)
+        Me.Label2.Size = New System.Drawing.Size(29, 14)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "NIT:"
         '
@@ -88,7 +88,7 @@ Partial Class Clientes
         Me.Label3.Location = New System.Drawing.Point(13, 136)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 16)
+        Me.Label3.Size = New System.Drawing.Size(52, 14)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Teléfono:"
         '
@@ -97,7 +97,7 @@ Partial Class Clientes
         Me.TextBox1.Location = New System.Drawing.Point(78, 73)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(175, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(175, 19)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
@@ -106,7 +106,7 @@ Partial Class Clientes
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.MaxLength = 8
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(437, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(437, 19)
         Me.TextBox2.TabIndex = 3
         '
         'TextBox3
@@ -115,7 +115,7 @@ Partial Class Clientes
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.MaxLength = 8
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(409, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(409, 19)
         Me.TextBox3.TabIndex = 4
         '
         'Button1
@@ -178,7 +178,7 @@ Partial Class Clientes
         Me.ComboBox1.Location = New System.Drawing.Point(576, 102)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(271, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(271, 20)
         Me.ComboBox1.TabIndex = 9
         '
         'Label4
@@ -187,7 +187,7 @@ Partial Class Clientes
         Me.Label4.Location = New System.Drawing.Point(517, 106)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 16)
+        Me.Label4.Size = New System.Drawing.Size(43, 14)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Campo:"
         '
@@ -196,7 +196,7 @@ Partial Class Clientes
         Me.TextBox4.Location = New System.Drawing.Point(575, 132)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(272, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(272, 19)
         Me.TextBox4.TabIndex = 10
         '
         'Button5
@@ -231,7 +231,7 @@ Partial Class Clientes
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(116, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(116, 19)
         Me.TextBox5.TabIndex = 1000
         '
         'Label5
@@ -264,7 +264,7 @@ Partial Class Clientes
         Me.Label7.Location = New System.Drawing.Point(11, 38)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(156, 19)
+        Me.Label7.Size = New System.Drawing.Size(129, 17)
         Me.Label7.TabIndex = 53
         Me.Label7.Text = "Detalles del Cliente"
         '
@@ -276,7 +276,7 @@ Partial Class Clientes
         Me.Label8.Location = New System.Drawing.Point(516, 67)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(134, 19)
+        Me.Label8.Size = New System.Drawing.Size(112, 17)
         Me.Label8.TabIndex = 54
         Me.Label8.Text = "Lista de Clientes"
         '
@@ -286,7 +286,7 @@ Partial Class Clientes
         Me.Label9.Location = New System.Drawing.Point(518, 135)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 16)
+        Me.Label9.Size = New System.Drawing.Size(40, 14)
         Me.Label9.TabIndex = 55
         Me.Label9.Text = "Buscar:"
         '
@@ -296,7 +296,7 @@ Partial Class Clientes
         Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label10.Location = New System.Drawing.Point(502, 34)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(11, 160)
+        Me.Label10.Size = New System.Drawing.Size(9, 140)
         Me.Label10.TabIndex = 144
         Me.Label10.Text = "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "|"
         '
@@ -305,7 +305,7 @@ Partial Class Clientes
         Me.TextBox6.Location = New System.Drawing.Point(326, 74)
         Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(164, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(164, 19)
         Me.TextBox6.TabIndex = 2
         '
         'Label11
@@ -314,7 +314,7 @@ Partial Class Clientes
         Me.Label11.Location = New System.Drawing.Point(261, 77)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(62, 16)
+        Me.Label11.Size = New System.Drawing.Size(53, 14)
         Me.Label11.TabIndex = 145
         Me.Label11.Text = "Apellidos:"
         '
@@ -332,7 +332,7 @@ Partial Class Clientes
         '
         'Clientes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(860, 495)

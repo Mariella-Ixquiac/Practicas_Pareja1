@@ -12,4 +12,8 @@ Public Class Entrada_nuevo
     Private Sub Entrada_nuevo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+    End Sub
 End Class

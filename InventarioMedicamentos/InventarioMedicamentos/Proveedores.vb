@@ -87,7 +87,25 @@ Public Class Proveedores
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        'Guardar
         conn = objetoconexion.AbrirCon
+
+        If TextBox13.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Nombre")
+            TextBox13.Focus()
+            Exit Sub
+        End If
+        If TextBox12.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Telefono")
+            TextBox12.Focus()
+            Exit Sub
+        End If
+        If ComboBox3.SelectedIndex = -1 Then
+            MsgBox("Debe Ingresar Marca")
+            TextBox6.Focus()
+            Exit Sub
+        End If
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "insert into proveedores(nom_proveedores,telefono,id_marca)values(@nom,@tel,@mar);"
@@ -101,7 +119,6 @@ Public Class Proveedores
             conn.Dispose()
             mostrar()
         Catch ex As Exception
-
 
         End Try
     End Sub
@@ -125,6 +142,9 @@ Public Class Proveedores
 
         Catch ex As Exception
         End Try
+
+        Button11.Enabled = False
+        Button13.Enabled = False
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
@@ -143,19 +163,13 @@ Public Class Proveedores
 
         Catch ex As Exception
         End Try
+
+        Button11.Enabled = False
+        Button13.Enabled = False
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Dim row As DataGridViewRow = DataGridView1.CurrentRow
-        Try
-
-            TextBox12.Text = row.Cells(2).Value.ToString()
-            TextBox13.Text = row.Cells(1).Value.ToString()
-            ComboBox3.SelectedItem = row.Cells(3).Value.ToString()
-            TextBox10.Text = row.Cells(0).Value.ToString()
-
-        Catch ex As Exception
-        End Try
+        'Lo cambié al DataGridView1_CellDoubleClick
     End Sub
 
     Private Sub TextBox12_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox12.KeyPress
@@ -168,6 +182,22 @@ Public Class Proveedores
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         conn = objetoconexion.AbrirCon
+        If TextBox2.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Nombre")
+            TextBox2.Focus()
+            Exit Sub
+        End If
+        If TextBox5.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Dirección")
+            TextBox5.Focus()
+            Exit Sub
+        End If
+        If TextBox6.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Calificación")
+            TextBox6.Focus()
+            Exit Sub
+        End If
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "insert into marca(nom_marca,direccion,calificacion)values(@nom,@dir,@cali);"
@@ -206,6 +236,9 @@ Public Class Proveedores
 
         Catch ex As Exception
         End Try
+
+        Button8.Enabled = False
+        Button15.Enabled = False
     End Sub
 
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
@@ -223,19 +256,13 @@ Public Class Proveedores
 
         Catch ex As Exception
         End Try
+
+        Button8.Enabled = False
+        Button15.Enabled = False
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-        Dim row As DataGridViewRow = DataGridView2.CurrentRow
-        Try
-
-            TextBox2.Text = row.Cells(1).Value.ToString()
-            TextBox5.Text = row.Cells(2).Value.ToString()
-            TextBox6.Text = row.Cells(3).Value.ToString()
-            TextBox1.Text = row.Cells(0).Value.ToString()
-
-        Catch ex As Exception
-        End Try
+        'Lo cambié al DataGridView2_CellDoubleClick
     End Sub
 
     Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
@@ -302,5 +329,37 @@ Public Class Proveedores
 
             End Try
         End If
+    End Sub
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
+        Dim row As DataGridViewRow = DataGridView1.CurrentRow
+        Try
+
+            TextBox12.Text = row.Cells(2).Value.ToString()
+            TextBox13.Text = row.Cells(1).Value.ToString()
+            ComboBox3.SelectedItem = row.Cells(3).Value.ToString()
+            TextBox10.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+
+        Button11.Enabled = True
+        Button13.Enabled = True
+    End Sub
+
+    Private Sub DataGridView2_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellDoubleClick
+        Dim row As DataGridViewRow = DataGridView2.CurrentRow
+        Try
+
+            TextBox2.Text = row.Cells(1).Value.ToString()
+            TextBox5.Text = row.Cells(2).Value.ToString()
+            TextBox6.Text = row.Cells(3).Value.ToString()
+            TextBox1.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+
+        Button8.Enabled = True
+        Button15.Enabled = True
     End Sub
 End Class

@@ -111,7 +111,7 @@ Partial Class Index
         Me.Button6.BackColor = System.Drawing.Color.Turquoise
         Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(563, 188)
+        Me.Button6.Location = New System.Drawing.Point(563, 42)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(176, 141)
@@ -139,7 +139,7 @@ Partial Class Index
         Me.Button8.BackColor = System.Drawing.Color.Turquoise
         Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button8.Location = New System.Drawing.Point(563, 41)
+        Me.Button8.Location = New System.Drawing.Point(563, 191)
         Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(176, 141)
@@ -155,7 +155,7 @@ Partial Class Index
         Me.Label3.Location = New System.Drawing.Point(0, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(764, 28)
+        Me.Label3.Size = New System.Drawing.Size(759, 28)
         Me.Label3.TabIndex = 51
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -170,16 +170,16 @@ Partial Class Index
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        Me.Label4.Size = New System.Drawing.Size(764, 28)
+        Me.Label4.Size = New System.Drawing.Size(759, 28)
         Me.Label4.TabIndex = 134
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Index
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(764, 370)
+        Me.ClientSize = New System.Drawing.Size(759, 370)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)

@@ -64,7 +64,30 @@ Public Class Clientes
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Guardar
         conn = objetoconexion.AbrirCon
+
+        If TextBox1.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Nombre")
+            TextBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox2.Text.Length = 0 Then
+            MsgBox("Debe Ingresar NIT")
+            TextBox2.Focus()
+            Exit Sub
+        End If
+        If TextBox6.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Apellidos")
+            TextBox6.Focus()
+            Exit Sub
+        End If
+        If TextBox3.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Teléfono")
+            TextBox3.Focus()
+            Exit Sub
+        End If
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "insert into clientes(nom_cliente,ape_cliente,nit,telefono_cliente)values(@nom,@ape,@nit,@tel);"
@@ -74,19 +97,18 @@ Public Class Clientes
             cmd.Parameters.AddWithValue("@nit", TextBox2.Text)
             cmd.Parameters.AddWithValue("@tel", TextBox3.Text)
 
-
             cmd.ExecuteNonQuery()
             conn.Close()
             conn.Dispose()
             mostrar()
         Catch ex As Exception
 
-
         End Try
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         conn = objetoconexion.AbrirCon
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "update clientes set nom_cliente=@nom, ape_cliente=@ape, nit=@nit, telefono_cliente=@tel WHERE id_cliente=@id"
@@ -105,6 +127,10 @@ Public Class Clientes
 
         Catch ex As Exception
         End Try
+
+        Button4.Enabled = False
+        Button2.Enabled = False
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -123,20 +149,15 @@ Public Class Clientes
 
         Catch ex As Exception
         End Try
+
+        Button4.Enabled = False
+        Button2.Enabled = False
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Dim row As DataGridViewRow = DataGridView1.CurrentRow
-        Try
+        'Cambie los datos de aquí para el DataGridView1_CellDoubleClick 
+        'Lo único que cambia es que ahora solo si se selecciona se van a habilitar los botones de modificar y eliminar, si no hay nada selecionado no se van a poder usar
 
-            TextBox1.Text = row.Cells(1).Value.ToString()
-            TextBox6.Text = row.Cells(2).Value.ToString()
-            TextBox2.Text = row.Cells(3).Value.ToString()
-            TextBox3.Text = row.Cells(4).Value.ToString()
-            TextBox5.Text = row.Cells(0).Value.ToString()
-
-        Catch ex As Exception
-        End Try
     End Sub
 
     Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
@@ -224,5 +245,26 @@ Public Class Clientes
 
         End If
 
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
+        Dim row As DataGridViewRow = DataGridView1.CurrentRow
+        Try
+
+            TextBox1.Text = row.Cells(1).Value.ToString()
+            TextBox6.Text = row.Cells(2).Value.ToString()
+            TextBox2.Text = row.Cells(3).Value.ToString()
+            TextBox3.Text = row.Cells(4).Value.ToString()
+            TextBox5.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+
+        Button4.Enabled = True
+        Button2.Enabled = True
     End Sub
 End Class
