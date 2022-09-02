@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 01-09-2022 a las 20:33:41
+-- Tiempo de generación: 02-09-2022 a las 23:15:22
 -- Versión del servidor: 5.7.36
 -- Versión de PHP: 7.4.26
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `nit` varchar(13) NOT NULL,
   `telefono_cliente` varchar(8) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `clientes`
@@ -43,7 +43,8 @@ CREATE TABLE IF NOT EXISTS `clientes` (
 
 INSERT INTO `clientes` (`id_cliente`, `nom_cliente`, `ape_cliente`, `nit`, `telefono_cliente`) VALUES
 (1, 'Marco', 'Sosa', '345678890', '54689098'),
-(3, 'Juana', 'Kiki', '12324435', '24233244');
+(3, 'Juana', 'Kiki', '12324435', '24233244'),
+(4, 'j', 'o', '8', '9');
 
 -- --------------------------------------------------------
 
@@ -81,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `login` (
   `id_rol` int(11) NOT NULL,
   PRIMARY KEY (`id_login`),
   KEY `ol` (`id_rol`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `login`
@@ -89,7 +90,8 @@ CREATE TABLE IF NOT EXISTS `login` (
 
 INSERT INTO `login` (`id_login`, `usuario`, `nombre`, `pssw`, `id_rol`) VALUES
 (2, 'Juana Sosa', 'Admin1', '123', 1),
-(4, 'Juana Sosa', 'Admin3', '123456789', 4);
+(4, 'Admin3', 'María', '45', 4),
+(5, 'Admin1', 'Luisa', '234', 4);
 
 -- --------------------------------------------------------
 
@@ -128,6 +130,7 @@ CREATE TABLE IF NOT EXISTS `medicamento` (
   `id_med` int(11) NOT NULL AUTO_INCREMENT,
   `nom_med` varchar(100) NOT NULL,
   `receta` tinyint(1) NOT NULL,
+  `Cantidad_existente` int(11) NOT NULL,
   `precauciones` varchar(200) NOT NULL,
   `descripcion` varchar(200) NOT NULL,
   `fec_caducidad` date NOT NULL,
@@ -136,16 +139,18 @@ CREATE TABLE IF NOT EXISTS `medicamento` (
   `formula` varchar(200) NOT NULL,
   `dosis` varchar(100) NOT NULL,
   PRIMARY KEY (`id_med`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `medicamento`
 --
 
-INSERT INTO `medicamento` (`id_med`, `nom_med`, `receta`, `precauciones`, `descripcion`, `fec_caducidad`, `presentacion`, `uni_medida`, `formula`, `dosis`) VALUES
-(2, '1', 1, '1', '1', '2022-09-01', '1', '1', '1', '1'),
-(3, '1', 2, '7', '8', '2022-09-01', '3', '4', '5', '6'),
-(4, 'q', 0, 'werty', 'dsfgsgfd', '2022-09-01', 'qwe', 'asd', 'lkjh', 'nbvc');
+INSERT INTO `medicamento` (`id_med`, `nom_med`, `receta`, `Cantidad_existente`, `precauciones`, `descripcion`, `fec_caducidad`, `presentacion`, `uni_medida`, `formula`, `dosis`) VALUES
+(2, '1', 1, 467, '1', '1', '2024-02-06', '0', '1', '1', '1'),
+(3, '1', 0, 13, '7', '8', '2022-09-01', '3', '4', '5', '6'),
+(4, 'q', 1, 12, 'werty', 'dsfgsgfd', '2022-09-01', 'qwe', 'asd', 'lkjh', 'nbvc'),
+(5, 'Hi', 0, 45, 'jakncdjka', 'cnjdfkal', '2022-09-05', 'r', 'd', 'jfioewñ', 'fnkjsñ'),
+(6, 'yuiutj', 1, 34, '1', '1', '2024-02-06', '0', '1', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -161,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
   `id_marca` int(11) NOT NULL,
   PRIMARY KEY (`id_proveedores`),
   KEY `Marca` (`id_marca`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `proveedores`
@@ -169,7 +174,10 @@ CREATE TABLE IF NOT EXISTS `proveedores` (
 
 INSERT INTO `proveedores` (`id_proveedores`, `nom_proveedores`, `telefono`, `id_marca`) VALUES
 (1, 'Edgar Raúl Culajay', '01726394', 1),
-(3, 'Marco Sosa', '12345456', 1);
+(3, 'Marco Sosa', '12345456', 1),
+(4, 'ser', '12234354', 4),
+(5, 'kiki', '98765432', 7),
+(6, 'gyr', '08765453', 3);
 
 -- --------------------------------------------------------
 
