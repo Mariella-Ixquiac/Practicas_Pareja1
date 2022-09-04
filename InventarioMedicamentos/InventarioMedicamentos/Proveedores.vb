@@ -124,6 +124,8 @@ Public Class Proveedores
         Catch ex As Exception
 
         End Try
+        limpiar()
+
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
@@ -277,6 +279,16 @@ Public Class Proveedores
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        If ComboBox4.SelectedIndex = -1 Then
+            MsgBox("Debe Ingresar un Campo para Buscar", "ATENCIÓN")
+            ComboBox4.Focus()
+            Exit Sub
+        End If
+        If TextBox11.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Datos", "ATENCIÓN")
+            TextBox11.Focus()
+            Exit Sub
+        End If
 
         If ComboBox4.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
@@ -364,5 +376,9 @@ Public Class Proveedores
 
         Button8.Enabled = True
         Button15.Enabled = True
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+
     End Sub
 End Class

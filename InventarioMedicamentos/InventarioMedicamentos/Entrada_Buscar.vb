@@ -16,4 +16,13 @@ Public Class Entrada_Buscar
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If TextBox5.Text.Length = 0 Then
+            MsgBox("Debe Ingresar eL Número del Documento", "ATENCIÓN")
+            TextBox5.Focus()
+            Exit Sub
+        End If
+
+    End Sub
 End Class

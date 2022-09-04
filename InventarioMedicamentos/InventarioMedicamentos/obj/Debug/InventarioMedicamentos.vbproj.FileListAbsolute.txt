@@ -75,3 +75,7 @@ C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamen
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_Nueva_productos.resources
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_productos.resources
 C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_proveedores.resources
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_productos.resources
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_proveedores.resources
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_Nueva_productos.resources
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_nuevo_cliente.resources

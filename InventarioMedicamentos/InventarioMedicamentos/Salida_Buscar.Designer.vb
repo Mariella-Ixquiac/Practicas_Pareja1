@@ -68,7 +68,7 @@ Partial Class Salida_Buscar
         Me.Label9.Location = New System.Drawing.Point(807, 551)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(40, 19)
+        Me.Label9.Size = New System.Drawing.Size(33, 17)
         Me.Label9.TabIndex = 244
         Me.Label9.Text = "0.00"
         '
@@ -80,7 +80,7 @@ Partial Class Salida_Buscar
         Me.Label10.Location = New System.Drawing.Point(13, 551)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(52, 19)
+        Me.Label10.Size = New System.Drawing.Size(43, 17)
         Me.Label10.TabIndex = 243
         Me.Label10.Text = "Total:"
         '
@@ -92,7 +92,7 @@ Partial Class Salida_Buscar
         Me.Label11.Location = New System.Drawing.Point(13, 257)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(154, 19)
+        Me.Label11.Size = New System.Drawing.Size(126, 17)
         Me.Label11.TabIndex = 242
         Me.Label11.Text = "Lista de Productos:"
         '
@@ -102,7 +102,7 @@ Partial Class Salida_Buscar
         Me.Label12.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label12.Location = New System.Drawing.Point(-11, 100)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(2633, 16)
+        Me.Label12.Size = New System.Drawing.Size(2107, 14)
         Me.Label12.TabIndex = 241
         Me.Label12.Text = resources.GetString("Label12.Text")
         '
@@ -112,7 +112,7 @@ Partial Class Salida_Buscar
         Me.Label13.Location = New System.Drawing.Point(14, 216)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(34, 16)
+        Me.Label13.Size = New System.Drawing.Size(29, 14)
         Me.Label13.TabIndex = 223
         Me.Label13.Text = "NIT:"
         '
@@ -122,7 +122,7 @@ Partial Class Salida_Buscar
         Me.Label14.Location = New System.Drawing.Point(13, 159)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(42, 16)
+        Me.Label14.Size = New System.Drawing.Size(34, 14)
         Me.Label14.TabIndex = 220
         Me.Label14.Text = "Fecha"
         '
@@ -133,7 +133,7 @@ Partial Class Salida_Buscar
         Me.DateTimePicker2.Location = New System.Drawing.Point(64, 153)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(780, 22)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(780, 19)
         Me.DateTimePicker2.TabIndex = 221
         '
         'Label15
@@ -144,7 +144,7 @@ Partial Class Salida_Buscar
         Me.Label15.Location = New System.Drawing.Point(13, 40)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(111, 19)
+        Me.Label15.Size = New System.Drawing.Size(91, 17)
         Me.Label15.TabIndex = 240
         Me.Label15.Text = "Buscar Salida"
         '
@@ -203,7 +203,7 @@ Partial Class Salida_Buscar
         Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(789, 22)
+        Me.TextBox7.Size = New System.Drawing.Size(789, 19)
         Me.TextBox7.TabIndex = 231
         '
         'TextBox8
@@ -212,7 +212,7 @@ Partial Class Salida_Buscar
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(703, 22)
+        Me.TextBox8.Size = New System.Drawing.Size(703, 19)
         Me.TextBox8.TabIndex = 230
         '
         'TextBox9
@@ -221,7 +221,7 @@ Partial Class Salida_Buscar
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(769, 22)
+        Me.TextBox9.Size = New System.Drawing.Size(769, 19)
         Me.TextBox9.TabIndex = 229
         '
         'Label18
@@ -230,7 +230,7 @@ Partial Class Salida_Buscar
         Me.Label18.Location = New System.Drawing.Point(14, 187)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(119, 16)
+        Me.Label18.Size = New System.Drawing.Size(99, 14)
         Me.Label18.TabIndex = 228
         Me.Label18.Text = "Nombre del Cliente:"
         '
@@ -240,7 +240,7 @@ Partial Class Salida_Buscar
         Me.Label19.Location = New System.Drawing.Point(13, 126)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(54, 16)
+        Me.Label19.Size = New System.Drawing.Size(45, 14)
         Me.Label19.TabIndex = 227
         Me.Label19.Text = "Usuario:"
         '
@@ -270,7 +270,7 @@ Partial Class Salida_Buscar
         Me.TextBox5.Location = New System.Drawing.Point(144, 73)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(346, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(346, 19)
         Me.TextBox5.TabIndex = 1
         '
         'Label20
@@ -279,7 +279,7 @@ Partial Class Salida_Buscar
         Me.Label20.Location = New System.Drawing.Point(14, 76)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(122, 16)
+        Me.Label20.Size = New System.Drawing.Size(100, 14)
         Me.Label20.TabIndex = 222
         Me.Label20.Text = "No. del Documento:"
         '
@@ -289,7 +289,7 @@ Partial Class Salida_Buscar
         Me.CheckBox14.Location = New System.Drawing.Point(728, 259)
         Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(118, 20)
+        Me.CheckBox14.Size = New System.Drawing.Size(97, 18)
         Me.CheckBox14.TabIndex = 4
         Me.CheckBox14.Text = "Ocultar Precios"
         Me.CheckBox14.UseVisualStyleBackColor = True
@@ -300,13 +300,13 @@ Partial Class Salida_Buscar
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label1.Location = New System.Drawing.Point(-10, 239)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(2633, 16)
+        Me.Label1.Size = New System.Drawing.Size(2107, 14)
         Me.Label1.TabIndex = 246
         Me.Label1.Text = resources.GetString("Label1.Text")
         '
         'Salida_Buscar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(863, 609)

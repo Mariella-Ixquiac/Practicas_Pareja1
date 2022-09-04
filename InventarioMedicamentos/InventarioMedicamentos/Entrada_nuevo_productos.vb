@@ -46,6 +46,17 @@ Public Class Entrada_nuevo_productos
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If ComboBox1.SelectedIndex = -1 Then
+            MsgBox("Debe Ingresar un Campo para Buscar", "ATENCIÓN")
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox4.Text.Length = 0 Then
+            MsgBox("Debe Ingresar Datos", "ATENCIÓN")
+            TextBox4.Focus()
+            Exit Sub
+        End If
+
         If ComboBox1.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
@@ -102,6 +113,7 @@ Public Class Entrada_nuevo_productos
             End Try
 
         End If
+
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
