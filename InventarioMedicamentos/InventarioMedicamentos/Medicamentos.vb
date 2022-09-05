@@ -179,12 +179,12 @@ Public Class Medicamentos
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If ComboBox1.SelectedIndex = -1 Then
-            MsgBox("Debe Ingresar un Campo para Buscar", "ATENCIÓN")
+            MsgBox("Debe Ingresar un Campo para Buscar")
             ComboBox1.Focus()
             Exit Sub
         End If
         If TextBox13.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Datos", "ATENCIÓN")
+            MsgBox("Debe Ingresar Datos")
             TextBox13.Focus()
             Exit Sub
         End If
