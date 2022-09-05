@@ -6,7 +6,7 @@ Imports MySql.Data
 Imports System.Configuration
 
 Public Class Form1
-    Dim CadenaConexion = "Server = localhost;Database=inventario_medicamentos;User id=root;Password=;Port=3306;"
+    Dim CadenaConexion = "Server = localhost;Database=inventario;User id=root;Password=;Port=3306;"
     Dim conn As New MySqlConnection(CadenaConexion)
     Dim cmd As MySqlCommand
 
@@ -22,12 +22,12 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar un Usuario")
+            MessageBox.Show("Debe Ingresar un Usuario", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox1.Focus()
             Exit Sub
         End If
         If TextBox2.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar una Contraseña")
+            MessageBox.Show("Debe Ingresar una Contraseña", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox2.Focus()
             Exit Sub
         End If
@@ -40,10 +40,23 @@ Public Class Form1
             Dim nuevaclave As String
         nuevaclave = Convert.ToBase64String(hash)
         MessageBox.Show("contraseña o:" & TextBox2.Text & vbCrLf & "contrseña n:" & nuevaclave)
+        conn.Close()
 
-        Index.Show()
-        Me.Hide()
+        Dim comando As MySqlCommand = New MySqlCommand
+        comando.Connection = conn
 
+        conn.Open()
+        comando.CommandText = "Select * From login Where usuario = '" + TextBox1.Text + "' And pssw = '" + TextBox2.Text + "'"
+        Dim r As MySqlDataReader
+        r = comando.ExecuteReader
+        If r.HasRows <> False Then
+            r.Read()
+            'MsgBox(r.GetString("usuario"))
+            Index.Show()
+            Me.Hide()
+        Else
+            MsgBox("El usuario o la contraseña son incorrectos")
+        End If
 
     End Sub
 

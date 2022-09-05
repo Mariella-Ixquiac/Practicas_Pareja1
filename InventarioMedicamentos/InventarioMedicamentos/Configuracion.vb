@@ -252,7 +252,6 @@ Public Class Configuracion
                 conn.Close()
                 conn.Dispose()
 
-
             Catch ex As Exception
 
             End Try

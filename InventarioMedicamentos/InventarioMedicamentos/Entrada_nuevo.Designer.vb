@@ -56,6 +56,7 @@ Partial Class Entrada_nuevo
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -283,7 +284,7 @@ Partial Class Entrada_nuevo
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(305, 19)
+        Me.TextBox11.Size = New System.Drawing.Size(251, 19)
         Me.TextBox11.TabIndex = 1
         Me.TextBox11.Text = "Autogenerado"
         '
@@ -399,6 +400,15 @@ Partial Class Entrada_nuevo
         Me.Label3.TabIndex = 410
         Me.Label3.Text = "Fecha de caducidad:"
         '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(401, 68)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
+        Me.TextBox6.Size = New System.Drawing.Size(46, 19)
+        Me.TextBox6.TabIndex = 415
+        '
         'Entrada_nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -406,6 +416,7 @@ Partial Class Entrada_nuevo
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(932, 602)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox10)
@@ -482,4 +493,5 @@ Partial Class Entrada_nuevo
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox6 As TextBox
 End Class
