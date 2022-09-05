@@ -34,12 +34,12 @@ Public Class Inventario
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If ComboBox2.SelectedIndex = -1 Then
-            MsgBox("Debe Ingresar un Campo para Buscar", "ATENCIÓN")
+            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             ComboBox2.Focus()
             Exit Sub
         End If
         If TextBox1.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Datos", "ATENCIÓN")
+            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox1.Focus()
             Exit Sub
         End If

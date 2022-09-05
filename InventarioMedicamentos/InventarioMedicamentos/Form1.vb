@@ -22,12 +22,12 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text.Length = 0 Then
-            MsgBox("Debe Ingresar un Usuario")
+            MessageBox.Show("Debe Ingresar un Usuario")
             TextBox1.Focus()
             Exit Sub
         End If
         If TextBox2.Text.Length = 0 Then
-            MsgBox("Debe Ingresar una Contraseña")
+            MessageBox.Show("Debe Ingresar una Contraseña")
             TextBox2.Focus()
             Exit Sub
         End If
@@ -42,7 +42,9 @@ Public Class Form1
         MessageBox.Show("contraseña o:" & TextBox2.Text & vbCrLf & "contrseña n:" & nuevaclave)
 
         Index.Show()
-                Me.Hide()
+        Me.Hide()
+
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

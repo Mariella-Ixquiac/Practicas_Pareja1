@@ -21,6 +21,7 @@ Public Class Medicamentos
 
     Private Sub limpiar()
         TextBox15.Focus()
+        TextBox1.Clear()
         TextBox15.Text = ""
         CheckBox1.Checked = False
         TextBox14.Text = ""
@@ -61,38 +62,42 @@ Public Class Medicamentos
         conn = objetoconexion.AbrirCon
 
         If TextBox15.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Nombre del Medicamento")
+            MessageBox.Show("Debe Ingresar Nombre del Medicamento", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox15.Focus()
             Exit Sub
         End If
+        If TextBox1.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar Cantidad Existente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            TextBox1.Focus()
+            Exit Sub
+        End If
         If TextBox14.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Empaque")
+            MessageBox.Show("Debe Ingresar Empaque", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox14.Focus()
             Exit Sub
         End If
         If TextBox11.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Unidad de Medida")
+            MessageBox.Show("Debe Ingresar Unidad de Medida", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox11.Focus()
             Exit Sub
         End If
-        
         If TextBox9.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Formula")
+            MessageBox.Show("Debe Ingresar Formula", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox9.Focus()
             Exit Sub
         End If
         If TextBox8.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Dosis")
+            MessageBox.Show("Debe Ingresar Dosis", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox8.Focus()
             Exit Sub
         End If
         If TextBox3.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Precauciones")
+            MessageBox.Show("Debe Ingresar Precauciones", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox3.Focus()
             Exit Sub
         End If
         If TextBox5.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Descripción")
+            MessageBox.Show("Debe Ingresar Detalles", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox5.Focus()
             Exit Sub
         End If
@@ -179,12 +184,12 @@ Public Class Medicamentos
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If ComboBox1.SelectedIndex = -1 Then
-            MsgBox("Debe Ingresar un Campo para Buscar")
+            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             ComboBox1.Focus()
             Exit Sub
         End If
         If TextBox13.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Datos")
+            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox13.Focus()
             Exit Sub
         End If
@@ -365,5 +370,13 @@ Public Class Medicamentos
 
         Button11.Enabled = True
         Button13.Enabled = True
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class

@@ -72,23 +72,33 @@ Public Class Clientes
         conn = objetoconexion.AbrirCon
 
         If TextBox1.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Nombre")
+            MessageBox.Show("Debe Ingresar Nombre", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox1.Focus()
             Exit Sub
         End If
-        If TextBox2.Text.Length = 0 Then
-            MsgBox("Debe Ingresar NIT")
-            TextBox2.Focus()
-            Exit Sub
-        End If
         If TextBox6.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Apellidos")
+            MessageBox.Show("Debe Ingresar Apellidos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox6.Focus()
             Exit Sub
         End If
+        If TextBox2.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar NIT", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            TextBox2.Focus()
+            Exit Sub
+        End If
         If TextBox3.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Teléfono")
+            MessageBox.Show("Debe Ingresar Teléfono", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox3.Focus()
+            Exit Sub
+        End If
+        If TextBox2.Text.Length < 8 Then
+            MessageBox.Show("Debe Ingresar un NIT Valido", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            TextBox2.Focus()
+            Exit Sub
+        End If
+        If TextBox2.Text.Length < 8 Then
+            MessageBox.Show("Debe Ingresar un Número de Teléfono Valido", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            TextBox2.Focus()
             Exit Sub
         End If
 
@@ -182,12 +192,12 @@ Public Class Clientes
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         If ComboBox1.SelectedIndex = -1 Then
-            MsgBox("Debe Ingresar un Campo para Buscar")
+            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             ComboBox1.Focus()
             Exit Sub
         End If
         If TextBox4.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Datos")
+            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox4.Focus()
             Exit Sub
         End If
@@ -282,4 +292,7 @@ Public Class Clientes
         Button2.Enabled = True
     End Sub
 
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
 End Class

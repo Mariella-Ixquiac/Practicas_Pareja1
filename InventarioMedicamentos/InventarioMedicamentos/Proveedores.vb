@@ -94,18 +94,24 @@ Public Class Proveedores
         conn = objetoconexion.AbrirCon
 
         If TextBox13.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Nombre")
+            MessageBox.Show("Debe Ingresar Nombre", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox13.Focus()
             Exit Sub
         End If
+        If ComboBox3.SelectedIndex = -1 Then
+            MessageBox.Show("Debe Ingresar Marca", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            TextBox6.Focus()
+            Exit Sub
+        End If
         If TextBox12.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Telefono")
+            MessageBox.Show("Debe Ingresar Telefono", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox12.Focus()
             Exit Sub
         End If
-        If ComboBox3.SelectedIndex = -1 Then
-            MsgBox("Debe Ingresar Marca")
-            TextBox6.Focus()
+
+        If TextBox12.Text.Length < 8 Then
+            MessageBox.Show("Debe Ingresar un Número de Teléfono Valido", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            TextBox12.Focus()
             Exit Sub
         End If
 
@@ -188,17 +194,17 @@ Public Class Proveedores
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         conn = objetoconexion.AbrirCon
         If TextBox2.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Nombre")
+            MessageBox.Show("Debe Ingresar Nombre")
             TextBox2.Focus()
             Exit Sub
         End If
         If TextBox5.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Dirección")
+            MessageBox.Show("Debe Ingresar Dirección")
             TextBox5.Focus()
             Exit Sub
         End If
         If TextBox6.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Calificación")
+            MessageBox.Show("Debe Ingresar Calificación")
             TextBox6.Focus()
             Exit Sub
         End If
@@ -280,12 +286,12 @@ Public Class Proveedores
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If ComboBox4.SelectedIndex = -1 Then
-            MsgBox("Debe Ingresar un Campo para Buscar")
+            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             ComboBox4.Focus()
             Exit Sub
         End If
         If TextBox11.Text.Length = 0 Then
-            MsgBox("Debe Ingresar Datos")
+            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox11.Focus()
             Exit Sub
         End If
