@@ -11,6 +11,7 @@ Public Class Entrada_nuevo
         conn = objetoconexion.AbrirCon
 
         Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', c.unidades_compradas as 'Stock', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.precio_costo as 'Precio costo', c.total_PC as 'Total', c.precio_final as 'Precio Final', c.total as 'Total' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
+        'hola
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -72,6 +73,10 @@ Public Class Entrada_nuevo
 
         Catch ex As Exception
         End Try
+
+    End Sub
+
+    Private Sub Entrada_nuevo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
