@@ -71,22 +71,22 @@ Public Class Configuracion
         conn = objetoconexion.AbrirCon
 
         If TextBox1.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Nombre", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Nombre", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox1.Focus()
             Exit Sub
         End If
         If ComboBox2.SelectedIndex = -1 Then
-            MessageBox.Show("Debe Ingresar Rol", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Rol", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ComboBox2.Focus()
             Exit Sub
         End If
         If TextBox3.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Usuario", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Usuario", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox3.Focus()
             Exit Sub
         End If
         If TextBox7.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Contraseña", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Contraseña", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox7.Focus()
             Exit Sub
         End If
@@ -102,7 +102,7 @@ Public Class Configuracion
                 cmd.Parameters.AddWithValue("@rol", ComboBox2.SelectedValue)
                 cmd.Parameters.AddWithValue("@psw", TextBox7.Text)
             Else
-                MessageBox.Show("Las Contraseñas no Coinciden. Vuelva a Intentarlo", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.None)
+                MessageBox.Show("Las Contraseñas no Coinciden. Vuelva a Intentarlo", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 TextBox7.Clear()
                 TextBox2.Clear()
                 TextBox7.Focus()
@@ -112,6 +112,8 @@ Public Class Configuracion
             conn.Close()
             conn.Dispose()
             mostrar()
+            limpiar()
+
         Catch ex As Exception
 
         End Try
@@ -136,6 +138,7 @@ Public Class Configuracion
             conn.Close()
             conn.Dispose()
             mostrar()
+            limpiar()
 
         Catch ex As Exception
         End Try
@@ -171,12 +174,12 @@ Public Class Configuracion
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If ComboBox3.SelectedIndex = -1 Then
-            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ComboBox3.Focus()
             Exit Sub
         End If
         If TextBox13.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox13.Focus()
             Exit Sub
         End If

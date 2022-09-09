@@ -389,7 +389,7 @@ Partial Class Configuracion
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Configuracion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Configuracion"
+        Me.Text = "Configuración"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -178,7 +178,7 @@ Partial Class Entrada_nuevo_proveedores
         Me.Controls.Add(Me.DataGridView1)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Entrada_nuevo_proveedores"
-        Me.Text = "Entrada_nuevo_proveedores"
+        Me.Text = "Elegir Proveedor"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

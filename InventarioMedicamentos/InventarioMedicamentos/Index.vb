@@ -31,12 +31,18 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Form1.Ban += 1
         Me.Hide()
+
         Index_configuracion.Show()
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Hide()
         Form1.Show()
+    End Sub
+
+    Private Sub Index_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -6,9 +6,12 @@ Imports MySql.Data
 Imports System.Configuration
 
 Public Class Form1
-    Dim CadenaConexion = "Server = localhost;Database=inventario;User id=root;Password=;Port=3306;"
+    Dim CadenaConexion = "Server = localhost;Database=inventario_medicamentos;User id=root;Password=;Port=3306;"
     Dim conn As New MySqlConnection(CadenaConexion)
     Dim cmd As MySqlCommand
+    Public id_rol As String
+
+    Public Ban As Integer
 
     Private Sub conectar()
         Dim squery As String = "SELECT * FROM login"
@@ -22,12 +25,12 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar un Usuario", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar un Usuario", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox1.Focus()
             Exit Sub
         End If
         If TextBox2.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar una Contraseña", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar una Contraseña", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox2.Focus()
             Exit Sub
         End If
@@ -48,15 +51,23 @@ Public Class Form1
         conn.Open()
         comando.CommandText = "Select * From login Where usuario = '" + TextBox1.Text + "' And pssw = '" + TextBox2.Text + "'"
         Dim r As MySqlDataReader
+
+
         r = comando.ExecuteReader
         If r.HasRows <> False Then
             r.Read()
-            'MsgBox(r.GetString("usuario"))
+            id_rol = r.GetString("id_rol")
             Index.Show()
+            Configuración_permisos.Show()
+            Configuración_permisos.Hide()
             Me.Hide()
         Else
             MsgBox("El usuario o la contraseña son incorrectos")
         End If
+
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        CheckBox1.Checked = False
 
     End Sub
 
@@ -65,6 +76,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Ban = -1
         If conn.State = ConnectionState.Closed Then
             conn.Open()
         End If
@@ -77,6 +90,10 @@ Public Class Form1
         Else
             TextBox2.PasswordChar = "*"
         End If
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 End Class

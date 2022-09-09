@@ -113,7 +113,7 @@ Partial Class index_salida
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "index_salida"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menú de salida"
+        Me.Text = "Menú de Salida"
         Me.ResumeLayout(False)
 
     End Sub

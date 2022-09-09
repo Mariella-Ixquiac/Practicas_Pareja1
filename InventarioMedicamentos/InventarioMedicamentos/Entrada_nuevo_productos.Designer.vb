@@ -40,7 +40,7 @@ Partial Class Entrada_nuevo_productos
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(237, 66)
+        Me.Label9.Location = New System.Drawing.Point(362, 66)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(50, 16)
@@ -52,10 +52,10 @@ Partial Class Entrada_nuevo_productos
         Me.Button6.BackColor = System.Drawing.Color.Turquoise
         Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(240, 95)
+        Me.Button6.Location = New System.Drawing.Point(360, 95)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(206, 25)
+        Me.Button6.Size = New System.Drawing.Size(301, 25)
         Me.Button6.TabIndex = 4
         Me.Button6.Text = " "
         Me.Button6.UseVisualStyleBackColor = False
@@ -68,17 +68,17 @@ Partial Class Entrada_nuevo_productos
         Me.Button5.Location = New System.Drawing.Point(12, 95)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(218, 25)
+        Me.Button5.Size = New System.Drawing.Size(340, 25)
         Me.Button5.TabIndex = 3
         Me.Button5.Text = " "
         Me.Button5.UseVisualStyleBackColor = False
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(295, 63)
+        Me.TextBox4.Location = New System.Drawing.Point(420, 63)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(151, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(241, 22)
         Me.TextBox4.TabIndex = 2
         '
         'Label4
@@ -95,11 +95,11 @@ Partial Class Entrada_nuevo_productos
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre del Medicamento", "Fecha de Caducidad", "Cantidad de existencia"})
+        Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre del Medicamento", "Fecha de Caducidad", "Cantidad de existencia", "Precio de Compra", "Precio de Venta"})
         Me.ComboBox1.Location = New System.Drawing.Point(60, 62)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(169, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(292, 23)
         Me.ComboBox1.TabIndex = 1
         '
         'Label6
@@ -109,7 +109,7 @@ Partial Class Entrada_nuevo_productos
         Me.Label6.Location = New System.Drawing.Point(0, 403)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(459, 22)
+        Me.Label6.Size = New System.Drawing.Size(674, 22)
         Me.Label6.TabIndex = 74
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -120,7 +120,7 @@ Partial Class Entrada_nuevo_productos
         Me.Label5.Location = New System.Drawing.Point(0, 0)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(459, 22)
+        Me.Label5.Size = New System.Drawing.Size(674, 22)
         Me.Label5.TabIndex = 73
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -129,7 +129,7 @@ Partial Class Entrada_nuevo_productos
         Me.Button7.BackColor = System.Drawing.Color.Turquoise
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(366, 31)
+        Me.Button7.Location = New System.Drawing.Point(581, 31)
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(80, 21)
@@ -155,7 +155,7 @@ Partial Class Entrada_nuevo_productos
         Me.DataGridView1.Location = New System.Drawing.Point(11, 127)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(436, 263)
+        Me.DataGridView1.Size = New System.Drawing.Size(650, 263)
         Me.DataGridView1.TabIndex = 70
         '
         'Entrada_nuevo_productos
@@ -163,7 +163,7 @@ Partial Class Entrada_nuevo_productos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(459, 425)
+        Me.ClientSize = New System.Drawing.Size(674, 425)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Button6)
@@ -178,7 +178,7 @@ Partial Class Entrada_nuevo_productos
         Me.Controls.Add(Me.DataGridView1)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Entrada_nuevo_productos"
-        Me.Text = "Entrada_nuevo_productos"
+        Me.Text = "Elegir Producto"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

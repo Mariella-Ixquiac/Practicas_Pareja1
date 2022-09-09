@@ -44,7 +44,7 @@ Partial Class Salida_Nueva_productos
         Me.Label6.Location = New System.Drawing.Point(0, 429)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(472, 24)
+        Me.Label6.Size = New System.Drawing.Size(691, 24)
         Me.Label6.TabIndex = 63
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -55,7 +55,7 @@ Partial Class Salida_Nueva_productos
         Me.Label5.Location = New System.Drawing.Point(0, 0)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(472, 24)
+        Me.Label5.Size = New System.Drawing.Size(691, 24)
         Me.Label5.TabIndex = 62
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -64,7 +64,7 @@ Partial Class Salida_Nueva_productos
         Me.Button7.BackColor = System.Drawing.Color.Turquoise
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Location = New System.Drawing.Point(368, 34)
+        Me.Button7.Location = New System.Drawing.Point(588, 33)
         Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(91, 22)
@@ -76,7 +76,7 @@ Partial Class Salida_Nueva_productos
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label8.Location = New System.Drawing.Point(11, 37)
+        Me.Label8.Location = New System.Drawing.Point(9, 33)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(148, 19)
@@ -90,13 +90,13 @@ Partial Class Salida_Nueva_productos
         Me.DataGridView1.Location = New System.Drawing.Point(13, 131)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(446, 285)
+        Me.DataGridView1.Size = New System.Drawing.Size(666, 285)
         Me.DataGridView1.TabIndex = 59
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(239, 66)
+        Me.Label9.Location = New System.Drawing.Point(365, 66)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(50, 16)
@@ -108,10 +108,10 @@ Partial Class Salida_Nueva_productos
         Me.Button6.BackColor = System.Drawing.Color.Turquoise
         Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.Location = New System.Drawing.Point(242, 94)
+        Me.Button6.Location = New System.Drawing.Point(368, 94)
         Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(217, 27)
+        Me.Button6.Size = New System.Drawing.Size(311, 27)
         Me.Button6.TabIndex = 4
         Me.Button6.Text = " "
         Me.Button6.UseVisualStyleBackColor = False
@@ -124,17 +124,17 @@ Partial Class Salida_Nueva_productos
         Me.Button5.Location = New System.Drawing.Point(13, 94)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(218, 27)
+        Me.Button5.Size = New System.Drawing.Size(347, 27)
         Me.Button5.TabIndex = 3
         Me.Button5.Text = " "
         Me.Button5.UseVisualStyleBackColor = False
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(296, 63)
+        Me.TextBox4.Location = New System.Drawing.Point(422, 63)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(163, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(256, 22)
         Me.TextBox4.TabIndex = 2
         '
         'Label4
@@ -155,7 +155,7 @@ Partial Class Salida_Nueva_productos
         Me.ComboBox1.Location = New System.Drawing.Point(69, 62)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(162, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(288, 23)
         Me.ComboBox1.TabIndex = 1
         '
         'Salida_Nueva_productos
@@ -163,7 +163,7 @@ Partial Class Salida_Nueva_productos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(472, 453)
+        Me.ClientSize = New System.Drawing.Size(691, 453)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Button6)
@@ -178,7 +178,7 @@ Partial Class Salida_Nueva_productos
         Me.Controls.Add(Me.DataGridView1)
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Salida_Nueva_productos"
-        Me.Text = "Salida_Nueva_productos"
+        Me.Text = "Elegir Producto"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

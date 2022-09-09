@@ -42,6 +42,7 @@ Partial Class Configuración_permisos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -235,7 +236,7 @@ Partial Class Configuración_permisos
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
-        Me.Label4.Size = New System.Drawing.Size(473, 28)
+        Me.Label4.Size = New System.Drawing.Size(475, 28)
         Me.Label4.TabIndex = 134
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -246,7 +247,7 @@ Partial Class Configuración_permisos
         Me.Label3.Location = New System.Drawing.Point(0, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(473, 28)
+        Me.Label3.Size = New System.Drawing.Size(475, 28)
         Me.Label3.TabIndex = 135
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -275,13 +276,25 @@ Partial Class Configuración_permisos
         Me.Button4.Text = " "
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Location = New System.Drawing.Point(568, 158)
+        Me.CheckBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(110, 20)
+        Me.CheckBox7.TabIndex = 15
+        Me.CheckBox7.Text = "Configuración"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
         'Configuración_permisos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(473, 377)
+        Me.ClientSize = New System.Drawing.Size(475, 377)
         Me.ControlBox = False
+        Me.Controls.Add(Me.CheckBox7)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label3)
@@ -292,12 +305,13 @@ Partial Class Configuración_permisos
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Configuración_permisos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Configuración_permisos"
+        Me.Text = "Permisos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents GroupBox1 As GroupBox
@@ -319,4 +333,5 @@ Partial Class Configuración_permisos
     Private WithEvents Label3 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents CheckBox7 As CheckBox
 End Class

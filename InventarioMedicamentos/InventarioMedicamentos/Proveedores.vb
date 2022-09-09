@@ -67,6 +67,7 @@ Public Class Proveedores
         mostrar()
         mostrar2()
         Cargar_datos()
+
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -127,10 +128,11 @@ Public Class Proveedores
             conn.Close()
             conn.Dispose()
             mostrar()
+            limpiar()
+
         Catch ex As Exception
 
         End Try
-        limpiar()
 
     End Sub
 
@@ -150,6 +152,8 @@ Public Class Proveedores
             conn.Close()
             conn.Dispose()
             mostrar()
+            limpiar()
+
 
         Catch ex As Exception
         End Try
@@ -222,6 +226,7 @@ Public Class Proveedores
             conn.Dispose()
             Cargar_datos()
             mostrar2()
+            limpiar3()
 
         Catch ex As Exception
         End Try
@@ -244,6 +249,7 @@ Public Class Proveedores
             conn.Dispose()
             Cargar_datos()
             mostrar2()
+            limpiar3()
 
         Catch ex As Exception
         End Try

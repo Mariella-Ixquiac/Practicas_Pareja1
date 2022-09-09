@@ -114,7 +114,7 @@ Partial Class Index_entrada
         Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "Index_entrada"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menú de entrada"
+        Me.Text = "Menú de Entrada"
         Me.ResumeLayout(False)
 
     End Sub
