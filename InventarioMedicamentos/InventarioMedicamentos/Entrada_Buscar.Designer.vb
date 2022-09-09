@@ -388,6 +388,7 @@ Partial Class Entrada_Buscar
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label20)
+        Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Entrada_Buscar"

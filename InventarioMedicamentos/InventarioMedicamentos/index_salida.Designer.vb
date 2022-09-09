@@ -110,6 +110,7 @@ Partial Class index_salida
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
+        Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "index_salida"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

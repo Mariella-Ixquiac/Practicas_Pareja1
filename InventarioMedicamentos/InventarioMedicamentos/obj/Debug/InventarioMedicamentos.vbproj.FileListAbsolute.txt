@@ -79,3 +79,6 @@ C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Entrada_nuevo_proveedores.resources
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_Nueva_productos.resources
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Salida_nuevo_cliente.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\es-419\InventarioMedicamentos.resources.dll
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Form1.es-419.resources
+C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\es-419\InventarioMedicamentos.resources.dll

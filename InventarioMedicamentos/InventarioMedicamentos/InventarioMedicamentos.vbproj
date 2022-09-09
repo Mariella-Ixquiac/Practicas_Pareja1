@@ -230,6 +230,9 @@
     <EmbeddedResource Include="Entrada_nuevo_proveedores.resx">
       <DependentUpon>Entrada_nuevo_proveedores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.es-419.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>

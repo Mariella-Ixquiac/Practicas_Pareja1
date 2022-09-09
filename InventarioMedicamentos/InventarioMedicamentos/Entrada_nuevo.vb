@@ -200,4 +200,5 @@ Public Class Entrada_nuevo
         Button1.Enabled = True
         Button5.Enabled = True
     End Sub
+
 End Class
