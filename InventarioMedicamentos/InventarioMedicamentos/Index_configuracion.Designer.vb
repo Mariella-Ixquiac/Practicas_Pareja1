@@ -105,6 +105,7 @@ Partial Class Index_configuracion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(593, 225)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)

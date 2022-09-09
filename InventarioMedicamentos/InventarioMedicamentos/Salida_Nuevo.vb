@@ -101,10 +101,9 @@ Public Class Salida_Nuevo
             T = (TextBox5.Text) * (TextBox7.Text)
 
             Dim T1 As Double
-            T1 = TextBox12.Text + ((TextBox5.Text) * (TextBox7.Text))
-            TextBox12.Text = TextBox12.Text + T1
-
-
+            T1 = TextBox14.Text + ((TextBox5.Text) * (TextBox7.Text))
+            TextBox14.Text = T + TextBox12.Text
+            TextBox12.Text = T1
 
             cmd.Parameters.AddWithValue("@fec", DateTimePicker2.Value.Date)
             cmd.Parameters.AddWithValue("@cli", TextBox2.Text)
@@ -165,6 +164,7 @@ Public Class Salida_Nuevo
 
             Dim T1 As Double
             T1 = ((TextBox5.Text) * (TextBox7.Text))
+
             TextBox12.Text = TextBox12.Text + T1
 
 
@@ -316,5 +316,15 @@ Public Class Salida_Nuevo
 
         Catch ex As Exception
         End Try
+
+
+        Button5.Enabled = True
+        Button10.Enabled = True
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        DataGridView2.DataSource = ""
+
+
     End Sub
 End Class

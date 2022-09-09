@@ -73,7 +73,7 @@ Partial Class Configuracion
         Me.Label6.Location = New System.Drawing.Point(0, 616)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(860, 26)
+        Me.Label6.Size = New System.Drawing.Size(859, 26)
         Me.Label6.TabIndex = 164
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -84,7 +84,7 @@ Partial Class Configuracion
         Me.Label11.Location = New System.Drawing.Point(0, 0)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(860, 26)
+        Me.Label11.Size = New System.Drawing.Size(859, 26)
         Me.Label11.TabIndex = 163
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -355,7 +355,7 @@ Partial Class Configuracion
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(860, 642)
+        Me.ClientSize = New System.Drawing.Size(859, 642)
         Me.ControlBox = False
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label3)

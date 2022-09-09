@@ -12,6 +12,7 @@ Public Class Form1
     Public id_rol As String
 
     Public Ban As Integer
+    Public Ban2 As Integer
 
     Private Sub conectar()
         Dim squery As String = "SELECT * FROM login"
@@ -77,7 +78,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Ban2 = -1
         Ban = -1
         If conn.State = ConnectionState.Closed Then
             conn.Open()

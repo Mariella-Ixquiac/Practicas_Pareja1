@@ -65,6 +65,8 @@ Partial Class Salida_Nuevo
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -225,7 +227,7 @@ Partial Class Salida_Nuevo
         Me.Label21.Location = New System.Drawing.Point(0, 0)
         Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(933, 26)
+        Me.Label21.Size = New System.Drawing.Size(1174, 26)
         Me.Label21.TabIndex = 396
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -299,7 +301,7 @@ Partial Class Salida_Nuevo
         Me.Label24.Location = New System.Drawing.Point(0, 610)
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(933, 26)
+        Me.Label24.Size = New System.Drawing.Size(1174, 26)
         Me.Label24.TabIndex = 389
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -497,7 +499,7 @@ Partial Class Salida_Nuevo
         Me.DataGridView1.Location = New System.Drawing.Point(963, 309)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(42, 268)
+        Me.DataGridView1.Size = New System.Drawing.Size(180, 268)
         Me.DataGridView1.TabIndex = 428
         '
         'TextBox13
@@ -509,13 +511,40 @@ Partial Class Salida_Nuevo
         Me.TextBox13.Size = New System.Drawing.Size(42, 22)
         Me.TextBox13.TabIndex = 430
         '
+        'TextBox14
+        '
+        Me.TextBox14.BackColor = System.Drawing.Color.Honeydew
+        Me.TextBox14.ForeColor = System.Drawing.Color.DarkGreen
+        Me.TextBox14.Location = New System.Drawing.Point(949, 583)
+        Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(96, 22)
+        Me.TextBox14.TabIndex = 431
+        Me.TextBox14.Text = "0.00"
+        Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Turquoise
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.Location = New System.Drawing.Point(928, 192)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(233, 31)
+        Me.Button1.TabIndex = 432
+        Me.Button1.Text = " "
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Salida_Nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(933, 636)
+        Me.ClientSize = New System.Drawing.Size(1174, 636)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox14)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox12)
@@ -613,4 +642,6 @@ Partial Class Salida_Nuevo
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents Button1 As Button
 End Class

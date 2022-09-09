@@ -270,7 +270,7 @@ Public Class Configuracion
             ComboBox2.SelectedItem = row.Cells(2).Value.ToString()
             TextBox7.Text = row.Cells(4).Value.ToString()
             TextBox5.Text = row.Cells(0).Value.ToString()
-
+            TextBox2.Text = row.Cells(4).Value.ToString()
         Catch ex As Exception
         End Try
 

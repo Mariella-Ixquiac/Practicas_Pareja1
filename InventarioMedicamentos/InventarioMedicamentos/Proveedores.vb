@@ -35,7 +35,7 @@ Public Class Proveedores
         TextBox13.Focus()
         TextBox10.Text = ""
         TextBox13.Text = ""
-        ComboBox3.SelectedIndex = -1
+        ComboBox3.SelectedValue = -1
         TextBox12.Text = ""
     End Sub
 
@@ -68,6 +68,7 @@ Public Class Proveedores
         mostrar2()
         Cargar_datos()
 
+        ComboBox3.SelectedValue = -1
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click

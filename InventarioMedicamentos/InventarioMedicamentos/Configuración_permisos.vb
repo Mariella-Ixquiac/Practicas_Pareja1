@@ -30,13 +30,8 @@ Public Class Configuración_permisos
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         If Form1.id_rol = 1 Then
-            'Salidas
-            'If CheckBox1.Checked = True Then
-            'Index.Button1.enabled = 1
-            'Else
-            '    Index.Button1.enabled = 0
-            'End If
 
+            'Salidas
             If CheckBox14.Checked = True Then
                 Index.Button1.Enabled = 1
             Else
@@ -44,12 +39,6 @@ Public Class Configuración_permisos
             End If
 
             'Entradas
-            'If CheckBox2.Checked = True Then
-            '    Index.Button2.enabled = 1
-            'Else
-            '    Index.Button2.enabled = 0
-            'End If
-
             If CheckBox13.Checked = True Then
                 Index.Button2.Enabled = 1
             Else
@@ -57,12 +46,6 @@ Public Class Configuración_permisos
             End If
 
             'Inventario
-            'If CheckBox3.Checked = True Then
-            '    Index.Button6.enabled = 1
-            'Else
-            '    Index.Button6.enabled = 0
-            'End If
-
             If CheckBox12.Checked = True Then
                 Index.Button6.Enabled = 1
             Else
@@ -70,12 +53,6 @@ Public Class Configuración_permisos
             End If
 
             'Medicamentos/Productos
-            'If CheckBox4.Checked = True Then
-            '    Index.Button3.enabled = 1
-            'Else
-            '    Index.Button3.enabled = 0
-            'End If
-
             If CheckBox11.Checked = True Then
                 Index.Button3.Enabled = 1
             Else
@@ -83,12 +60,6 @@ Public Class Configuración_permisos
             End If
 
             'Proveedores
-            'If CheckBox5.Checked = True Then
-            '    Index.Button5.enabled = 1
-            'Else
-            '    Index.Button5.enabled = 0
-            'End If
-
             If CheckBox10.Checked = True Then
                 Index.Button5.Enabled = 1
             Else
@@ -96,12 +67,6 @@ Public Class Configuración_permisos
             End If
 
             'Clientes
-            'If CheckBox6.Checked = True Then
-            '    Index.Button4.enabled = 1
-            'Else
-            '    Index.Button4.enabled = 0
-            'End If
-
             If CheckBox9.Checked = True Then
                 Index.Button4.Enabled = 1
             Else
@@ -109,15 +74,16 @@ Public Class Configuración_permisos
             End If
 
             'Configuración
-            If CheckBox8.Checked = True Then
+            If CheckBox8.Checked = False Then
                 Index.Button7.Enabled = 1
             Else
                 Index.Button7.Enabled = 0
             End If
-
         End If
 
-        If Form1.id_rol = 1 Then
+
+
+        If Form1.id_rol = 4 Then
             'Salidas
             If CheckBox1.Checked = True Then
                 Index.Button1.Enabled = 1
@@ -165,42 +131,32 @@ Public Class Configuración_permisos
                 Index.Button4.Enabled = 0
             End If
 
-
+            Form1.Ban2 = 1
         End If
     End Sub
 
     Private Sub Configuración_permisos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Comparar el id del administrador 
-        If Form1.Ban < 0 Then
+
+
+        GroupBox2.Enabled = 0
+
+        GroupBox1.Enabled = 0
+
+
+        If Form1.Ban < 0 And Form1.Ban2 < 0 Then
             If Form1.id_rol = "1" Then
 
-                CheckBox1.Checked = True
-                CheckBox2.Checked = True
-                CheckBox3.Checked = True
-                CheckBox4.Checked = True
-                CheckBox5.Checked = True
-                CheckBox6.Checked = True
-                CheckBox7.Checked = True
-                Button4.PerformClick()
                 Index.Button7.Enabled = 1
             End If
 
 
             If Form1.id_rol = "4" Then
-                CheckBox8.Checked = False
 
                 Index.Button7.Enabled = 0
-                CheckBox9.Checked = True
-                CheckBox10.Checked = True
-                CheckBox11.Checked = True
-                CheckBox12.Checked = True
-                CheckBox13.Checked = True
-                CheckBox14.Checked = True
-                Button4.PerformClick()
-            End If
-        Else
 
+            End If
         End If
 
     End Sub
+
 End Class

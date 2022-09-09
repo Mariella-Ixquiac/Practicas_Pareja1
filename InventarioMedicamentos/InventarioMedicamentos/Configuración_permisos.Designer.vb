@@ -67,6 +67,8 @@ Partial Class Configuración_permisos
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Checked = True
+        Me.CheckBox6.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox6.Location = New System.Drawing.Point(17, 164)
         Me.CheckBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox6.Name = "CheckBox6"
@@ -78,6 +80,8 @@ Partial Class Configuración_permisos
         'CheckBox5
         '
         Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Checked = True
+        Me.CheckBox5.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox5.Location = New System.Drawing.Point(17, 138)
         Me.CheckBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox5.Name = "CheckBox5"
@@ -89,6 +93,8 @@ Partial Class Configuración_permisos
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Checked = True
+        Me.CheckBox4.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox4.Location = New System.Drawing.Point(17, 112)
         Me.CheckBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox4.Name = "CheckBox4"
@@ -100,6 +106,8 @@ Partial Class Configuración_permisos
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Checked = True
+        Me.CheckBox3.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox3.Location = New System.Drawing.Point(17, 85)
         Me.CheckBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox3.Name = "CheckBox3"
@@ -111,6 +119,8 @@ Partial Class Configuración_permisos
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Checked = True
+        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox2.Location = New System.Drawing.Point(17, 58)
         Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox2.Name = "CheckBox2"
@@ -122,6 +132,8 @@ Partial Class Configuración_permisos
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox1.Location = New System.Drawing.Point(17, 32)
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox1.Name = "CheckBox1"
@@ -162,6 +174,8 @@ Partial Class Configuración_permisos
         'CheckBox9
         '
         Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.Checked = True
+        Me.CheckBox9.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox9.Location = New System.Drawing.Point(20, 164)
         Me.CheckBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox9.Name = "CheckBox9"
@@ -173,6 +187,8 @@ Partial Class Configuración_permisos
         'CheckBox10
         '
         Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.Checked = True
+        Me.CheckBox10.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox10.Location = New System.Drawing.Point(20, 138)
         Me.CheckBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox10.Name = "CheckBox10"
@@ -184,6 +200,8 @@ Partial Class Configuración_permisos
         'CheckBox11
         '
         Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.Checked = True
+        Me.CheckBox11.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox11.Location = New System.Drawing.Point(20, 112)
         Me.CheckBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox11.Name = "CheckBox11"
@@ -195,6 +213,8 @@ Partial Class Configuración_permisos
         'CheckBox12
         '
         Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.Checked = True
+        Me.CheckBox12.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox12.Location = New System.Drawing.Point(20, 85)
         Me.CheckBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox12.Name = "CheckBox12"
@@ -206,6 +226,8 @@ Partial Class Configuración_permisos
         'CheckBox13
         '
         Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Checked = True
+        Me.CheckBox13.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox13.Location = New System.Drawing.Point(20, 58)
         Me.CheckBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox13.Name = "CheckBox13"
@@ -217,6 +239,8 @@ Partial Class Configuración_permisos
         'CheckBox14
         '
         Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Checked = True
+        Me.CheckBox14.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox14.Location = New System.Drawing.Point(20, 32)
         Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox14.Name = "CheckBox14"
@@ -232,7 +256,7 @@ Partial Class Configuración_permisos
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(0, 349)
+        Me.Label4.Location = New System.Drawing.Point(0, 315)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
@@ -268,7 +292,7 @@ Partial Class Configuración_permisos
         Me.Button4.BackColor = System.Drawing.Color.Turquoise
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(17, 306)
+        Me.Button4.Location = New System.Drawing.Point(17, 354)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(443, 31)
@@ -292,7 +316,7 @@ Partial Class Configuración_permisos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(475, 377)
+        Me.ClientSize = New System.Drawing.Size(475, 343)
         Me.ControlBox = False
         Me.Controls.Add(Me.CheckBox7)
         Me.Controls.Add(Me.Button4)
@@ -303,6 +327,7 @@ Partial Class Configuración_permisos
         Me.Controls.Add(Me.GroupBox1)
         Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Configuración_permisos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
