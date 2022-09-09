@@ -64,8 +64,26 @@ Public Class Salida_Nuevo
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
+
+        If TextBox2.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar un Cliente.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Button6.Focus()
+            Exit Sub
+        End If
+        If TextBox3.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar un Medicamento.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Button4.Focus()
+            Exit Sub
+        End If
+        If TextBox7.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar una Cantidad.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            TextBox7.Focus()
+            Exit Sub
+        End If
+
         If Convert.ToDouble(TextBox7.Text) > Convert.ToDouble(TextBox1.Text) Then
-            MessageBox.Show("No se tienen sufiecientes medicamentos en Existencia", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("No se tienen sufiecientes medicamentos en Existencia", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox7.Focus()
             Exit Sub
         End If
@@ -185,6 +203,10 @@ Public Class Salida_Nuevo
             limpiar()
         Catch ex As Exception
         End Try
+
+        Button5.Enabled = False
+        Button10.Enabled = False
+
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
@@ -221,22 +243,27 @@ Public Class Salida_Nuevo
         End Try
 
         Try
-                conn = objetoconexion.AbrirCon
-                cmd = conn.CreateCommand
-                cmd.CommandText = "update medicamento set Cantidad_existente=@can WHERE id_med=@id"
+            conn = objetoconexion.AbrirCon
+            cmd = conn.CreateCommand
+            cmd.CommandText = "update medicamento set Cantidad_existente=@can WHERE id_med=@id"
 
-                cmd.Parameters.AddWithValue("@id", TextBox3.Text)
-                cmd.Parameters.AddWithValue("@can", TextBox1.Text)
+            cmd.Parameters.AddWithValue("@id", TextBox3.Text)
+            cmd.Parameters.AddWithValue("@can", TextBox1.Text)
 
-                cmd.ExecuteNonQuery()
-                conn.Close()
-                conn.Dispose()
-                mostrar2()
-                mostrar()
-                limpiar()
-            Catch ex As Exception
-            End Try
-        MessageBox.Show("Se elimino correstamente.", "Siiii.")
+            cmd.ExecuteNonQuery()
+            conn.Close()
+            conn.Dispose()
+            mostrar2()
+            mostrar()
+            limpiar()
+        Catch ex As Exception
+        End Try
+
+        Button5.Enabled = False
+        Button10.Enabled = False
+
+        MessageBox.Show("Se Elimino Correctamente.", "Bien Hecho.")
+
     End Sub
 
     Private Sub TextBox7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox7.KeyPress
@@ -248,6 +275,21 @@ Public Class Salida_Nuevo
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        Dim row As DataGridViewRow = DataGridView1.CurrentRow
+        Try
+
+            TextBox1.Text = row.Cells(1).Value.ToString()
+            TextBox3.Text = row.Cells(0).Value.ToString()
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub DataGridView2_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentDoubleClick
         Dim row As DataGridViewRow = DataGridView2.CurrentRow
         Try
 
@@ -275,16 +317,4 @@ Public Class Salida_Nuevo
         Catch ex As Exception
         End Try
     End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Dim row As DataGridViewRow = DataGridView1.CurrentRow
-        Try
-
-            TextBox1.Text = row.Cells(1).Value.ToString()
-            TextBox3.Text = row.Cells(0).Value.ToString()
-
-        Catch ex As Exception
-        End Try
-    End Sub
-
 End Class

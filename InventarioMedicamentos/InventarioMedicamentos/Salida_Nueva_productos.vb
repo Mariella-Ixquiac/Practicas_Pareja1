@@ -25,17 +25,7 @@ Public Class Salida_Nueva_productos
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Dim row As DataGridViewRow = DataGridView1.CurrentRow
-        Try
 
-            Salida_Nuevo.TextBox3.Text = row.Cells(0).Value.ToString()
-            Salida_Nuevo.TextBox10.Text = row.Cells(1).Value.ToString()
-            Salida_Nuevo.DateTimePicker1.Value = row.Cells(2).Value.ToString()
-            Salida_Nuevo.TextBox1.Text = row.Cells(3).Value.ToString()
-            Salida_Nuevo.TextBox5.Text = row.Cells(4).Value.ToString()
-
-        Catch ex As Exception
-        End Try
     End Sub
 
     Private Sub Salida_Nueva_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -48,12 +38,12 @@ Public Class Salida_Nueva_productos
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         If ComboBox1.SelectedIndex = -1 Then
-            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar un Campo para Buscar.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ComboBox1.Focus()
             Exit Sub
         End If
         If TextBox4.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Datos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox4.Focus()
             Exit Sub
         End If
@@ -147,5 +137,19 @@ Public Class Salida_Nueva_productos
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         limpiar2()
         mostrar()
+    End Sub
+
+    Private Sub DataGridView1_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentDoubleClick
+        Dim row As DataGridViewRow = DataGridView1.CurrentRow
+        Try
+
+            Salida_Nuevo.TextBox3.Text = row.Cells(0).Value.ToString()
+            Salida_Nuevo.TextBox10.Text = row.Cells(1).Value.ToString()
+            Salida_Nuevo.DateTimePicker1.Value = row.Cells(2).Value.ToString()
+            Salida_Nuevo.TextBox1.Text = row.Cells(3).Value.ToString()
+            Salida_Nuevo.TextBox5.Text = row.Cells(4).Value.ToString()
+
+        Catch ex As Exception
+        End Try
     End Sub
 End Class

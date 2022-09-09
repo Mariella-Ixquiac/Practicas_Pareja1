@@ -47,12 +47,12 @@ Public Class Salida_nuevo_cliente
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         If ComboBox1.SelectedIndex = -1 Then
-            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar un Campo para Buscar.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ComboBox1.Focus()
             Exit Sub
         End If
         If TextBox4.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Datos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox4.Focus()
             Exit Sub
         End If

@@ -64,52 +64,52 @@ Public Class Medicamentos
         conn = objetoconexion.AbrirCon
 
         If TextBox15.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Nombre del Medicamento", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Nombre del Medicamento.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox15.Focus()
             Exit Sub
         End If
         If TextBox1.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Cantidad Existente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Cantidad Existente.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox1.Focus()
             Exit Sub
         End If
         If TextBox14.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Empaque", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Empaque.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox14.Focus()
             Exit Sub
         End If
         If TextBox11.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Unidad de Medida", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Unidad de Medida.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox11.Focus()
             Exit Sub
         End If
         If TextBox9.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Formula", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Formula.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox9.Focus()
             Exit Sub
         End If
         If TextBox8.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Dosis", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Dosis.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox8.Focus()
             Exit Sub
         End If
         If TextBox3.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Precauciones", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Precauciones.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox3.Focus()
             Exit Sub
         End If
         If TextBox5.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Detalles", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Detalles.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox5.Focus()
             Exit Sub
         End If
         If TextBox4.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Precio de Compra", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Precio de Compra.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox4.Focus()
             Exit Sub
         End If
         If TextBox2.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Precio de Venta", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Precio de Venta.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox2.Focus()
             Exit Sub
 
@@ -205,12 +205,12 @@ Public Class Medicamentos
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If ComboBox1.SelectedIndex = -1 Then
-            MessageBox.Show("Debe Ingresar un Campo para Buscar", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar un Campo para Buscar.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ComboBox1.Focus()
             Exit Sub
         End If
         If TextBox13.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
+            MessageBox.Show("Debe Ingresar Datos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox13.Focus()
             Exit Sub
         End If

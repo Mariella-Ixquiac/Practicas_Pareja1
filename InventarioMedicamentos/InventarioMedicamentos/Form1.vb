@@ -25,12 +25,12 @@ Public Class Form1
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar un Usuario", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe Ingresar un Usuario.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox1.Focus()
             Exit Sub
         End If
         If TextBox2.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar una Contraseña", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe Ingresar una Contraseña.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox2.Focus()
             Exit Sub
         End If
@@ -62,7 +62,8 @@ Public Class Form1
             Configuración_permisos.Hide()
             Me.Hide()
         Else
-            MsgBox("El usuario o la contraseña son incorrectos")
+            MessageBox.Show("El usuario o la contraseña son incorrectos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
         End If
 
         TextBox1.Text = ""

@@ -45,7 +45,7 @@ Public Class Entrada_Buscar
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If TextBox5.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar eL Número del Documento", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe Ingresar eL Número del Documento.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox5.Focus()
             Exit Sub
         End If
@@ -124,6 +124,7 @@ Public Class Entrada_Buscar
 
         Catch ex As Exception
         End Try
+
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click

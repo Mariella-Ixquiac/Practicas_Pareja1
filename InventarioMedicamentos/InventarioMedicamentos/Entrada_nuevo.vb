@@ -61,6 +61,17 @@ Public Class Entrada_nuevo
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         conn = objetoconexion.AbrirCon
 
+        If TextBox4.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar un Proveedor.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Button6.Focus()
+            Exit Sub
+        End If
+        If TextBox5.Text.Length = 0 Then
+            MessageBox.Show("Debe Ingresar un Medicamento.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Button4.Focus()
+            Exit Sub
+        End If
+
         Try
             cmd = conn.CreateCommand
             cmd.CommandText = "insert into compra(fec_compra,unidades_compradas,id_proveedores,id_medicamento,precio_costo,total_PC,precio_final,total)values(@fec,@uni,@pro,@med,@cos,@tpc,@fin,@tpf);"
@@ -122,6 +133,8 @@ Public Class Entrada_nuevo
         Catch ex As Exception
 
         End Try
+        Button1.Enabled = False
+        Button5.Enabled = False
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -140,9 +153,28 @@ Public Class Entrada_nuevo
 
         Catch ex As Exception
         End Try
+
+        Button1.Enabled = False
+        Button5.Enabled = False
     End Sub
 
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 46 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 46 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub DataGridView2_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentDoubleClick
         Dim row As DataGridViewRow = DataGridView2.CurrentRow
         Try
 
@@ -165,22 +197,7 @@ Public Class Entrada_nuevo
         Catch ex As Exception
         End Try
 
+        Button1.Enabled = True
+        Button5.Enabled = True
     End Sub
-
-    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 46 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
-    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 46 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
 End Class
