@@ -29,6 +29,19 @@ Public Class Inventario
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'Primer Guardar
+        Dim CadenaConexion = "Server = localhost;Database=inventario_medicamentos;User id=root;Password=;Port=3306;"
+        Dim conn As New MySqlConnection(CadenaConexion)
+        Dim da As MySqlDataAdapter
+        Dim dt As DataTable
+        conn.Open()
+        Dim sQuery = "SELECT a.nom_marca as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
+
+        da = New MySqlDataAdapter(sQuery, conn)
+        dt = New DataTable
+        da.Fill(dt)
+        DataGridView2.DataSource = dt
+        conn.Close()
 
     End Sub
 
@@ -43,6 +56,7 @@ Public Class Inventario
             TextBox1.Focus()
             Exit Sub
         End If
+
     End Sub
     Private Sub limpiar()
         TextBox1.Text = ""
@@ -51,5 +65,11 @@ Public Class Inventario
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         limpiar()
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+        mostrar()
+
+
     End Sub
 End Class
