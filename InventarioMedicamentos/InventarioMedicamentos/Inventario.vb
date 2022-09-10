@@ -10,7 +10,7 @@ Public Class Inventario
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles' FROM medicamento e;"
+        Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -29,19 +29,10 @@ Public Class Inventario
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Primer Guardar
-        Dim CadenaConexion = "Server = localhost;Database=inventario_medicamentos;User id=root;Password=;Port=3306;"
-        Dim conn As New MySqlConnection(CadenaConexion)
-        Dim da As MySqlDataAdapter
-        Dim dt As DataTable
-        conn.Open()
-        Dim sQuery = "SELECT a.nom_marca as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
+        'Mostrar Base de Datos
 
-        da = New MySqlDataAdapter(sQuery, conn)
-        dt = New DataTable
-        da.Fill(dt)
-        DataGridView2.DataSource = dt
-        conn.Close()
+        mostrar()
+
 
     End Sub
 
@@ -55,6 +46,147 @@ Public Class Inventario
             MessageBox.Show("Debe Ingresar Datos", "Atención", MessageBoxButtons.OK, MessageBoxIcon.None)
             TextBox1.Focus()
             Exit Sub
+        End If
+
+        If ComboBox2.SelectedItem = "Nombre del Medicamento" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM medicamento m where m.nom_med like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Nombre del Proveedor" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM marca a where a.nom_marca like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Fecha de Caducidad" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM medicamentos m where m.fec_caducidad like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Unidad de Medida" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM medicamentos m where m.uni_medida like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Cantidad de existencia" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM medicamento m where m.Cantidad_existente like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Unidades Compradas" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM compra c where c.unidades_compradas like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Precio de Compra" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM medicamentos m where m.precio_costo like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Total Precio de Compra" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM compra c where c.total_PC like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Precio de Venta" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM medicamentos m where m.precio_final like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
+        ElseIf ComboBox2.SelectedItem = "Total Precio de Venta" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento FROM compra c where c.total like '%" & TextBox1.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+
+            Catch ex As Exception
+            End Try
+
         End If
 
     End Sub
@@ -71,5 +203,9 @@ Public Class Inventario
         mostrar()
 
 
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        'Buscar por fechas 
     End Sub
 End Class
