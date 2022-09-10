@@ -199,7 +199,7 @@ Public Class Clientes
             Exit Sub
         End If
         If TextBox4.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar Datos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe Ingresar Datos ", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox4.Focus()
             Exit Sub
         End If

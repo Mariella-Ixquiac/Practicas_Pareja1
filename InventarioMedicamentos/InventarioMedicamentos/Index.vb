@@ -40,6 +40,9 @@
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Hide()
         Form1.Show()
+
+        Form1.Ban = 0
+        Form1.Ban2 = 0
     End Sub
 
     Private Sub Index_Load(sender As Object, e As EventArgs) Handles MyBase.Load

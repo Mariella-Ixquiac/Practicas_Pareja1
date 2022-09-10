@@ -29,7 +29,7 @@ Public Class Configuración_permisos
 
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        If Form1.id_rol = 1 Then
+        If Form1.id_rol = "1" Then
 
             'Salidas
             If CheckBox14.Checked = True Then
@@ -79,11 +79,10 @@ Public Class Configuración_permisos
             Else
                 Index.Button7.Enabled = 0
             End If
-        End If
+            'Form1.Ban = 1
+            'End If
 
-
-
-        If Form1.id_rol = 4 Then
+        ElseIf Form1.id_rol = "4" Then
             'Salidas
             If CheckBox1.Checked = True Then
                 Index.Button1.Enabled = 1
@@ -159,4 +158,7 @@ Public Class Configuración_permisos
 
     End Sub
 
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
+
+    End Sub
 End Class
