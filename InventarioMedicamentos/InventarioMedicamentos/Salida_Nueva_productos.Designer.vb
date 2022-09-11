@@ -79,7 +79,7 @@ Partial Class Salida_Nueva_productos
         Me.Label8.Location = New System.Drawing.Point(9, 33)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(148, 19)
+        Me.Label8.Size = New System.Drawing.Size(121, 17)
         Me.Label8.TabIndex = 60
         Me.Label8.Text = "Lista de Productos"
         '
@@ -99,7 +99,7 @@ Partial Class Salida_Nueva_productos
         Me.Label9.Location = New System.Drawing.Point(365, 66)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 16)
+        Me.Label9.Size = New System.Drawing.Size(40, 14)
         Me.Label9.TabIndex = 69
         Me.Label9.Text = "Buscar:"
         '
@@ -134,7 +134,7 @@ Partial Class Salida_Nueva_productos
         Me.TextBox4.Location = New System.Drawing.Point(422, 63)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(256, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(256, 19)
         Me.TextBox4.TabIndex = 2
         '
         'Label4
@@ -143,7 +143,7 @@ Partial Class Salida_Nueva_productos
         Me.Label4.Location = New System.Drawing.Point(10, 66)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 16)
+        Me.Label4.Size = New System.Drawing.Size(43, 14)
         Me.Label4.TabIndex = 68
         Me.Label4.Text = "Campo:"
         '
@@ -155,12 +155,12 @@ Partial Class Salida_Nueva_productos
         Me.ComboBox1.Location = New System.Drawing.Point(69, 62)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(288, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(288, 20)
         Me.ComboBox1.TabIndex = 1
         '
         'Salida_Nueva_productos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(691, 453)
