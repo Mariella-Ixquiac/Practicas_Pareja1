@@ -5,6 +5,7 @@ Imports MySql.Data.MySqlClient
 Imports MySql.Data
 Imports System.Configuration
 
+'sdfsdf
 Public Class Form1
     Dim CadenaConexion = "Server = localhost;Database=inventario_medicamentos;User id=root;Password=;Port=3306;"
     Dim conn As New MySqlConnection(CadenaConexion)
