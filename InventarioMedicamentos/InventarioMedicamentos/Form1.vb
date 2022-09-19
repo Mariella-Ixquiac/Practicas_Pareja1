@@ -84,6 +84,7 @@ Public Class Form1
         If conn.State = ConnectionState.Closed Then
             conn.Open()
         End If
+        'Hola
         Call conectar()
     End Sub
 
