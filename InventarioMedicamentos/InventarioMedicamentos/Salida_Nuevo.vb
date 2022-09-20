@@ -67,7 +67,8 @@ Public Class Salida_Nuevo
         mostrar()
         Index.Show()
         limpiar()
-        TextBox10.Text = "0.00"
+        TextBox12.Text = "0.00"
+        TextBox14.Text = "0.00"
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -79,8 +80,6 @@ Public Class Salida_Nuevo
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-
-
         If TextBox2.Text.Length = 0 Then
             MessageBox.Show("Debe Ingresar un Cliente.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Button6.Focus()
@@ -121,6 +120,7 @@ Public Class Salida_Nuevo
             'total
             Dim T1 As Double
             T1 = TextBox14.Text + ((TextBox5.Text) * (TextBox7.Text))
+
             TextBox14.Text = T + TextBox12.Text
             TextBox12.Text = T1
 
@@ -164,7 +164,7 @@ Public Class Salida_Nuevo
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        limpiar()
+        limpiar2()
         mostrar()
     End Sub
 
@@ -175,17 +175,20 @@ Public Class Salida_Nuevo
             cmd = conn.CreateCommand
             cmd.CommandText = "update venta set fec_venta=@fec, id_cliente=@cli, id_medicamento=@med, unidades_compradas=@unc, unidades_vendidas=@unv, precio=@pre, subtotal_venta=@sub, total=@tot WHERE id_venta=@id"
 
+            'stock
             Dim S As Double
             S = Convert.ToDouble(TextBox1.Text) - Convert.ToDouble(TextBox7.Text) + Convert.ToDouble(TextBox13.Text)
             TextBox1.Text = S
+
+            'subtotal
             Dim T As Double
             T = (TextBox5.Text) * (TextBox7.Text)
 
+            'total
             Dim T1 As Double
-            T1 = ((TextBox5.Text) * (TextBox7.Text))
-
-            TextBox12.Text = TextBox12.Text + T1
-
+            T1 = TextBox18.Text - TextBox17.Text
+            TextBox12.Text = T + T1
+            TextBox14.Text = TextBox12.Text
 
             cmd.Parameters.AddWithValue("@fec", DateTimePicker2.Value.Date)
             cmd.Parameters.AddWithValue("@cli", TextBox2.Text)
@@ -194,7 +197,7 @@ Public Class Salida_Nuevo
             cmd.Parameters.AddWithValue("@unv", TextBox7.Text)
             cmd.Parameters.AddWithValue("@pre", TextBox5.Text)
             cmd.Parameters.AddWithValue("@sub", T)
-            cmd.Parameters.AddWithValue("@tot", T1)
+            cmd.Parameters.AddWithValue("@tot", TextBox12.Text)
 
             cmd.Parameters.AddWithValue("@id", TextBox6.Text)
 
@@ -236,19 +239,21 @@ Public Class Salida_Nuevo
             cmd = conn.CreateCommand
             cmd.CommandText = "update venta set unidades_compradas=@unc, total=@tot WHERE id_venta=@id"
 
+            'stock
             Dim S As Double
             S = Convert.ToDouble(TextBox1.Text) + Convert.ToDouble(TextBox13.Text)
             TextBox1.Text = S
 
-            Dim A As Double
-            A = TextBox12.Text - TextBox14.Text
-            TextBox1.Text = A
+            'Total
+            Dim M As Double
+            M = Convert.ToDouble(TextBox15.Text) - (TextBox5.Text * TextBox7.Text)
+            TextBox16.Text = M
+            TextBox12.Text = TextBox16.Text
+            TextBox14.Text = TextBox12.Text
 
-            TextBox12.Text = A
             cmd.Parameters.AddWithValue("@id", TextBox6.Text)
             cmd.Parameters.AddWithValue("@unc", S)
             cmd.Parameters.AddWithValue("@tot", TextBox12.Text)
-
         Catch ex As Exception
         End Try
 
@@ -333,8 +338,9 @@ Public Class Salida_Nuevo
 
             DataGridView2.Columns(9).Visible = False
             DataGridView2.Columns(10).Visible = False
-
-
+            TextBox18.Text = TextBox12.Text
+            TextBox17.Text = (TextBox5.Text) * (TextBox7.Text)
+            TextBox15.Text = TextBox12.Text
             TextBox4.Text = ""
             TextBox8.Text = ""
             DateTimePicker1.Value = (Date.Now())
@@ -347,9 +353,27 @@ Public Class Salida_Nuevo
         Button10.Enabled = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         DataGridView2.DataSource = ""
 
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        TextBox12.Text = "0.00"
+        limpiar()
+        TextBox13.Text = "0.00"
+        TextBox14.Text = "0.00"
+        TextBox15.Text = "0.00"
+        TextBox16.Text = "0.00"
+
+    End Sub
+
+    Private Sub TextBox13_TextChanged(sender As Object, e As EventArgs) Handles TextBox13.TextChanged
+
+    End Sub
+
+    Private Sub TextBox17_TextChanged(sender As Object, e As EventArgs) Handles TextBox17.TextChanged
 
     End Sub
 End Class

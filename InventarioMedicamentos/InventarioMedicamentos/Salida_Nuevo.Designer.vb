@@ -65,8 +65,17 @@ Partial Class Salida_Nuevo
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,7 +84,7 @@ Partial Class Salida_Nuevo
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label1.Location = New System.Drawing.Point(-27, 260)
+        Me.Label1.Location = New System.Drawing.Point(-27, 298)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(2708, 16)
         Me.Label1.TabIndex = 406
@@ -140,7 +149,7 @@ Partial Class Salida_Nuevo
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label15.Location = New System.Drawing.Point(11, 583)
+        Me.Label15.Location = New System.Drawing.Point(11, 619)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(52, 19)
@@ -162,7 +171,7 @@ Partial Class Salida_Nuevo
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label16.Location = New System.Drawing.Point(11, 280)
+        Me.Label16.Location = New System.Drawing.Point(11, 316)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(154, 19)
@@ -227,7 +236,7 @@ Partial Class Salida_Nuevo
         Me.Label21.Location = New System.Drawing.Point(0, 0)
         Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(1269, 26)
+        Me.Label21.Size = New System.Drawing.Size(934, 26)
         Me.Label21.TabIndex = 396
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -288,7 +297,7 @@ Partial Class Salida_Nuevo
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(14, 309)
+        Me.DataGridView2.Location = New System.Drawing.Point(14, 345)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(902, 268)
@@ -298,10 +307,10 @@ Partial Class Salida_Nuevo
         '
         Me.Label24.BackColor = System.Drawing.Color.Teal
         Me.Label24.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label24.Location = New System.Drawing.Point(0, 610)
+        Me.Label24.Location = New System.Drawing.Point(0, 650)
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(1269, 26)
+        Me.Label24.Size = New System.Drawing.Size(934, 26)
         Me.Label24.TabIndex = 389
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
@@ -471,10 +480,10 @@ Partial Class Salida_Nuevo
         '
         Me.TextBox12.BackColor = System.Drawing.Color.Honeydew
         Me.TextBox12.ForeColor = System.Drawing.Color.DarkGreen
-        Me.TextBox12.Location = New System.Drawing.Point(819, 585)
+        Me.TextBox12.Location = New System.Drawing.Point(757, 621)
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(96, 22)
+        Me.TextBox12.Size = New System.Drawing.Size(158, 22)
         Me.TextBox12.TabIndex = 427
         Me.TextBox12.Text = "0.00"
         Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -483,64 +492,172 @@ Partial Class Salida_Nuevo
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(963, 309)
+        Me.DataGridView1.Location = New System.Drawing.Point(963, 265)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(180, 268)
+        Me.DataGridView1.Size = New System.Drawing.Size(223, 199)
         Me.DataGridView1.TabIndex = 428
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(963, 231)
+        Me.TextBox13.Location = New System.Drawing.Point(1003, 235)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(42, 22)
+        Me.TextBox13.Size = New System.Drawing.Size(140, 22)
         Me.TextBox13.TabIndex = 430
         '
         'TextBox14
         '
         Me.TextBox14.BackColor = System.Drawing.Color.Honeydew
         Me.TextBox14.ForeColor = System.Drawing.Color.DarkGreen
-        Me.TextBox14.Location = New System.Drawing.Point(949, 583)
+        Me.TextBox14.Location = New System.Drawing.Point(1025, 619)
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(96, 22)
+        Me.TextBox14.Size = New System.Drawing.Size(161, 22)
         Me.TextBox14.TabIndex = 431
         Me.TextBox14.Text = "0.00"
         Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'Button1
+        'Button9
         '
-        Me.Button1.BackColor = System.Drawing.Color.Turquoise
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Location = New System.Drawing.Point(928, 192)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(233, 31)
-        Me.Button1.TabIndex = 432
-        Me.Button1.Text = " "
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button9.BackColor = System.Drawing.Color.Turquoise
+        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
+        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button9.Location = New System.Drawing.Point(14, 265)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(901, 29)
+        Me.Button9.TabIndex = 435
+        Me.Button9.Text = " "
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(960, 238)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(44, 16)
+        Me.Label6.TabIndex = 436
+        Me.Label6.Text = "Stock:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(960, 622)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(57, 16)
+        Me.Label8.TabIndex = 437
+        Me.Label8.Text = "Subtotal:"
         '
         'TextBox15
         '
-        Me.TextBox15.Location = New System.Drawing.Point(1063, 580)
+        Me.TextBox15.BackColor = System.Drawing.Color.Honeydew
+        Me.TextBox15.ForeColor = System.Drawing.Color.DarkGreen
+        Me.TextBox15.Location = New System.Drawing.Point(1003, 552)
         Me.TextBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.ReadOnly = True
-        Me.TextBox15.Size = New System.Drawing.Size(42, 22)
-        Me.TextBox15.TabIndex = 433
+        Me.TextBox15.Size = New System.Drawing.Size(183, 22)
+        Me.TextBox15.TabIndex = 438
+        Me.TextBox15.Text = "0.00"
+        Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'TextBox16
+        '
+        Me.TextBox16.BackColor = System.Drawing.Color.Honeydew
+        Me.TextBox16.ForeColor = System.Drawing.Color.DarkGreen
+        Me.TextBox16.Location = New System.Drawing.Point(1064, 582)
+        Me.TextBox16.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(122, 22)
+        Me.TextBox16.TabIndex = 439
+        Me.TextBox16.Text = "0.00"
+        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(960, 555)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(39, 16)
+        Me.Label9.TabIndex = 440
+        Me.Label9.Text = "Total:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(960, 585)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(96, 16)
+        Me.Label10.TabIndex = 441
+        Me.Label10.Text = "Total - subtotal:"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(960, 505)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(104, 16)
+        Me.Label13.TabIndex = 445
+        Me.Label13.Text = "Subtotal anterior:"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(960, 475)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(39, 16)
+        Me.Label14.TabIndex = 444
+        Me.Label14.Text = "Total:"
+        '
+        'TextBox17
+        '
+        Me.TextBox17.BackColor = System.Drawing.Color.Honeydew
+        Me.TextBox17.ForeColor = System.Drawing.Color.DarkGreen
+        Me.TextBox17.Location = New System.Drawing.Point(1072, 502)
+        Me.TextBox17.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(114, 22)
+        Me.TextBox17.TabIndex = 443
+        Me.TextBox17.Text = "0.00"
+        Me.TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'TextBox18
+        '
+        Me.TextBox18.BackColor = System.Drawing.Color.Honeydew
+        Me.TextBox18.ForeColor = System.Drawing.Color.DarkGreen
+        Me.TextBox18.Location = New System.Drawing.Point(1003, 472)
+        Me.TextBox18.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(183, 22)
+        Me.TextBox18.TabIndex = 442
+        Me.TextBox18.Text = "0.00"
+        Me.TextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Salida_Nuevo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(1269, 636)
+        Me.ClientSize = New System.Drawing.Size(934, 676)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.TextBox17)
+        Me.Controls.Add(Me.TextBox18)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.TextBox15)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.TextBox14)
         Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.DataGridView1)
@@ -639,6 +756,15 @@ Partial Class Salida_Nuevo
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label8 As Label
     Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents TextBox17 As TextBox
+    Friend WithEvents TextBox18 As TextBox
 End Class

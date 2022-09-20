@@ -39,7 +39,6 @@ Partial Class Inventario
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,7 +47,7 @@ Partial Class Inventario
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(367, 130)
+        Me.Label9.Location = New System.Drawing.Point(360, 132)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(50, 16)
@@ -60,12 +59,12 @@ Partial Class Inventario
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label8.Location = New System.Drawing.Point(15, 43)
+        Me.Label8.Location = New System.Drawing.Point(12, 40)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(86, 19)
+        Me.Label8.Size = New System.Drawing.Size(243, 19)
         Me.Label8.TabIndex = 175
-        Me.Label8.Text = "Inventario"
+        Me.Label8.Text = "Inventario de los medicamentos"
         '
         'Button7
         '
@@ -84,7 +83,7 @@ Partial Class Inventario
         Me.Button1.BackColor = System.Drawing.Color.Turquoise
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Location = New System.Drawing.Point(907, 123)
+        Me.Button1.Location = New System.Drawing.Point(907, 125)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(181, 27)
@@ -97,26 +96,26 @@ Partial Class Inventario
         Me.Button3.BackColor = System.Drawing.Color.Turquoise
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(725, 123)
+        Me.Button3.Location = New System.Drawing.Point(686, 126)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(177, 27)
+        Me.Button3.Size = New System.Drawing.Size(213, 27)
         Me.Button3.TabIndex = 7
         Me.Button3.Text = " "
         Me.Button3.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(424, 127)
+        Me.TextBox1.Location = New System.Drawing.Point(418, 129)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(267, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(260, 22)
         Me.TextBox1.TabIndex = 6
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(30, 131)
+        Me.Label12.Location = New System.Drawing.Point(13, 132)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(51, 16)
@@ -127,11 +126,11 @@ Partial Class Inventario
         '
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Nombre del Medicamento", "Nombre del Proveedor", "Fecha de Caducidad", "Unidad de Medida", "Cantidad de existencia", "Unidades Compradas", "Precio de Compra (Q)", "Total Precio de Compra", "Precio de venta ", "Total Precio de Venta"})
-        Me.ComboBox2.Location = New System.Drawing.Point(89, 127)
+        Me.ComboBox2.Items.AddRange(New Object() {"Nombre del Medicamento", "Nombre del Proveedor", "Fecha de Caducidad", "Unidad de Medida", "Cantidad de existencia", "Unidades Compradas", "Precio de Compra", "Total Precio de Compra", "Precio de Venta", "Total Precio de Venta"})
+        Me.ComboBox2.Location = New System.Drawing.Point(74, 129)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(266, 23)
+        Me.ComboBox2.Size = New System.Drawing.Size(278, 23)
         Me.ComboBox2.TabIndex = 5
         '
         'Label4
@@ -141,7 +140,7 @@ Partial Class Inventario
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(0, 503)
+        Me.Label4.Location = New System.Drawing.Point(0, 649)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
@@ -164,16 +163,16 @@ Partial Class Inventario
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(16, 167)
+        Me.DataGridView2.Location = New System.Drawing.Point(16, 161)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(1072, 318)
+        Me.DataGridView2.Size = New System.Drawing.Size(1072, 472)
         Me.DataGridView2.TabIndex = 326
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(28, 76)
+        Me.Label19.Location = New System.Drawing.Point(13, 78)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(81, 16)
@@ -183,16 +182,16 @@ Partial Class Inventario
         'DateTimePicker2
         '
         Me.DateTimePicker2.AllowDrop = True
-        Me.DateTimePicker2.Location = New System.Drawing.Point(117, 74)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(102, 76)
         Me.DateTimePicker2.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(336, 22)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(250, 22)
         Me.DateTimePicker2.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(461, 76)
+        Me.Label1.Location = New System.Drawing.Point(360, 78)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(64, 16)
@@ -202,44 +201,31 @@ Partial Class Inventario
         'DateTimePicker1
         '
         Me.DateTimePicker1.AllowDrop = True
-        Me.DateTimePicker1.Location = New System.Drawing.Point(533, 75)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(432, 76)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(326, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(246, 22)
         Me.DateTimePicker1.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label2.Location = New System.Drawing.Point(34, 103)
+        Me.Label2.Location = New System.Drawing.Point(-15, 105)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(1628, 16)
         Me.Label2.TabIndex = 331
         Me.Label2.Text = resources.GetString("Label2.Text")
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Turquoise
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(788, 33)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(174, 27)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = " "
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Turquoise
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(890, 72)
+        Me.Button4.Location = New System.Drawing.Point(686, 74)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(174, 27)
+        Me.Button4.Size = New System.Drawing.Size(213, 27)
         Me.Button4.TabIndex = 332
         Me.Button4.Text = " "
         Me.Button4.UseVisualStyleBackColor = False
@@ -249,10 +235,10 @@ Partial Class Inventario
         Me.Button12.BackColor = System.Drawing.Color.Turquoise
         Me.Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), System.Drawing.Image)
         Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button12.Location = New System.Drawing.Point(614, 34)
+        Me.Button12.Location = New System.Drawing.Point(907, 76)
         Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(166, 26)
+        Me.Button12.Size = New System.Drawing.Size(181, 26)
         Me.Button12.TabIndex = 333
         Me.Button12.Text = " "
         Me.Button12.UseVisualStyleBackColor = False
@@ -262,11 +248,10 @@ Partial Class Inventario
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(1101, 531)
+        Me.ClientSize = New System.Drawing.Size(1101, 677)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -311,7 +296,6 @@ Partial Class Inventario
     Friend WithEvents Label1 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button12 As Button
 End Class
