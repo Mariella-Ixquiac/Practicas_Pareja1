@@ -33,6 +33,10 @@ Public Class Salida_Nueva_productos
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+
+        mostrar()
+        TextBox4.Text = ""
+        ComboBox1.SelectedIndex = -1
         Me.Hide()
     End Sub
 

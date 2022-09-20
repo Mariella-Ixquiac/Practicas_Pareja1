@@ -10,13 +10,14 @@ Public Class Proveedores
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' FROM proveedores p inner JOIN marca m on p.id_marca= m.id_marca;"
+        Dim query As String = "SELECT p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca', p.id_marca as 'ID de la Marca' FROM proveedores p inner JOIN marca m on p.id_marca= m.id_marca;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
         DataGridView1.DataSource = ds.Tables(0)
         conn.Close()
         conn.Dispose()
+        TextBox13.Focus()
     End Sub
 
     Private Sub mostrar2()
@@ -67,13 +68,18 @@ Public Class Proveedores
         mostrar()
         mostrar2()
         Cargar_datos()
-
+        TextBox13.Focus()
         ComboBox3.SelectedValue = -1
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+        mostrar()
         Me.Hide()
         Index.Show()
+        limpiar()
+        limpiar2()
+        limpiar3()
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
@@ -346,7 +352,7 @@ Public Class Proveedores
         ElseIf ComboBox4.SelectedItem = "Marca" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "select p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca' from proveedores p inner JOIN marca m on p.id_marca= m.id_marca where m.nom_marca like '%" & TextBox11.Text & "%'"
+                Dim query As String = "select p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca', p.id_marca from proveedores p inner JOIN marca m on p.id_marca= m.id_marca where m.nom_marca like '%" & TextBox11.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -363,12 +369,15 @@ Public Class Proveedores
         Dim row As DataGridViewRow = DataGridView1.CurrentRow
         Try
 
+            TextBox10.Text = row.Cells(0).Value.ToString()
             TextBox12.Text = row.Cells(2).Value.ToString()
             TextBox13.Text = row.Cells(1).Value.ToString()
-            ComboBox3.SelectedItem = row.Cells(3).Value.ToString()
-            TextBox10.Text = row.Cells(0).Value.ToString()
+            Dim x As String
+            x = row.Cells(3).Value.ToString()
+            ComboBox3.SelectedIndex = row.Cells(4).Value - 1
 
         Catch ex As Exception
+            MessageBox.Show(ex.ToString)
         End Try
 
         Button11.Enabled = True
@@ -390,4 +399,5 @@ Public Class Proveedores
         Button8.Enabled = True
         Button15.Enabled = True
     End Sub
+
 End Class

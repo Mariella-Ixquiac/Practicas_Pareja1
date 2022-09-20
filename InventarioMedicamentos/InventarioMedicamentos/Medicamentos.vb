@@ -44,6 +44,10 @@ Public Class Medicamentos
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Hide()
         Index.Show()
+        limpiar()
+        limpiar2()
+
+        mostrar()
     End Sub
 
     Private Sub Medicamentos_Load(sender As Object, e As EventArgs) Handles MyBase.Load

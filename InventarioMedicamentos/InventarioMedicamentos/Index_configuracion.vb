@@ -13,4 +13,8 @@
         Me.Hide()
         Index.Show()
     End Sub
+
+    Private Sub Index_configuracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

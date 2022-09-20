@@ -50,9 +50,24 @@ Public Class Salida_Nuevo
         TextBox7.Text = ""
     End Sub
 
+    Private Sub limpiar2()
+        Button6.Focus()
+        TextBox6.Text = ""
+
+        TextBox3.Text = ""
+        TextBox10.Text = ""
+        DateTimePicker1.Value = (Date.Now())
+        TextBox5.Text = ""
+        TextBox1.Text = ""
+        TextBox7.Text = ""
+    End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
+
+        mostrar()
         Index.Show()
+        limpiar()
+        TextBox10.Text = "0.00"
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -94,12 +109,16 @@ Public Class Salida_Nuevo
             cmd = conn.CreateCommand
             cmd.CommandText = "insert into venta(fec_venta,id_cliente,id_medicamento,unidades_compradas,unidades_vendidas,precio,subtotal_venta,total)values(@fec,@cli,@med,@unc,@unv,@pre,@sub,@tot);"
 
+            'stock
             Dim S As Double
             S = Convert.ToDouble(TextBox1.Text) - Convert.ToDouble(TextBox7.Text)
             TextBox1.Text = S
+
+            'subtotal
             Dim T As Double
             T = (TextBox5.Text) * (TextBox7.Text)
 
+            'total
             Dim T1 As Double
             T1 = TextBox14.Text + ((TextBox5.Text) * (TextBox7.Text))
             TextBox14.Text = T + TextBox12.Text
@@ -134,7 +153,7 @@ Public Class Salida_Nuevo
         conn.Dispose()
         mostrar2()
         mostrar()
-        limpiar()
+        limpiar2()
     End Sub
 
     Private Sub Salida_Nuevo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -200,7 +219,8 @@ Public Class Salida_Nuevo
             conn.Dispose()
             mostrar2()
             mostrar()
-            limpiar()
+
+            limpiar2()
         Catch ex As Exception
         End Try
 
@@ -214,14 +234,20 @@ Public Class Salida_Nuevo
         conn = objetoconexion.AbrirCon
         Try
             cmd = conn.CreateCommand
-            cmd.CommandText = "update venta set unidades_compradas=@unc WHERE id_venta=@id"
+            cmd.CommandText = "update venta set unidades_compradas=@unc, total=@tot WHERE id_venta=@id"
 
             Dim S As Double
             S = Convert.ToDouble(TextBox1.Text) + Convert.ToDouble(TextBox13.Text)
             TextBox1.Text = S
 
+            Dim A As Double
+            A = TextBox12.Text - TextBox14.Text
+            TextBox1.Text = A
+
+            TextBox12.Text = A
             cmd.Parameters.AddWithValue("@id", TextBox6.Text)
             cmd.Parameters.AddWithValue("@unc", S)
+            cmd.Parameters.AddWithValue("@tot", TextBox12.Text)
 
         Catch ex As Exception
         End Try
@@ -233,7 +259,6 @@ Public Class Salida_Nuevo
             cmd = conn.CreateCommand
             cmd.CommandText = "delete from venta where id_venta=@id"
             cmd.Parameters.AddWithValue("@id", TextBox6.Text)
-            TextBox12.Text = "0.00"
             cmd.ExecuteNonQuery()
             conn.Close()
             conn.Dispose()
@@ -255,14 +280,13 @@ Public Class Salida_Nuevo
             conn.Dispose()
             mostrar2()
             mostrar()
-            limpiar()
+            limpiar2()
         Catch ex As Exception
         End Try
 
         Button5.Enabled = False
         Button10.Enabled = False
 
-        MessageBox.Show("Se Elimino Correctamente.", "Bien Hecho.")
 
     End Sub
 
@@ -309,6 +333,7 @@ Public Class Salida_Nuevo
 
             DataGridView2.Columns(9).Visible = False
             DataGridView2.Columns(10).Visible = False
+
 
             TextBox4.Text = ""
             TextBox8.Text = ""

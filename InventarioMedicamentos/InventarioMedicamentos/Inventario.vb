@@ -18,10 +18,17 @@ Public Class Inventario
         conn.Close()
         conn.Dispose()
     End Sub
+    Sub limpiar1()
+
+        DateTimePicker2.Value = (Date.Now())
+        DateTimePicker1.Value = (Date.Now())
+    End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Me.Hide()
         Index.Show()
+        limpiar()
+        limpiar1()
     End Sub
 
     Private Sub Inventario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -214,7 +221,7 @@ Public Class Inventario
         Else
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento WHERE fec_caducidad BETWEEN '" & DateTimePicker2.Value & "' AND '" & DateTimePicker1.Value & "';"
+                Dim query As String = "SELECT m.nom_med as 'Nombre del Medicamento',a.nom_marca as 'Nombre del Proveedor', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Cantidad existente', c.unidades_compradas as 'Unidades Compradas', m.precio_costo as 'Precio de Compra (Q)', c.total_PC as 'Total precio de Compra', m.precio_final as 'Precio de Venta(Q)', c.total as 'Total Precio de Venta' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento WHERE fec_caducidad BETWEEN '%" & DateTimePicker2.Value & "%' AND '%" & DateTimePicker2.Value & "%';"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -225,5 +232,9 @@ Public Class Inventario
             End Try
         End If
 
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        limpiar1()
     End Sub
 End Class

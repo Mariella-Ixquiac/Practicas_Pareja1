@@ -8,6 +8,9 @@ Public Class Entrada_Buscar
     Dim cmd As MySqlCommand
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        CheckBox14.Checked = False
+        limpiar()
+        mostrar()
         Me.Hide()
         Index.Show()
     End Sub
@@ -35,12 +38,25 @@ Public Class Entrada_Buscar
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox5.Text = ""
+
+        TextBox4.Text = ""
     End Sub
 
     Private Sub Entrada_Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
-
-
+        If CheckBox14.Checked = True And TextBox5.Text = "" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento where c.id_compra like '%" & TextBox5.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+        End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -89,6 +105,11 @@ Public Class Entrada_Buscar
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+                TextBox9.Text = "***"
+                TextBox2.Text = "***"
+                TextBox3.Text = "***"
+                TextBox4.Text = "***"
             Catch ex As Exception
             End Try
         End If
@@ -103,6 +124,11 @@ Public Class Entrada_Buscar
             DataGridView2.DataSource = ds.Tables(0)
             conn.Close()
             conn.Dispose()
+
+            TextBox9.Text = "***"
+            TextBox2.Text = "***"
+            TextBox3.Text = "***"
+            TextBox4.Text = "***"
         Else
             mostrar()
         End If
@@ -151,6 +177,7 @@ Public Class Entrada_Buscar
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
             Catch ex As Exception
             End Try
         End If
@@ -164,6 +191,7 @@ Public Class Entrada_Buscar
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
             Catch ex As Exception
             End Try
         End If

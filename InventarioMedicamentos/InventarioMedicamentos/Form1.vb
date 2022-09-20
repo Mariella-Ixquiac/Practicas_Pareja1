@@ -12,9 +12,6 @@ Public Class Form1
     Dim cmd As MySqlCommand
     Public id_rol As String
 
-    Public Ban As Integer
-    Public Ban2 As Integer
-
     Private Sub conectar()
         Dim squery As String = "SELECT * FROM login"
         Dim adpt As New MySqlDataAdapter(squery, conn)
@@ -44,7 +41,6 @@ Public Class Form1
             Dim hash() As Byte = md5.ComputeHash(codigo.GetBytes(clave))
             Dim nuevaclave As String
         nuevaclave = Convert.ToBase64String(hash)
-        MessageBox.Show("contraseña o:" & TextBox2.Text & vbCrLf & "contrseña n:" & nuevaclave)
         conn.Close()
 
         Dim comando As MySqlCommand = New MySqlCommand
@@ -63,6 +59,46 @@ Public Class Form1
             Configuración_permisos.Show()
             Configuración_permisos.Hide()
             Me.Hide()
+
+            If id_rol = "1" Then
+                Index.Button5.Enabled = 1
+                Index.Button3.Enabled = 1
+                Index.Button4.Enabled = 1
+                Index.Button6.Enabled = 1
+                Index.Button2.Enabled = 1
+                Index.Button1.Enabled = 1
+                Index.Button7.Enabled = 1
+            End If
+
+            If id_rol = "2" Then
+                Index.Button5.Enabled = 1
+                Index.Button3.Enabled = 1
+                Index.Button4.Enabled = 1
+                Index.Button6.Enabled = 1
+                Index.Button2.Enabled = 1
+                Index.Button1.Enabled = 1
+                Index.Button7.Enabled = 0
+            End If
+
+            If id_rol = "3" Then
+                Index.Button5.Enabled = 1
+                Index.Button3.Enabled = 1
+                Index.Button4.Enabled = 1
+                Index.Button6.Enabled = 0
+                Index.Button2.Enabled = 0
+                Index.Button1.Enabled = 0
+                Index.Button7.Enabled = 0
+            End If
+
+            If id_rol = "4" Then
+                Index.Button5.Enabled = 0
+                Index.Button3.Enabled = 0
+                Index.Button4.Enabled = 0
+                Index.Button6.Enabled = 1
+                Index.Button2.Enabled = 1
+                Index.Button1.Enabled = 1
+                Index.Button7.Enabled = 0
+            End If
         Else
             MessageBox.Show("El usuario o la contraseña son incorrectos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
@@ -79,8 +115,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Ban2 = -1
-        Ban = -1
+
         If conn.State = ConnectionState.Closed Then
             conn.Open()
         End If

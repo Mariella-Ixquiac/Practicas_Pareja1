@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Form1.Ban += 1
+
         Me.Hide()
 
         Index_configuracion.Show()
@@ -41,8 +41,6 @@
         Me.Hide()
         Form1.Show()
 
-        Form1.Ban = 0
-        Form1.Ban2 = 0
     End Sub
 
     Private Sub Index_Load(sender As Object, e As EventArgs) Handles MyBase.Load

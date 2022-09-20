@@ -55,6 +55,8 @@ Public Class Clientes
         Index.Show()
         mostrar()
         Cargar_datos()
+        limpiar2()
+        limpiar()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -294,4 +296,7 @@ Public Class Clientes
         Button2.Enabled = True
     End Sub
 
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
 End Class

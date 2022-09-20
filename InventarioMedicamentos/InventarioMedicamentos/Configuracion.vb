@@ -10,7 +10,7 @@ Public Class Configuracion
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave' FROM login l inner JOIN rol r on l.id_rol= r.id_rol;"
+        Dim query As String = "SELECT l.id_login AS 'ID', l.nombre as 'Nombre del usuario', r.rol as 'Rol', l.usuario as 'Usuario', l.pssw as 'Clave', r.id_rol as 'ID del Rol' FROM login l inner JOIN rol r on l.id_rol= r.id_rol;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -50,11 +50,16 @@ Public Class Configuracion
     Private Sub Configuracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         Cargar_datos()
+
+        ComboBox2.SelectedValue = -1
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Hide()
         Index.Show()
+        limpiar2()
+        limpiar()
+        mostrar()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -129,9 +134,11 @@ Public Class Configuracion
             cmd.Parameters.AddWithValue("@usu", TextBox3.Text)
             cmd.Parameters.AddWithValue("@nom", TextBox1.Text)
             cmd.Parameters.AddWithValue("@rol", ComboBox2.SelectedValue)
-            cmd.Parameters.AddWithValue("@psw", TextBox7.Text)
-            cmd.Parameters.AddWithValue("@psw", TextBox2.Text)
-
+            If TextBox7.Text = TextBox2.Text Then
+                cmd.Parameters.AddWithValue("@psw", TextBox2.Text)
+            Else
+                MessageBox.Show("Las Contraseñas no Coinciden. Vuelva a Intentarlo.", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
             cmd.Parameters.AddWithValue("@id", TextBox5.Text)
 
             cmd.ExecuteNonQuery()
@@ -265,12 +272,16 @@ Public Class Configuracion
         Dim row As DataGridViewRow = DataGridView1.CurrentRow
         Try
 
-            TextBox3.Text = row.Cells(3).Value.ToString()
-            TextBox1.Text = row.Cells(1).Value.ToString()
-            ComboBox2.SelectedItem = row.Cells(2).Value.ToString()
-            TextBox7.Text = row.Cells(4).Value.ToString()
             TextBox5.Text = row.Cells(0).Value.ToString()
+            TextBox1.Text = row.Cells(1).Value.ToString()
+            TextBox3.Text = row.Cells(3).Value.ToString()
+            TextBox7.Text = row.Cells(4).Value.ToString()
             TextBox2.Text = row.Cells(4).Value.ToString()
+
+            Dim x As String
+            x = row.Cells(2).Value.ToString()
+            ComboBox2.SelectedIndex = row.Cells(5).Value - 1
+
         Catch ex As Exception
         End Try
 

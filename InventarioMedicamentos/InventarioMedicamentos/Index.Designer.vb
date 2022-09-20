@@ -123,6 +123,7 @@ Partial Class Index
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Index"
         Me.ResumeLayout(False)
 

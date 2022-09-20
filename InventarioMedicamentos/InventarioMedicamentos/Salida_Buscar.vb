@@ -8,8 +8,11 @@ Public Class Salida_Buscar
     Dim cmd As MySqlCommand
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        CheckBox14.Checked = False
         Me.Hide()
+        mostrar()
         Index.Show()
+        limpiar()
     End Sub
 
     Private Sub mostrar()
@@ -35,10 +38,24 @@ Public Class Salida_Buscar
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox5.Text = ""
+        TextBox4.Text = ""
     End Sub
 
     Private Sub Salida_Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
+        If CheckBox14.Checked = True And TextBox5.Text = "" Then
+            conn = objetoconexion.AbrirCon
+            Try
+                Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento where v.id_venta like '%" & TextBox5.Text & "%'"
+                Dim adpt As New MySqlDataAdapter(query, conn)
+                Dim ds As New DataSet()
+                adpt.Fill(ds)
+                DataGridView2.DataSource = ds.Tables(0)
+                conn.Close()
+                conn.Dispose()
+            Catch ex As Exception
+            End Try
+        End If
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -89,6 +106,10 @@ Public Class Salida_Buscar
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
+
+                TextBox2.Text = "***"
+                TextBox3.Text = "***"
+                TextBox4.Text = "***"
             Catch ex As Exception
             End Try
         End If
@@ -113,6 +134,9 @@ Public Class Salida_Buscar
             DataGridView2.DataSource = ds.Tables(0)
             conn.Close()
             conn.Dispose()
+            TextBox2.Text = "***"
+            TextBox3.Text = "***"
+            TextBox4.Text = "***"
         Else
             mostrar()
         End If
