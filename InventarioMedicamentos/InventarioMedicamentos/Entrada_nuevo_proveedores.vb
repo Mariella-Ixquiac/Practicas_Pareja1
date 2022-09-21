@@ -45,6 +45,8 @@ Public Class Entrada_nuevo_proveedores
         Me.Hide()
         TextBox4.Text = ""
         ComboBox1.SelectedIndex = -1
+
+        ComboBox1.Focus()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click

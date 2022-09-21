@@ -38,6 +38,8 @@ Public Class Salida_nuevo_cliente
     End Sub
 
     Private Sub Salida_nuevo_cliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        ComboBox1.Focus()
         mostrar()
     End Sub
 

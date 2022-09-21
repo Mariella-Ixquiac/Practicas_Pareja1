@@ -50,6 +50,7 @@ Public Class Inventario
     End Sub
 
     Private Sub Inventario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ComboBox2.Focus()
         mostrar()
         mostrar2()
     End Sub

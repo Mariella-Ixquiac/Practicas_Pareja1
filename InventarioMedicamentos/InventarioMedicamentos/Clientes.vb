@@ -48,6 +48,7 @@ Public Class Clientes
     Private Sub Clientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         Cargar_datos()
+        TextBox1.Focus()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click

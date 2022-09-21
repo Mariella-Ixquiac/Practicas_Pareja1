@@ -29,6 +29,7 @@ Public Class Salida_Nueva_productos
     End Sub
 
     Private Sub Salida_Nueva_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ComboBox1.Focus()
         mostrar()
     End Sub
 

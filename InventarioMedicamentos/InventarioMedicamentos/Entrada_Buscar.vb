@@ -43,6 +43,7 @@ Public Class Entrada_Buscar
     End Sub
 
     Private Sub Entrada_Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox5.Focus()
         mostrar()
         If CheckBox14.Checked = True And TextBox5.Text = "" Then
             conn = objetoconexion.AbrirCon

@@ -160,6 +160,7 @@ Public Class Salida_Nuevo
         mostrar()
         mostrar2()
         DataGridView2.Columns(9).Visible = False
+        DateTimePicker2.Focus()
         DataGridView2.Columns(10).Visible = False
     End Sub
 

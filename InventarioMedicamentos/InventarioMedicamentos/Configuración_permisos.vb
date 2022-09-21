@@ -28,7 +28,7 @@ Public Class Configuración_permisos
     End Sub
 
     Private Sub Configuración_permisos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Button3.Focus()
         GroupBox2.Enabled = 0
         GroupBox1.Enabled = 0
         GroupBox3.Enabled = 0

@@ -51,6 +51,7 @@ Public Class Medicamentos
     End Sub
 
     Private Sub Medicamentos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox15.Focus()
         mostrar()
     End Sub
 

@@ -48,6 +48,7 @@ Public Class Configuracion
     End Sub
 
     Private Sub Configuracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox1.Focus()
         mostrar()
         Cargar_datos()
         DataGridView1.Columns(5).Visible = False
@@ -290,5 +291,15 @@ Public Class Configuracion
 
         Button4.Enabled = True
         Button2.Enabled = True
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            TextBox2.PasswordChar = ""
+            TextBox7.PasswordChar = ""
+        Else
+            TextBox2.PasswordChar = "*"
+            TextBox7.PasswordChar = "*"
+        End If
     End Sub
 End Class

@@ -13,4 +13,8 @@
         Me.Hide()
         Index.Show()
     End Sub
+
+    Private Sub index_salida_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Button1.Focus()
+    End Sub
 End Class

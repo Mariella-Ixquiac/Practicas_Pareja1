@@ -26,6 +26,8 @@ Public Class Entrada_nuevo_productos
 
     Private Sub Entrada_nuevo_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
+        ComboBox1.Focus()
+
     End Sub
 
     Private Sub DataGridView1_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentDoubleClick

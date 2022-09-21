@@ -52,6 +52,7 @@ Public Class Entrada_nuevo
 
     Private Sub Entrada_nuevo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
+
         DataGridView2.Columns(9).Visible = False
         DataGridView2.Columns(10).Visible = False
     End Sub

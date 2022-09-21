@@ -15,6 +15,6 @@
     End Sub
 
     Private Sub Index_entrada_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Button1.Focus()
     End Sub
 End Class
