@@ -50,7 +50,7 @@ Public Class Configuracion
     Private Sub Configuracion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         Cargar_datos()
-
+        DataGridView1.Columns(5).Visible = False
         ComboBox2.SelectedValue = -1
     End Sub
 
@@ -281,6 +281,9 @@ Public Class Configuracion
             Dim x As String
             x = row.Cells(2).Value.ToString()
             ComboBox2.SelectedIndex = row.Cells(5).Value - 1
+
+
+            DataGridView1.Columns(5).Visible = False
 
         Catch ex As Exception
         End Try

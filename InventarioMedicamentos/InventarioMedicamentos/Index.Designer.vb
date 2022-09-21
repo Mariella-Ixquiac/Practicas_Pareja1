@@ -29,10 +29,10 @@ Partial Class Index
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -78,13 +78,6 @@ Partial Class Index
         Me.Button6.Name = "Button6"
         Me.Button6.UseVisualStyleBackColor = False
         '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.Turquoise
-        resources.ApplyResources(Me.Button7, "Button7")
-        Me.Button7.Name = "Button7"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
         'Button8
         '
         Me.Button8.BackColor = System.Drawing.Color.Turquoise
@@ -105,6 +98,13 @@ Partial Class Index
         resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Name = "Label4"
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.Turquoise
+        resources.ApplyResources(Me.Button7, "Button7")
+        Me.Button7.Name = "Button7"
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Index
         '
@@ -135,8 +135,8 @@ Partial Class Index
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Private WithEvents Label3 As Label
     Private WithEvents Label4 As Label
+    Friend WithEvents Button7 As Button
 End Class

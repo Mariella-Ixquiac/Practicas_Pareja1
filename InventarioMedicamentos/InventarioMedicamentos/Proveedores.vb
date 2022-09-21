@@ -65,11 +65,13 @@ Public Class Proveedores
     End Sub
 
     Private Sub Proveedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         mostrar()
         mostrar2()
         Cargar_datos()
         TextBox13.Focus()
         ComboBox3.SelectedValue = -1
+        DataGridView1.Columns(4).Visible = False
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -376,6 +378,7 @@ Public Class Proveedores
             x = row.Cells(3).Value.ToString()
             ComboBox3.SelectedIndex = row.Cells(4).Value - 1
 
+            DataGridView1.Columns(4).Visible = False
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
         End Try

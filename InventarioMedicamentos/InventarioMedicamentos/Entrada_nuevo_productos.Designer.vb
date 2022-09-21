@@ -179,6 +179,7 @@ Partial Class Entrada_nuevo_productos
         Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Entrada_nuevo_productos"
         Me.Text = "Elegir Producto"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

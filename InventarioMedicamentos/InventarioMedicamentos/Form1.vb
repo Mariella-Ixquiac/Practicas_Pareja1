@@ -68,6 +68,14 @@ Public Class Form1
                 Index.Button2.Enabled = 1
                 Index.Button1.Enabled = 1
                 Index.Button7.Enabled = 1
+
+                Index.Button1.BackColor = Color.Turquoise
+                Index.Button2.BackColor = Color.Turquoise
+                Index.Button6.BackColor = Color.Turquoise
+                Index.Button5.BackColor = Color.Turquoise
+                Index.Button3.BackColor = Color.Turquoise
+                Index.Button4.BackColor = Color.Turquoise
+                Index.Button7.BackColor = Color.Turquoise
             End If
 
             If id_rol = "2" Then
@@ -78,6 +86,15 @@ Public Class Form1
                 Index.Button2.Enabled = 1
                 Index.Button1.Enabled = 1
                 Index.Button7.Enabled = 0
+                Index.Button1.BackColor = Color.Turquoise
+                Index.Button2.BackColor = Color.Turquoise
+                Index.Button6.BackColor = Color.Turquoise
+                Index.Button5.BackColor = Color.Turquoise
+                Index.Button3.BackColor = Color.Turquoise
+                Index.Button4.BackColor = Color.Turquoise
+                Index.Button7.BackColor = Color.LightSeaGreen
+
+
             End If
 
             If id_rol = "3" Then
@@ -88,6 +105,13 @@ Public Class Form1
                 Index.Button2.Enabled = 0
                 Index.Button1.Enabled = 0
                 Index.Button7.Enabled = 0
+                Index.Button1.BackColor = Color.LightSeaGreen
+                Index.Button2.BackColor = Color.LightSeaGreen
+                Index.Button6.BackColor = Color.LightSeaGreen
+                Index.Button5.BackColor = Color.Turquoise
+                Index.Button3.BackColor = Color.Turquoise
+                Index.Button4.BackColor = Color.Turquoise
+                Index.Button7.BackColor = Color.LightSeaGreen
             End If
 
             If id_rol = "4" Then
@@ -98,6 +122,13 @@ Public Class Form1
                 Index.Button2.Enabled = 1
                 Index.Button1.Enabled = 1
                 Index.Button7.Enabled = 0
+                Index.Button1.BackColor = Color.Turquoise
+                Index.Button2.BackColor = Color.Turquoise
+                Index.Button6.BackColor = Color.Turquoise
+                Index.Button5.BackColor = Color.LightSeaGreen
+                Index.Button3.BackColor = Color.LightSeaGreen
+                Index.Button4.BackColor = Color.LightSeaGreen
+                Index.Button7.BackColor = Color.LightSeaGreen
             End If
         Else
             MessageBox.Show("El usuario o la contraseña son incorrectos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
