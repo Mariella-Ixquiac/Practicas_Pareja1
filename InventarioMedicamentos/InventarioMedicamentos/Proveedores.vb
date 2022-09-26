@@ -278,7 +278,7 @@ Public Class Proveedores
             conn.Dispose()
             mostrar2()
 
-            limpiar()
+            limpiar2()
 
         Catch ex As Exception
         End Try

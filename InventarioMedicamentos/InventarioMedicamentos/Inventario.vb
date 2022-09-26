@@ -30,7 +30,7 @@ Public Class Inventario
     Private Sub mostrar2()
         conn = objetoconexion.AbrirCon
 
-        Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento;"
+        Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -244,7 +244,7 @@ Public Class Inventario
         If ComboBox1.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.id_venta Like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.id_venta Like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -257,7 +257,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Nombre del Cliente" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where c.ape_cliente Like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where c.ape_cliente Like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -271,7 +271,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Fecha de la Venta" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.fec_venta like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.fec_venta like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -285,7 +285,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Nombre del Medicamento" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.nom_med like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.nom_med like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -299,7 +299,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Fecha de Caducidad" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.fec_caducidad like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.fec_caducidad like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -313,7 +313,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Unidad de Medida" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.uni_medida like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.uni_medida like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -327,7 +327,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Stock" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.Cantidad_existente like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.Cantidad_existente like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -338,10 +338,10 @@ Public Class Inventario
             Catch ex As Exception
             End Try
 
-        ElseIf ComboBox1.SelectedItem = "Unidades a Vender" Then
+        ElseIf ComboBox1.SelectedItem = "Unidades Vendidas" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.unidades_vendidas like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.unidades_vendidas like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -355,7 +355,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Precio (Q)" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.precio_final like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where m.precio_final like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -369,7 +369,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Subtotal (Q)" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.subtotal_venta Like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.subtotal_venta Like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -383,7 +383,7 @@ Public Class Inventario
         ElseIf ComboBox1.SelectedItem = "Total (Q)" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a Vender', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.total Like '%" & TextBox2.Text & "%'”
+                Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento where v.total Like '%" & TextBox2.Text & "%'”
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -400,5 +400,16 @@ Public Class Inventario
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         limpiar2()
         mostrar2()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        DataGridView1.Enabled = False
+
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+        DataGridView2.Enabled = False
+
+
     End Sub
 End Class

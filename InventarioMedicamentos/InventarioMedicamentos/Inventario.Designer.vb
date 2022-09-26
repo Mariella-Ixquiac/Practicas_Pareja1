@@ -54,7 +54,7 @@ Partial Class Inventario
         Me.Label9.Location = New System.Drawing.Point(421, 75)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 16)
+        Me.Label9.Size = New System.Drawing.Size(40, 14)
         Me.Label9.TabIndex = 176
         Me.Label9.Text = "Buscar:"
         '
@@ -66,7 +66,7 @@ Partial Class Inventario
         Me.Label8.Location = New System.Drawing.Point(12, 40)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(243, 19)
+        Me.Label8.Size = New System.Drawing.Size(204, 17)
         Me.Label8.TabIndex = 175
         Me.Label8.Text = "Inventario de los medicamentos"
         '
@@ -113,7 +113,7 @@ Partial Class Inventario
         Me.TextBox1.Location = New System.Drawing.Point(479, 72)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(267, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(267, 19)
         Me.TextBox1.TabIndex = 6
         '
         'Label12
@@ -122,7 +122,7 @@ Partial Class Inventario
         Me.Label12.Location = New System.Drawing.Point(103, 75)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(51, 16)
+        Me.Label12.Size = New System.Drawing.Size(43, 14)
         Me.Label12.TabIndex = 170
         Me.Label12.Text = "Campo:"
         '
@@ -134,7 +134,7 @@ Partial Class Inventario
         Me.ComboBox2.Location = New System.Drawing.Point(162, 70)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(251, 23)
+        Me.ComboBox2.Size = New System.Drawing.Size(251, 20)
         Me.ComboBox2.TabIndex = 5
         '
         'Label4
@@ -144,7 +144,7 @@ Partial Class Inventario
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(0, 755)
+        Me.Label4.Location = New System.Drawing.Point(0, 736)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
@@ -177,7 +177,7 @@ Partial Class Inventario
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(13, 448)
+        Me.DataGridView1.Location = New System.Drawing.Point(13, 446)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1121, 283)
@@ -189,17 +189,17 @@ Partial Class Inventario
         Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
         Me.Label10.Location = New System.Drawing.Point(-3, 394)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(1963, 16)
+        Me.Label10.Size = New System.Drawing.Size(1571, 14)
         Me.Label10.TabIndex = 328
         Me.Label10.Text = resources.GetString("Label10.Text")
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(421, 419)
+        Me.Label1.Location = New System.Drawing.Point(421, 417)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(50, 16)
+        Me.Label1.Size = New System.Drawing.Size(40, 14)
         Me.Label1.TabIndex = 334
         Me.Label1.Text = "Buscar:"
         '
@@ -208,7 +208,7 @@ Partial Class Inventario
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(962, 412)
+        Me.Button2.Location = New System.Drawing.Point(962, 410)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(172, 28)
@@ -221,7 +221,7 @@ Partial Class Inventario
         Me.Button4.BackColor = System.Drawing.Color.Turquoise
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(754, 413)
+        Me.Button4.Location = New System.Drawing.Point(754, 411)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(200, 27)
@@ -231,19 +231,19 @@ Partial Class Inventario
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(479, 416)
+        Me.TextBox2.Location = New System.Drawing.Point(479, 414)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(267, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(267, 19)
         Me.TextBox2.TabIndex = 330
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(103, 419)
+        Me.Label2.Location = New System.Drawing.Point(103, 417)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 16)
+        Me.Label2.Size = New System.Drawing.Size(43, 14)
         Me.Label2.TabIndex = 333
         Me.Label2.Text = "Campo:"
         '
@@ -252,10 +252,10 @@ Partial Class Inventario
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre del Cliente", "Fecha de la Venta", "Nombre del Medicamento", "Fecha de Caducidad", "Unidad de Medida", "Stock", "Unidades a Vender", "Precio (Q)", "Subtotal (Q)", "Total (Q)"})
-        Me.ComboBox1.Location = New System.Drawing.Point(162, 414)
+        Me.ComboBox1.Location = New System.Drawing.Point(162, 412)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(251, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(251, 20)
         Me.ComboBox1.TabIndex = 329
         '
         'Label5
@@ -266,7 +266,7 @@ Partial Class Inventario
         Me.Label5.Location = New System.Drawing.Point(13, 71)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(82, 19)
+        Me.Label5.Size = New System.Drawing.Size(68, 17)
         Me.Label5.TabIndex = 335
         Me.Label5.Text = "Compras:"
         '
@@ -275,19 +275,19 @@ Partial Class Inventario
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label6.Location = New System.Drawing.Point(13, 416)
+        Me.Label6.Location = New System.Drawing.Point(13, 414)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(62, 19)
+        Me.Label6.Size = New System.Drawing.Size(55, 17)
         Me.Label6.TabIndex = 336
         Me.Label6.Text = "Ventas:"
         '
         'Inventario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(1147, 783)
+        Me.ClientSize = New System.Drawing.Size(1147, 764)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)

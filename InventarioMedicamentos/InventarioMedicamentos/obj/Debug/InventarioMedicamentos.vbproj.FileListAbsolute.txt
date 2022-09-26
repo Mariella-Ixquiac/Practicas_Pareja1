@@ -42,7 +42,6 @@ C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\MySql.Data.xml
-C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.vbprojResolveAssemblyReference.cache
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.vbproj.InventarioMedicamentos.exe.config
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Clientes.resources
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Configuracion.resources
@@ -85,3 +84,4 @@ C:\Users\HP\Desktop\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamen
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\bin\Debug\es-419\InventarioMedicamentos.resources.dll
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.Form1.es-419.resources
 C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\es-419\InventarioMedicamentos.resources.dll
+C:\Users\marie\OneDrive\Documentos\Visual Studio 2015\Projects\ProyectoPracticas\Practicas_Pareja1\InventarioMedicamentos\InventarioMedicamentos\obj\Debug\InventarioMedicamentos.vbprojResolveAssemblyReference.cache

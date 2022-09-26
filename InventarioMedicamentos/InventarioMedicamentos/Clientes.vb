@@ -99,9 +99,9 @@ Public Class Clientes
             TextBox2.Focus()
             Exit Sub
         End If
-        If TextBox2.Text.Length < 8 Then
+        If TextBox3.Text.Length < 8 Then
             MessageBox.Show("Debe Ingresar un Número de Teléfono Valido.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            TextBox2.Focus()
+            TextBox3.Focus()
             Exit Sub
         End If
 

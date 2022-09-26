@@ -37,7 +37,7 @@ Public Class Entrada_nuevo
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
-        Index.Show()
+        Index_entrada.Show()
         limpiar()
         mostrar()
     End Sub
@@ -204,4 +204,7 @@ Public Class Entrada_nuevo
         Button5.Enabled = True
     End Sub
 
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
 End Class

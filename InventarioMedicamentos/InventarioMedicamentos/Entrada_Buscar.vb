@@ -12,7 +12,7 @@ Public Class Entrada_Buscar
         limpiar()
         mostrar()
         Me.Hide()
-        Index.Show()
+        Index_entrada.Show()
     End Sub
 
     Private Sub mostrar()
