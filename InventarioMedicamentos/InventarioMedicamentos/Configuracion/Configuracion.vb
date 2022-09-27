@@ -97,7 +97,6 @@ Public Class Configuracion
             Exit Sub
         End If
 
-
         Try
             If TextBox2.Text = TextBox7.Text Then
                 cmd = conn.CreateCommand
@@ -174,10 +173,6 @@ Public Class Configuracion
 
         Button4.Enabled = False
         Button2.Enabled = False
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
@@ -338,7 +333,6 @@ Public Class Configuracion
             Button1.PerformClick()
         End If
     End Sub
-
 
     Private Sub TextBox13_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox13.KeyDown
         If e.KeyCode = Keys.Enter Then

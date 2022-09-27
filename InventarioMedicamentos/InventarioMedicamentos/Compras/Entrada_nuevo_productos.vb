@@ -27,7 +27,6 @@ Public Class Entrada_nuevo_productos
     Private Sub Entrada_nuevo_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         mostrar()
         ComboBox1.Focus()
-
     End Sub
 
     Private Sub DataGridView1_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentDoubleClick
@@ -147,9 +146,7 @@ Public Class Entrada_nuevo_productos
 
             Catch ex As Exception
             End Try
-
         End If
-
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -168,5 +165,4 @@ Public Class Entrada_nuevo_productos
             Button5.PerformClick()
         End If
     End Sub
-
 End Class

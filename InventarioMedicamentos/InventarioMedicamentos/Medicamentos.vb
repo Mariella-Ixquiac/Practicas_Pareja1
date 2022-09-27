@@ -9,7 +9,6 @@ Public Class Medicamentos
 
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT e.id_med AS 'ID', e.nom_med as 'Nombre del Medicamentos', e.receta as 'Receta', e.Cantidad_existente AS 'Cantidad de existencia', e.presentacion as 'Empaque', e.uni_medida as 'Unidad de medida', e.fec_caducidad as 'Fecha de caducidad', e.formula as 'Formula', e.dosis as 'Dosis', e.precauciones as 'Precauciones', e.descripcion as 'Detalles', e.precio_costo as 'Precio Costo', e.precio_final as 'Precio Final' FROM medicamento e;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
@@ -46,7 +45,6 @@ Public Class Medicamentos
         Index.Show()
         limpiar()
         limpiar2()
-
         mostrar()
     End Sub
 
@@ -65,7 +63,6 @@ Public Class Medicamentos
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        'Guardar
         conn = objetoconexion.AbrirCon
 
         If TextBox15.Text.Length = 0 Then
@@ -117,7 +114,6 @@ Public Class Medicamentos
             MessageBox.Show("Debe Ingresar Precio de Venta.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox2.Focus()
             Exit Sub
-
         End If
 
         Try
@@ -144,7 +140,6 @@ Public Class Medicamentos
             limpiar()
 
         Catch ex As Exception
-
         End Try
     End Sub
 
@@ -202,10 +197,6 @@ Public Class Medicamentos
 
         Button11.Enabled = False
         Button13.Enabled = False
-    End Sub
-
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-        'Está en DataGridView2_CellDoubleClick 
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
@@ -451,7 +442,6 @@ Public Class Medicamentos
             End If
         End If
     End Sub
-
 
     Private Sub TextBox15_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox15.KeyDown
         If e.KeyCode = Keys.Enter Then

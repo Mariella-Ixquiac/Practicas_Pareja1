@@ -4,140 +4,140 @@
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAgAAABAQAAAAAAgAAAAA=</HashCode>
-      <FileName>Class1.vb</FileName>
+      <FileName>Conexion\Class1.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Clientes" Collapsed="true">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAgEKAgAAUEkEDg2DsCAAQ0cA8JBAAAACAAIAA=</HashCode>
+      <HashCode>AAABAAggEKAAAAUEkECg2H8CAAS0cA8JBAAAAABAIAA=</HashCode>
       <FileName>Clientes.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Configuracion" Collapsed="true">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABBAEAgECAgAAUEEECgXDgCABT7cAgJBAAAAAAAAAA=</HashCode>
-      <FileName>Configuracion.vb</FileName>
+      <HashCode>AQBBAEggECAAAAUEEESgXDwCABT7cIgJBAAABAAAAAA=</HashCode>
+      <FileName>Configuracion\Configuracion.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Configuración_permisos" Collapsed="true">
     <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAECECAAAAQAAACAQCCSBwQAMIgAAAAAAAAAAAA=</HashCode>
-      <FileName>Configuración_permisos.vb</FileName>
+      <HashCode>AQAAAAECECAAAAQAAACAACD6hwUAMIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuracion\Configuración_permisos.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Entrada_Buscar" Collapsed="true">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABgEAgECAAABQEFESgAjgSADT/UAARAQAQAAAAAAA=</HashCode>
-      <FileName>Entrada_Buscar.vb</FileName>
+      <HashCode>AAAJgEAgECAAABQEFESgAjgSADT/UAARAQAQAAAAAIA=</HashCode>
+      <FileName>Compras\Entrada_Buscar.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Entrada_nuevo" Collapsed="true">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABgAAgEKAAAAQEkECgxjkCACX/cA4RAAAAABAAAAA=</HashCode>
-      <FileName>Entrada_nuevo.vb</FileName>
+      <HashCode>AAABgAAgEKAAIAQElECgxjkCACX/cA4RAAAAAAAAAAA=</HashCode>
+      <FileName>Compras\Entrada_nuevo.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Entrada_nuevo_productos" Collapsed="true">
     <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECAgAAQEAACgkAMCAAQAAAeJBAAAAAAAABA=</HashCode>
-      <FileName>Entrada_nuevo_productos.vb</FileName>
+      <HashCode>AAAAAAAAECAAAAQEAACglAMCAAQAAAeJBAEAAAAAABA=</HashCode>
+      <FileName>Compras\Entrada_nuevo_productos.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Entrada_nuevo_proveedores" Collapsed="true">
     <Position X="4" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECQAAAQEAACgkAMCAAQAAAeJBAAAAAAAAAA=</HashCode>
-      <FileName>Entrada_nuevo_proveedores.vb</FileName>
+      <HashCode>AAAAAAAAECQAAAQEAACglAMCAAQAAAeJBAEAAAAAAAA=</HashCode>
+      <FileName>Compras\Entrada_nuevo_proveedores.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Form1" Collapsed="true">
     <Position X="5.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQABAAAiECgAAAQAAACAABgCAAQQYIAQAEQQAAAAAAA=</HashCode>
-      <FileName>Form1.vb</FileName>
+      <HashCode>AQABAAAiUCAAAAQAAACAABwCAASQYIAQAEQAAAAAAAA=</HashCode>
+      <FileName>Menus\Form1.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Index" Collapsed="true">
     <Position X="7.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgECAAAAAAAACAxDsCAACAcA8AAAAAAAAAAAA=</HashCode>
-      <FileName>Index.vb</FileName>
+      <FileName>Menus\Index.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Index_configuracion" Collapsed="true">
     <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECAAAAAAAACABCgCAACAUAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Index_configuracion.vb</FileName>
+      <HashCode>AAAAAAAAECAACAAAAACABCgCAACAUAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menus\Index_configuracion.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Index_entrada" Collapsed="true">
     <Position X="2.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAECAAAAAAQACABCgCAACAUAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Index_entrada.vb</FileName>
+      <FileName>Menus\Index_entrada.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.index_salida" Collapsed="true">
     <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECAAAAAAAACABCgCAACAUAAAAAAAAAAAAAA=</HashCode>
-      <FileName>index_salida.vb</FileName>
+      <HashCode>AAAAAAAAECAAAAAACACABCgCAACAUAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menus\index_salida.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Inventario" Collapsed="true">
     <Position X="5.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECAAAAQEEACAEjoCACRQcAERAAgAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAgECAgAAQEEACAVDsCAARQcAkZBAgAAhAAAEA=</HashCode>
       <FileName>Inventario.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Medicamentos" Collapsed="true">
     <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQBBhAAgECEAgCQEkECgHhSCADX/ABARBAAAAJAAAEA=</HashCode>
+      <HashCode>AQBJhAggUCEAoCQE0ECwHhSCADX/ABARBIAAAIAAAEA=</HashCode>
       <FileName>Medicamentos.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Proveedores" Collapsed="true">
     <Position X="4" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABBBAAgFKEggAUEkACA3D8CAjTzIBcZBBAAApgAAEA=</HashCode>
+      <HashCode>AABBBAAgEKEAgAUE0CCA3D8CBjTzIBcZBBAAAogAAEA=</HashCode>
       <FileName>Proveedores.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Salida_Buscar" Collapsed="true">
     <Position X="5.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIBgEAgECAAABQEFECgAjoSADT/cAARAQAAAAAAAAA=</HashCode>
-      <FileName>Salida_Buscar.vb</FileName>
+      <HashCode>AAIBgEAgECAAABQEFmCgAjoSADT/cAARAQAAAAAAAAA=</HashCode>
+      <FileName>Ventas\Salida_Buscar.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Salida_Nueva_productos" Collapsed="true">
     <Position X="7.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECAgAAQFAACgkAMCAAQAAAcJBAAAAAAAAAA=</HashCode>
-      <FileName>Salida_Nueva_productos.vb</FileName>
+      <HashCode>AAAAAAAAECAAAAQFAACglAMCAAQAAAeJBAEAAAAAAAA=</HashCode>
+      <FileName>Ventas\Salida_Nueva_productos.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Salida_Nuevo" Collapsed="true">
     <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABBgEAgEKAgBAQEEECgxjMCACT/EA8ZAAAAABAAAAA=</HashCode>
-      <FileName>Salida_Nuevo.vb</FileName>
+      <HashCode>AABBgEAgGKAgBAQEFECgzjMCACT/UA8ZBAIAAAAAAAA=</HashCode>
+      <FileName>Ventas\Salida_Nuevo.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.Salida_nuevo_cliente" Collapsed="true">
     <Position X="2.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAECAAAAQEAACokAMCAAQAAAeJBAAAAAAAAAA=</HashCode>
-      <FileName>Salida_nuevo_cliente.vb</FileName>
+      <HashCode>AAAAAAAAECAAAAQEAAColAMCAAQAAAeJBAEAAAAAAAA=</HashCode>
+      <FileName>Ventas\Salida_nuevo_cliente.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventarioMedicamentos.My.MyApplication" Collapsed="true">

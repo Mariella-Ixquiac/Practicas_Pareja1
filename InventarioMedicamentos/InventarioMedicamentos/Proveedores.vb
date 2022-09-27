@@ -9,7 +9,6 @@ Public Class Proveedores
 
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT p.id_proveedores AS 'ID', p.nom_proveedores as 'Nombre del Proveedor', p.telefono as 'Celular', m.nom_marca as 'Marca', p.id_marca as 'ID de la Marca' FROM proveedores p inner JOIN marca m on p.id_marca= m.id_marca;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
@@ -22,7 +21,6 @@ Public Class Proveedores
 
     Private Sub mostrar2()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT m.id_marca AS 'ID', m.nom_marca as 'Nombre de la marca', m.direccion as 'domicilio', m.calificacion as 'Puntaje' FROM marca m;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
@@ -65,7 +63,6 @@ Public Class Proveedores
     End Sub
 
     Private Sub Proveedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         mostrar()
         mostrar2()
         Cargar_datos()
@@ -75,7 +72,6 @@ Public Class Proveedores
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
         mostrar()
         Me.Hide()
         Index.Show()
@@ -100,7 +96,6 @@ Public Class Proveedores
     End Sub
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        'Guardar
         conn = objetoconexion.AbrirCon
 
         If TextBox13.Text.Length = 0 Then
@@ -140,9 +135,7 @@ Public Class Proveedores
             limpiar()
 
         Catch ex As Exception
-
         End Try
-
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
@@ -190,10 +183,6 @@ Public Class Proveedores
 
         Button11.Enabled = False
         Button13.Enabled = False
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        'Lo cambié al DataGridView1_CellDoubleClick
     End Sub
 
     Private Sub TextBox12_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox12.KeyPress
@@ -287,10 +276,6 @@ Public Class Proveedores
         Button15.Enabled = False
     End Sub
 
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-        'Lo cambié al DataGridView2_CellDoubleClick
-    End Sub
-
     Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
         If Asc(e.KeyChar) <> 8 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
@@ -337,7 +322,6 @@ Public Class Proveedores
             Catch ex As Exception
             End Try
 
-
         ElseIf ComboBox4.SelectedItem = "Celular" Then
             conn = objetoconexion.AbrirCon
             Try
@@ -362,7 +346,6 @@ Public Class Proveedores
                 conn.Close()
                 conn.Dispose()
             Catch ex As Exception
-
             End Try
         End If
     End Sub
@@ -421,8 +404,6 @@ Public Class Proveedores
         End If
     End Sub
 
-
-
     Private Sub textbox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button5.PerformClick()
@@ -441,8 +422,6 @@ Public Class Proveedores
         End If
     End Sub
 
-
-
     Private Sub combobox4_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox4.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button10.PerformClick()
@@ -454,5 +433,4 @@ Public Class Proveedores
             Button10.PerformClick()
         End If
     End Sub
-
 End Class

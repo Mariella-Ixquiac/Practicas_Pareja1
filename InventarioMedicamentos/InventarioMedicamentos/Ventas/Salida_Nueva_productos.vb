@@ -9,7 +9,6 @@ Public Class Salida_Nueva_productos
 
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT m.id_med AS 'ID', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.Cantidad_existente AS 'Cantidad de existencia', m.precio_final AS 'Precio de Venta' FROM medicamento m;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
@@ -24,17 +23,12 @@ Public Class Salida_Nueva_productos
         ComboBox1.SelectedIndex = -1
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
     Private Sub Salida_Nueva_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Focus()
         mostrar()
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-
         mostrar()
         TextBox4.Text = ""
         ComboBox1.SelectedIndex = -1
@@ -135,10 +129,7 @@ Public Class Salida_Nueva_productos
 
             Catch ex As Exception
             End Try
-
         End If
-
-
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -160,7 +151,6 @@ Public Class Salida_Nueva_productos
         End Try
     End Sub
 
-
     Private Sub combobox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button5.PerformClick()
@@ -172,5 +162,4 @@ Public Class Salida_Nueva_productos
             Button5.PerformClick()
         End If
     End Sub
-
 End Class

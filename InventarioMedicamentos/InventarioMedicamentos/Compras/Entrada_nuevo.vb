@@ -100,8 +100,6 @@ Public Class Entrada_nuevo
             limpiar()
 
         Catch ex As Exception
-            MessageBox.Show(ex.innerexception.Message)
-
         End Try
     End Sub
 
@@ -204,11 +202,9 @@ Public Class Entrada_nuevo
         Button5.Enabled = True
     End Sub
 
-
     Private Sub DateTimePicker2_KeyDown(sender As Object, e As KeyEventArgs) Handles DateTimePicker2.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button8.PerformClick()
         End If
     End Sub
-
 End Class

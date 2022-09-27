@@ -113,78 +113,78 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="Conexion\Class1.vb" />
     <Compile Include="Clientes.Designer.vb">
       <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
     <Compile Include="Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuracion.Designer.vb">
+    <Compile Include="Configuracion\Configuracion.Designer.vb">
       <DependentUpon>Configuracion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Configuracion.vb">
+    <Compile Include="Configuracion\Configuracion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configuración_permisos.Designer.vb">
+    <Compile Include="Configuracion\Configuración_permisos.Designer.vb">
       <DependentUpon>Configuración_permisos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Configuración_permisos.vb">
+    <Compile Include="Configuracion\Configuración_permisos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entrada_Buscar.Designer.vb">
+    <Compile Include="Compras\Entrada_Buscar.Designer.vb">
       <DependentUpon>Entrada_Buscar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Entrada_Buscar.vb">
+    <Compile Include="Compras\Entrada_Buscar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entrada_nuevo.Designer.vb">
+    <Compile Include="Compras\Entrada_nuevo.Designer.vb">
       <DependentUpon>Entrada_nuevo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Entrada_nuevo.vb">
+    <Compile Include="Compras\Entrada_nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entrada_nuevo_productos.Designer.vb">
+    <Compile Include="Compras\Entrada_nuevo_productos.Designer.vb">
       <DependentUpon>Entrada_nuevo_productos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Entrada_nuevo_productos.vb">
+    <Compile Include="Compras\Entrada_nuevo_productos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entrada_nuevo_proveedores.Designer.vb">
+    <Compile Include="Compras\Entrada_nuevo_proveedores.Designer.vb">
       <DependentUpon>Entrada_nuevo_proveedores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Entrada_nuevo_proveedores.vb">
+    <Compile Include="Compras\Entrada_nuevo_proveedores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Menus\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="Menus\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Index.Designer.vb">
+    <Compile Include="Menus\Index.Designer.vb">
       <DependentUpon>Index.vb</DependentUpon>
     </Compile>
-    <Compile Include="Index.vb">
+    <Compile Include="Menus\Index.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Index_configuracion.Designer.vb">
+    <Compile Include="Menus\Index_configuracion.Designer.vb">
       <DependentUpon>Index_configuracion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Index_configuracion.vb">
+    <Compile Include="Menus\Index_configuracion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Index_entrada.Designer.vb">
+    <Compile Include="Menus\Index_entrada.Designer.vb">
       <DependentUpon>Index_entrada.vb</DependentUpon>
     </Compile>
-    <Compile Include="Index_entrada.vb">
+    <Compile Include="Menus\Index_entrada.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="index_salida.Designer.vb">
+    <Compile Include="Menus\index_salida.Designer.vb">
       <DependentUpon>index_salida.vb</DependentUpon>
     </Compile>
-    <Compile Include="index_salida.vb">
+    <Compile Include="Menus\index_salida.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inventario.Designer.vb">
@@ -220,28 +220,28 @@
     <Compile Include="Proveedores.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Salida_Buscar.Designer.vb">
+    <Compile Include="Ventas\Salida_Buscar.Designer.vb">
       <DependentUpon>Salida_Buscar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Salida_Buscar.vb">
+    <Compile Include="Ventas\Salida_Buscar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Salida_Nueva_productos.Designer.vb">
+    <Compile Include="Ventas\Salida_Nueva_productos.Designer.vb">
       <DependentUpon>Salida_Nueva_productos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Salida_Nueva_productos.vb">
+    <Compile Include="Ventas\Salida_Nueva_productos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Salida_Nuevo.Designer.vb">
+    <Compile Include="Ventas\Salida_Nuevo.Designer.vb">
       <DependentUpon>Salida_Nuevo.vb</DependentUpon>
     </Compile>
-    <Compile Include="Salida_Nuevo.vb">
+    <Compile Include="Ventas\Salida_Nuevo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Salida_nuevo_cliente.Designer.vb">
+    <Compile Include="Ventas\Salida_nuevo_cliente.Designer.vb">
       <DependentUpon>Salida_nuevo_cliente.vb</DependentUpon>
     </Compile>
-    <Compile Include="Salida_nuevo_cliente.vb">
+    <Compile Include="Ventas\Salida_nuevo_cliente.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -249,40 +249,40 @@
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuracion.resx">
+    <EmbeddedResource Include="Configuracion\Configuracion.resx">
       <DependentUpon>Configuracion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configuración_permisos.resx">
+    <EmbeddedResource Include="Configuracion\Configuración_permisos.resx">
       <DependentUpon>Configuración_permisos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entrada_Buscar.resx">
+    <EmbeddedResource Include="Compras\Entrada_Buscar.resx">
       <DependentUpon>Entrada_Buscar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entrada_nuevo.resx">
+    <EmbeddedResource Include="Compras\Entrada_nuevo.resx">
       <DependentUpon>Entrada_nuevo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entrada_nuevo_productos.resx">
+    <EmbeddedResource Include="Compras\Entrada_nuevo_productos.resx">
       <DependentUpon>Entrada_nuevo_productos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entrada_nuevo_proveedores.resx">
+    <EmbeddedResource Include="Compras\Entrada_nuevo_proveedores.resx">
       <DependentUpon>Entrada_nuevo_proveedores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.es-419.resx">
+    <EmbeddedResource Include="Menus\Form1.es-419.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Menus\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Index.resx">
+    <EmbeddedResource Include="Menus\Index.resx">
       <DependentUpon>Index.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Index_configuracion.resx">
+    <EmbeddedResource Include="Menus\Index_configuracion.resx">
       <DependentUpon>Index_configuracion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Index_entrada.resx">
+    <EmbeddedResource Include="Menus\Index_entrada.resx">
       <DependentUpon>Index_entrada.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="index_salida.resx">
+    <EmbeddedResource Include="Menus\index_salida.resx">
       <DependentUpon>index_salida.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario.resx">
@@ -300,21 +300,21 @@
     <EmbeddedResource Include="Proveedores.resx">
       <DependentUpon>Proveedores.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Salida_Buscar.resx">
+    <EmbeddedResource Include="Ventas\Salida_Buscar.resx">
       <DependentUpon>Salida_Buscar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Salida_Nueva_productos.resx">
+    <EmbeddedResource Include="Ventas\Salida_Nueva_productos.resx">
       <DependentUpon>Salida_Nueva_productos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Salida_Nuevo.resx">
+    <EmbeddedResource Include="Ventas\Salida_Nuevo.resx">
       <DependentUpon>Salida_Nuevo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Salida_nuevo_cliente.resx">
+    <EmbeddedResource Include="Ventas\Salida_nuevo_cliente.resx">
       <DependentUpon>Salida_nuevo_cliente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="Conexion\ClassDiagram1.cd" />
     <None Include="InventarioMedicamentos_ClaveTemporal.pfx" />
     <None Include="InventarioMedicamentos_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
@@ -327,7 +327,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="Conexion\App.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -341,6 +341,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

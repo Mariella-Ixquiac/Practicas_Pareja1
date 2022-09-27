@@ -2,30 +2,28 @@
 Imports MySql.Data
 Imports System.Configuration
 
-Public Class Entrada_Buscar
+Public Class Salida_Buscar
     Dim conn As New MySqlConnection
     Dim objetoconexion As New Class1
     Dim cmd As MySqlCommand
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         CheckBox14.Checked = False
-        limpiar()
-        mostrar()
         Me.Hide()
-        Index_entrada.Show()
+        mostrar()
+        index_salida.Show()
+        limpiar()
     End Sub
 
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
-
-        Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock',  c.precio_costo as 'Precio costo (Q)', c.total_PC as 'Total (Q)', c.precio_final as 'Precio Final (Q)', c.total as 'Total (Q)' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
+        Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender', m.precio_final as 'Precio', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
         DataGridView2.DataSource = ds.Tables(0)
         conn.Close()
         conn.Dispose()
-
     End Sub
 
     Private Sub limpiar()
@@ -38,17 +36,16 @@ Public Class Entrada_Buscar
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox5.Text = ""
-
         TextBox4.Text = ""
     End Sub
 
-    Private Sub Entrada_Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Salida_Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBox5.Focus()
         mostrar()
         If CheckBox14.Checked = True And TextBox5.Text = "" Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento where c.id_compra like '%" & TextBox5.Text & "%'"
+                Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento where v.id_venta like '%" & TextBox5.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -62,14 +59,15 @@ Public Class Entrada_Buscar
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If TextBox5.Text.Length = 0 Then
-            MessageBox.Show("Debe Ingresar eL Número del Documento.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Debe Ingresar el Número del Documento.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox5.Focus()
             Exit Sub
         End If
+
         If TextBox5.Text = True Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock', c.precio_costo as 'Precio costo (Q)', c.total_PC as 'Total (Q)', c.precio_final as 'Precio Final (Q)', c.total as 'Total (Q)' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento where c.id_compra like '%" & TextBox5.Text & "%'"
+                Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender', m.precio_final as 'Precio', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento where v.id_venta like '%" & TextBox5.Text & "%';"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -92,14 +90,14 @@ Public Class Entrada_Buscar
                 TextBox4.Text = row.Cells(8).Value.ToString()
 
             Catch ex As Exception
-
             End Try
         End If
+
 
         If CheckBox14.Checked = True Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento where c.id_compra like '%" & TextBox5.Text & "%'"
+                Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento where v.id_venta like '%" & TextBox5.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
@@ -107,7 +105,6 @@ Public Class Entrada_Buscar
                 conn.Close()
                 conn.Dispose()
 
-                TextBox9.Text = "***"
                 TextBox2.Text = "***"
                 TextBox3.Text = "***"
                 TextBox4.Text = "***"
@@ -116,17 +113,23 @@ Public Class Entrada_Buscar
         End If
     End Sub
 
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
     Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
         If CheckBox14.Checked = True Then
-            Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', c.unidades_compradas as 'Stock', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
+            Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento;"
             Dim adpt As New MySqlDataAdapter(query, conn)
             Dim ds As New DataSet()
             adpt.Fill(ds)
             DataGridView2.DataSource = ds.Tables(0)
             conn.Close()
             conn.Dispose()
-
-            TextBox9.Text = "***"
             TextBox2.Text = "***"
             TextBox3.Text = "***"
             TextBox4.Text = "***"
@@ -151,60 +154,49 @@ Public Class Entrada_Buscar
 
         Catch ex As Exception
         End Try
-
     End Sub
 
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         limpiar()
         mostrar()
-    End Sub
-
-    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
     End Sub
 
     Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
         If CheckBox14.Checked = True Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento where c.id_compra like '%" & TextBox5.Text & "%'"
+                Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento where v.id_venta like '%" & TextBox5.Text & "%'"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-
             Catch ex As Exception
             End Try
         End If
         If CheckBox14.Checked = False Then
             conn = objetoconexion.AbrirCon
             Try
-                Dim query As String = "SELECT c.id_compra AS 'ID', c.fec_compra as 'Fecha de la compra', p.nom_proveedores as 'Nombre del Proveedor', m.nom_med as 'Nombre del Medicamento', c.unidades_compradas as 'Stock', c.precio_costo as 'Precio costo (Q)', c.total_PC as 'Total (Q)', c.precio_final as 'Precio Final (Q)', c.total as 'Total (Q)' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento where c.id_compra like '%" & TextBox5.Text & "%'"
+                Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender', m.precio_final as 'Precio', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento where v.id_venta like '%" & TextBox5.Text & "%';"
                 Dim adpt As New MySqlDataAdapter(query, conn)
                 Dim ds As New DataSet()
                 adpt.Fill(ds)
                 DataGridView2.DataSource = ds.Tables(0)
                 conn.Close()
                 conn.Dispose()
-
             Catch ex As Exception
             End Try
         End If
     End Sub
 
-    Private Sub TextBox5_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
+    Private Sub textbox5_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button3.PerformClick()
         End If
     End Sub
 
-    Private Sub CheckBox14_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox14.KeyDown
+    Private Sub checkbox14_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox14.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button3.PerformClick()
         End If

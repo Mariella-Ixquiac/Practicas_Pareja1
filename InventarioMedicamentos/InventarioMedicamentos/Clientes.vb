@@ -39,9 +39,6 @@ Public Class Clientes
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
-        'ComboBox1.DataSource = ds.Tables(0)
-        'ComboBox1.DisplayMember = "nom_proveedores"
-        'ComboBox1.ValueMember = "id_proveedores"
         conn.Close()
     End Sub
 
@@ -71,7 +68,6 @@ Public Class Clientes
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Guardar
         conn = objetoconexion.AbrirCon
 
         If TextBox1.Text.Length = 0 Then
@@ -119,8 +115,8 @@ Public Class Clientes
             conn.Dispose()
             mostrar()
             limpiar()
-        Catch ex As Exception
 
+        Catch ex As Exception
         End Try
     End Sub
 
@@ -149,7 +145,6 @@ Public Class Clientes
 
         Button4.Enabled = False
         Button2.Enabled = False
-
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -171,12 +166,6 @@ Public Class Clientes
 
         Button4.Enabled = False
         Button2.Enabled = False
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        'Cambie los datos de aquí para el DataGridView1_CellDoubleClick 
-        'Lo único que cambia es que ahora solo si se selecciona se van a habilitar los botones de modificar y eliminar, si no hay nada selecionado no se van a poder usar
-
     End Sub
 
     Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
@@ -277,7 +266,6 @@ Public Class Clientes
             End Try
 
         End If
-
     End Sub
 
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
@@ -320,8 +308,6 @@ Public Class Clientes
             Button1.PerformClick()
         End If
     End Sub
-
-
 
     Private Sub COMBOBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox1.KeyDown
         If e.KeyCode = Keys.Enter Then

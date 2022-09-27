@@ -9,9 +9,7 @@ Public Class Salida_Nuevo
 
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT v.id_venta AS 'ID', v.fec_venta as 'Fecha de la venta', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', m.nom_med as 'Nombre del Medicamento', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades a vender', m.precio_final as 'Precio', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)', v.id_cliente, v.id_medicamento FROM venta v inner JOIN clientes c on v.id_cliente= c.id_cliente inner JOIN medicamento m on m.id_med= v.id_medicamento;"
-
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -20,12 +18,9 @@ Public Class Salida_Nuevo
         conn.Dispose()
     End Sub
 
-
     Private Sub mostrar2()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT e.id_med AS 'ID', e.Cantidad_existente AS 'Cantidad de existencia' FROM medicamento e;"
-
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
         adpt.Fill(ds)
@@ -53,7 +48,6 @@ Public Class Salida_Nuevo
     Private Sub limpiar2()
         Button6.Focus()
         TextBox6.Text = ""
-
         TextBox3.Text = ""
         TextBox10.Text = ""
         DateTimePicker1.Value = (Date.Now())
@@ -61,9 +55,9 @@ Public Class Salida_Nuevo
         TextBox1.Text = ""
         TextBox7.Text = ""
     End Sub
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
-
         mostrar()
         index_salida.Show()
         limpiar()
@@ -230,11 +224,9 @@ Public Class Salida_Nuevo
 
         Button5.Enabled = False
         Button10.Enabled = False
-
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-
         conn = objetoconexion.AbrirCon
         Try
             cmd = conn.CreateCommand
@@ -258,9 +250,7 @@ Public Class Salida_Nuevo
         Catch ex As Exception
         End Try
 
-
         Try
-
             conn = objetoconexion.AbrirCon
             cmd = conn.CreateCommand
             cmd.CommandText = "delete from venta where id_venta=@id"
@@ -292,8 +282,6 @@ Public Class Salida_Nuevo
 
         Button5.Enabled = False
         Button10.Enabled = False
-
-
     End Sub
 
     Private Sub TextBox7_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox7.KeyPress
@@ -302,10 +290,6 @@ Public Class Salida_Nuevo
                 e.Handled = True
             End If
         End If
-    End Sub
-
-    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
@@ -356,8 +340,6 @@ Public Class Salida_Nuevo
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         DataGridView2.DataSource = ""
-
-
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
@@ -367,9 +349,7 @@ Public Class Salida_Nuevo
         TextBox14.Text = "0.00"
         TextBox15.Text = "0.00"
         TextBox16.Text = "0.00"
-
     End Sub
-
 
     Private Sub datetimepicker2_KeyDown(sender As Object, e As KeyEventArgs) Handles DateTimePicker2.KeyDown
         If e.KeyCode = Keys.Enter Then
@@ -382,5 +362,4 @@ Public Class Salida_Nuevo
             Button8.PerformClick()
         End If
     End Sub
-
 End Class

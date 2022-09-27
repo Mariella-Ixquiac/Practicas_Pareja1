@@ -16,7 +16,6 @@ Public Class Inventario
 
     Private Sub mostrar()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT c.id_compra as 'ID', c.fec_compra as 'Fecha de la Compra', m.nom_med as 'Nombre del Medicamento', a.nom_marca as 'Nombre del Proveedor',  m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', m.precio_costo as 'Precio Costo (Q)', c.total_PC as 'Total (Q)', m.precio_final as 'Precio Final (Q)', c.total as 'Total (Q)' FROM compra c inner JOIN proveedores p on c.id_proveedores= p.id_proveedores inner JOIN marca a on a.id_marca=p.id_proveedores inner JOIN medicamento m on m.id_med= c.id_medicamento;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
@@ -26,10 +25,8 @@ Public Class Inventario
         conn.Dispose()
     End Sub
 
-
     Private Sub mostrar2()
         conn = objetoconexion.AbrirCon
-
         Dim query As String = "SELECT v.id_venta as 'ID', concat(c.ape_cliente, ', ', c.nom_cliente) as 'Nombre del Cliente', v.fec_venta as 'Fecha de la Venta', m.nom_med as 'Nombre del Medicamento', m.fec_caducidad as 'Fecha de Caducidad', m.uni_medida as 'Unidad de Medida', m.Cantidad_existente as 'Stock', v.unidades_vendidas as 'Unidades Vendidas', m.precio_final as 'Precio (Q)', v.subtotal_venta as 'Subtotal (Q)', v.total as 'Total (Q)' FROM venta v inner join clientes c on c.id_cliente=v.id_cliente inner join medicamento m on m.id_med= v.id_medicamento;"
         Dim adpt As New MySqlDataAdapter(query, conn)
         Dim ds As New DataSet()
@@ -66,7 +63,6 @@ Public Class Inventario
             TextBox1.Focus()
             Exit Sub
         End If
-
         If ComboBox2.SelectedItem = "ID" Then
             conn = objetoconexion.AbrirCon
             Try
@@ -219,9 +215,7 @@ Public Class Inventario
 
             Catch ex As Exception
             End Try
-
         End If
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -389,11 +383,10 @@ Public Class Inventario
                 adpt.Fill(ds)
                 DataGridView1.DataSource = ds.Tables(0)
                 conn.Close()
-            conn.Dispose()
+                conn.Dispose()
 
-        Catch ex As Exception
-        End Try
-
+            Catch ex As Exception
+            End Try
         End If
     End Sub
 
@@ -404,13 +397,10 @@ Public Class Inventario
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         DataGridView1.Enabled = False
-
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
         DataGridView2.Enabled = False
-
-
     End Sub
 
     Private Sub combobox2_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox2.KeyDown
@@ -425,7 +415,6 @@ Public Class Inventario
         End If
     End Sub
 
-
     Private Sub combobox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
             Button4.PerformClick()
@@ -437,5 +426,4 @@ Public Class Inventario
             Button4.PerformClick()
         End If
     End Sub
-
 End Class

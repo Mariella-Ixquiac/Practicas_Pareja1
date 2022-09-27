@@ -1,11 +1,9 @@
 ﻿Imports System.Text
 Imports System.Security.Cryptography
-
 Imports MySql.Data.MySqlClient
 Imports MySql.Data
 Imports System.Configuration
 
-'sdfsdf
 Public Class Form1
     Dim CadenaConexion = "Server = localhost;Database=inventario_medicamentos;User id=root;Password=;Port=3306;"
     Dim conn As New MySqlConnection(CadenaConexion)
@@ -19,7 +17,6 @@ Public Class Form1
         adpt.Fill(ds)
         conn.Close()
         conn.Dispose()
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -132,13 +129,11 @@ Public Class Form1
             End If
         Else
             MessageBox.Show("El usuario o la contraseña son incorrectos.", "Atención.", MessageBoxButtons.OK, MessageBoxIcon.Error)
-
         End If
 
         TextBox1.Text = ""
         TextBox2.Text = ""
         CheckBox1.Checked = False
-
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -146,12 +141,10 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         TextBox1.Focus()
         If conn.State = ConnectionState.Closed Then
             conn.Open()
         End If
-        'Hola
         Call conectar()
     End Sub
 
@@ -161,15 +154,6 @@ Public Class Form1
         Else
             TextBox2.PasswordChar = "*"
         End If
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
-    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
-
     End Sub
 
     Private Sub TextBox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
@@ -183,7 +167,6 @@ Public Class Form1
             Button1.PerformClick()
         End If
     End Sub
-
 
     Private Sub CheckBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox1.KeyDown
         If e.KeyCode = Keys.Enter Then
