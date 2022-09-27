@@ -451,4 +451,92 @@ Public Class Medicamentos
             End If
         End If
     End Sub
+
+
+    Private Sub TextBox15_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox15.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub CheckBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox14_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox14.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub DateTimePicker1_KeyDown(sender As Object, e As KeyEventArgs) Handles DateTimePicker1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox9_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox9.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox8_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox8.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox3_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox3.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox5_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox4_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox4.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox11_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox11.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+
+
+    Private Sub combobox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button10.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox13_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox13.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button10.PerformClick()
+        End If
+    End Sub
+
 End Class

@@ -195,4 +195,16 @@ Public Class Salida_Buscar
         End If
 
     End Sub
+    Private Sub textbox5_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button3.PerformClick()
+        End If
+    End Sub
+
+    Private Sub checkbox14_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox14.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button3.PerformClick()
+        End If
+    End Sub
+
 End Class

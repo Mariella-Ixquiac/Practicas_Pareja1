@@ -370,11 +370,17 @@ Public Class Salida_Nuevo
 
     End Sub
 
-    Private Sub TextBox13_TextChanged(sender As Object, e As EventArgs) Handles TextBox13.TextChanged
 
+    Private Sub datetimepicker2_KeyDown(sender As Object, e As KeyEventArgs) Handles DateTimePicker2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button8.PerformClick()
+        End If
     End Sub
 
-    Private Sub TextBox17_TextChanged(sender As Object, e As EventArgs) Handles TextBox17.TextChanged
-
+    Private Sub textbox7_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox7.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button8.PerformClick()
+        End If
     End Sub
+
 End Class

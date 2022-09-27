@@ -302,4 +302,53 @@ Public Class Configuracion
             TextBox7.PasswordChar = "*"
         End If
     End Sub
+
+    Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox3_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox3.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.PerformClick()
+        End If
+    End Sub
+
+    Private Sub TextBox7_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox7.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.PerformClick()
+        End If
+    End Sub
+
+    Private Sub cOMBOBox2_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.PerformClick()
+        End If
+    End Sub
+
+    Private Sub checkBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button1.PerformClick()
+        End If
+    End Sub
+
+
+    Private Sub TextBox13_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox13.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button10.PerformClick()
+        End If
+    End Sub
+
+    Private Sub comboBox3_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox3.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button10.PerformClick()
+        End If
+    End Sub
 End Class

@@ -403,4 +403,56 @@ Public Class Proveedores
         Button15.Enabled = True
     End Sub
 
+    Private Sub textbox13_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox13.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub combobox3_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox3.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox12_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox12.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button14.PerformClick()
+        End If
+    End Sub
+
+
+
+    Private Sub textbox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button5.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox5_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button5.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox6_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox6.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button5.PerformClick()
+        End If
+    End Sub
+
+
+
+    Private Sub combobox4_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox4.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button10.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox11_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox11.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button10.PerformClick()
+        End If
+    End Sub
+
 End Class

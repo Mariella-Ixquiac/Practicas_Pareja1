@@ -197,4 +197,16 @@ Public Class Entrada_Buscar
             End Try
         End If
     End Sub
+
+    Private Sub TextBox5_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button3.PerformClick()
+        End If
+    End Sub
+
+    Private Sub CheckBox14_KeyDown(sender As Object, e As KeyEventArgs) Handles CheckBox14.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button3.PerformClick()
+        End If
+    End Sub
 End Class

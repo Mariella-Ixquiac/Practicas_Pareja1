@@ -412,4 +412,30 @@ Public Class Inventario
 
 
     End Sub
+
+    Private Sub combobox2_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button3.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button3.PerformClick()
+        End If
+    End Sub
+
+
+    Private Sub combobox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button4.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button4.PerformClick()
+        End If
+    End Sub
+
 End Class

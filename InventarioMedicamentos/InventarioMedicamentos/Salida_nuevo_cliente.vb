@@ -125,4 +125,17 @@ Public Class Salida_nuevo_cliente
         limpiar2()
         mostrar()
     End Sub
+
+    Private Sub combobox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ComboBox1.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button5.PerformClick()
+        End If
+    End Sub
+
+    Private Sub textbox4_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox4.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button5.PerformClick()
+        End If
+    End Sub
+
 End Class

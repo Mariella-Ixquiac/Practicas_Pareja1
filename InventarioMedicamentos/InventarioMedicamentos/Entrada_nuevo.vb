@@ -204,7 +204,11 @@ Public Class Entrada_nuevo
         Button5.Enabled = True
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
+    Private Sub DateTimePicker2_KeyDown(sender As Object, e As KeyEventArgs) Handles DateTimePicker2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Button8.PerformClick()
+        End If
     End Sub
+
 End Class
