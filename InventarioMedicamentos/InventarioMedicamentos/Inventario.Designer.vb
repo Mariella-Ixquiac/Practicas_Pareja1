@@ -44,6 +44,7 @@ Partial Class Inventario
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,10 +52,10 @@ Partial Class Inventario
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(421, 75)
+        Me.Label9.Location = New System.Drawing.Point(421, 82)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(40, 14)
+        Me.Label9.Size = New System.Drawing.Size(50, 16)
         Me.Label9.TabIndex = 176
         Me.Label9.Text = "Buscar:"
         '
@@ -66,7 +67,7 @@ Partial Class Inventario
         Me.Label8.Location = New System.Drawing.Point(12, 40)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(204, 17)
+        Me.Label8.Size = New System.Drawing.Size(243, 19)
         Me.Label8.TabIndex = 175
         Me.Label8.Text = "Inventario de los medicamentos"
         '
@@ -87,7 +88,7 @@ Partial Class Inventario
         Me.Button1.BackColor = System.Drawing.Color.Turquoise
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Location = New System.Drawing.Point(962, 69)
+        Me.Button1.Location = New System.Drawing.Point(962, 76)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(172, 27)
@@ -100,7 +101,7 @@ Partial Class Inventario
         Me.Button3.BackColor = System.Drawing.Color.Turquoise
         Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Location = New System.Drawing.Point(754, 69)
+        Me.Button3.Location = New System.Drawing.Point(754, 76)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(200, 27)
@@ -110,19 +111,19 @@ Partial Class Inventario
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(479, 72)
+        Me.TextBox1.Location = New System.Drawing.Point(479, 79)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(267, 19)
+        Me.TextBox1.Size = New System.Drawing.Size(267, 22)
         Me.TextBox1.TabIndex = 6
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(103, 75)
+        Me.Label12.Location = New System.Drawing.Point(103, 82)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(43, 14)
+        Me.Label12.Size = New System.Drawing.Size(51, 16)
         Me.Label12.TabIndex = 170
         Me.Label12.Text = "Campo:"
         '
@@ -131,10 +132,10 @@ Partial Class Inventario
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"ID", "Fecha de la Compra", "Nombre del Medicamento", "Nombre del Proveedor", "Fecha de Caducidad", "Unidad de Medida", "Stock", "Precio Costo (Q)", "Total (Q)", "Precio Final (Q)", "Total Final (Q)"})
-        Me.ComboBox2.Location = New System.Drawing.Point(162, 70)
+        Me.ComboBox2.Location = New System.Drawing.Point(162, 77)
         Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(251, 20)
+        Me.ComboBox2.Size = New System.Drawing.Size(251, 23)
         Me.ComboBox2.TabIndex = 5
         '
         'Label4
@@ -144,7 +145,7 @@ Partial Class Inventario
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(0, 736)
+        Me.Label4.Location = New System.Drawing.Point(0, 747)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Padding = New System.Windows.Forms.Padding(20, 0, 0, 0)
@@ -167,7 +168,7 @@ Partial Class Inventario
         '
         Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(16, 105)
+        Me.DataGridView2.Location = New System.Drawing.Point(16, 112)
         Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(1118, 283)
@@ -177,7 +178,7 @@ Partial Class Inventario
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Window
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(13, 446)
+        Me.DataGridView1.Location = New System.Drawing.Point(13, 453)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1121, 283)
@@ -187,19 +188,19 @@ Partial Class Inventario
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label10.Location = New System.Drawing.Point(-3, 394)
+        Me.Label10.Location = New System.Drawing.Point(-3, 401)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(1571, 14)
+        Me.Label10.Size = New System.Drawing.Size(1963, 16)
         Me.Label10.TabIndex = 328
         Me.Label10.Text = resources.GetString("Label10.Text")
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(421, 417)
+        Me.Label1.Location = New System.Drawing.Point(421, 424)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 14)
+        Me.Label1.Size = New System.Drawing.Size(50, 16)
         Me.Label1.TabIndex = 334
         Me.Label1.Text = "Buscar:"
         '
@@ -208,7 +209,7 @@ Partial Class Inventario
         Me.Button2.BackColor = System.Drawing.Color.Turquoise
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(962, 410)
+        Me.Button2.Location = New System.Drawing.Point(962, 417)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(172, 28)
@@ -221,7 +222,7 @@ Partial Class Inventario
         Me.Button4.BackColor = System.Drawing.Color.Turquoise
         Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.Location = New System.Drawing.Point(754, 411)
+        Me.Button4.Location = New System.Drawing.Point(754, 418)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(200, 27)
@@ -231,19 +232,19 @@ Partial Class Inventario
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(479, 414)
+        Me.TextBox2.Location = New System.Drawing.Point(479, 421)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(267, 19)
+        Me.TextBox2.Size = New System.Drawing.Size(267, 22)
         Me.TextBox2.TabIndex = 330
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(103, 417)
+        Me.Label2.Location = New System.Drawing.Point(103, 424)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(43, 14)
+        Me.Label2.Size = New System.Drawing.Size(51, 16)
         Me.Label2.TabIndex = 333
         Me.Label2.Text = "Campo:"
         '
@@ -252,10 +253,10 @@ Partial Class Inventario
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"ID", "Nombre del Cliente", "Fecha de la Venta", "Nombre del Medicamento", "Fecha de Caducidad", "Unidad de Medida", "Stock", "Unidades a Vender", "Precio (Q)", "Subtotal (Q)", "Total (Q)"})
-        Me.ComboBox1.Location = New System.Drawing.Point(162, 412)
+        Me.ComboBox1.Location = New System.Drawing.Point(162, 419)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(251, 20)
+        Me.ComboBox1.Size = New System.Drawing.Size(251, 23)
         Me.ComboBox1.TabIndex = 329
         '
         'Label5
@@ -263,10 +264,10 @@ Partial Class Inventario
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label5.Location = New System.Drawing.Point(13, 71)
+        Me.Label5.Location = New System.Drawing.Point(13, 78)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(68, 17)
+        Me.Label5.Size = New System.Drawing.Size(82, 19)
         Me.Label5.TabIndex = 335
         Me.Label5.Text = "Compras:"
         '
@@ -275,20 +276,31 @@ Partial Class Inventario
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 10.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.DarkGreen
-        Me.Label6.Location = New System.Drawing.Point(13, 414)
+        Me.Label6.Location = New System.Drawing.Point(13, 421)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(55, 17)
+        Me.Label6.Size = New System.Drawing.Size(62, 19)
         Me.Label6.TabIndex = 336
         Me.Label6.Text = "Ventas:"
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Label7.Location = New System.Drawing.Point(-418, 57)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(1963, 16)
+        Me.Label7.TabIndex = 337
+        Me.Label7.Text = resources.GetString("Label7.Text")
+        '
         'Inventario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
-        Me.ClientSize = New System.Drawing.Size(1147, 764)
+        Me.ClientSize = New System.Drawing.Size(1147, 775)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
@@ -345,4 +357,5 @@ Partial Class Inventario
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class
