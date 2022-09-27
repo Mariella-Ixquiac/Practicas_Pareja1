@@ -102,7 +102,7 @@
 <blockquote class="blockquote" style="padding-right:45px; padding-left:45px;">
   <p><Center>Antes de iniciar a usar este programa, primero se debe conocer como descargarlo y hacer uso de todas las Funciones.</Center></p> 
   <footer class="blockquote-footer"><Center>Se utilizará en especial una base de datos la cual si debemos descargar una aplicación previamente.</Center></footer> 
-  <center><img src="https://cdn.icon-icons.com/icons2/37/PNG/512/database_theapplication_3365.png"; width="100px"></center>
+  <center><img src="https://cdn-icons-png.flaticon.com/512/149/149749.png"; width="100px"></center>
 
 </blockquote>
 <br>
