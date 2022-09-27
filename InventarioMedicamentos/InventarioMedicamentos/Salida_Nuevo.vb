@@ -65,7 +65,7 @@ Public Class Salida_Nuevo
         Me.Hide()
 
         mostrar()
-        Index.Show()
+        index_salida.Show()
         limpiar()
         TextBox12.Text = "0.00"
         TextBox14.Text = "0.00"

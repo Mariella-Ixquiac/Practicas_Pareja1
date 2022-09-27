@@ -11,7 +11,7 @@ Public Class Salida_Buscar
         CheckBox14.Checked = False
         Me.Hide()
         mostrar()
-        Index.Show()
+        index_salida.Show()
         limpiar()
     End Sub
 

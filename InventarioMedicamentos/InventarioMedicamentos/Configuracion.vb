@@ -57,7 +57,7 @@ Public Class Configuracion
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Hide()
-        Index.Show()
+        Index_configuracion.Show()
         limpiar2()
         limpiar()
         mostrar()
